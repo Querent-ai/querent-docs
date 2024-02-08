@@ -1,2 +1,2 @@
 # querent-docs
-Documentation for Querent engine. [Read more](docs.querent.xyz)
+Documentation for Querent engine. [Read more](https://docs.querent.xyz)
