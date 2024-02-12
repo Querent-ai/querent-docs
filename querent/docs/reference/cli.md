@@ -46,9 +46,9 @@ The Janitor service runs maintenance tasks on indexes: garbage collection, docum
 :::note
 Querent needs to open the following port for cluster formation and workload distribution:
 
-    TCP port (default is 7280) for REST API
-    TCP and UDP port (default is 7280) for cluster membership protocol
-    TCP port + 1 (default is 7281) for gRPC address for the distributed search
+    TCP port (default is 1111) for REST API
+    TCP and UDP port (default is 2222) for cluster membership protocol
+    TCP port (default is 3333) for gRPC address for the distributed search
 
 If ports are already taken, the serve command will fail.
 :::

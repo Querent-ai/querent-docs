@@ -15,7 +15,7 @@ This method works only for [some OS/architectures](installation.md#download), an
 
 ```bash
 pip3 install querent
-curl -L https://install.querent.xyz | sh
+curl -L https://install.querent.xyz/install.sh | sh
 ```
 
 ```bash
@@ -182,7 +182,7 @@ docker-compose up
 <TabItem value="docker" label="Docker">
 
 ```bash
-docker run --rm -v $(pwd)/querent_data:/querent/querent_data -p 127.0.0.1:7280:7280 querent/querent env QUERENT_NODE_CONFIG=/path/to/querent.config.yaml
+docker run --rm -v $(pwd)/querent_data:/querent/querent_data -p 127.0.0.1:1111:1111 querent/querent env QUERENT_NODE_CONFIG=/path/to/querent.config.yaml
 ```
 
 </TabItem>
@@ -194,7 +194,7 @@ Tips: you can use the environment variable `RUST_LOG` to control querent verbosi
 Check it's working by browsing the [UI at http://localhost:111](http://localhost:1111) or do a simple GET with cURL:
 
 ```bash
-curl http://localhost:7280/api/v1/version
+curl http://localhost:1111/api/v1/version
 ```
 
 Here are the links you check:
