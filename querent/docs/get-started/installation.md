@@ -143,7 +143,7 @@ To easily install Querent on your machine, just run the command below from your 
 The script detects the architecture and then downloads the correct binary archive for the machine.
 
 ```bash
-curl -L https://install.querent.io | sh
+curl -L https://install.querent.xyz/install.sh | sh
 ```
 
 All this script does is download the correct binary archive for your machine and extracts it in the current working directory. This means you can download any desired archive from [github](https://github.com/querent-ai/quester/releases) that matches your OS architecture and manually extract it anywhere.
