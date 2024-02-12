@@ -45,6 +45,24 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    title: 'Data Privacy and Security',
+    Svg: require('@site/static/img/data_privacy_security.svg').default,
+    description: (
+      <>
+        Querent prioritizes data privacy and security, implementing robust measures to safeguard sensitive information and comply with regulations.
+      </>
+    ),
+  },
+  {
+    title: 'Enterprise-scale Architecture',
+    Svg: require('@site/static/img/enterprise_architecture.svg').default,
+    description: (
+      <>
+        Querent is designed with an enterprise-scale architecture, ensuring scalability, reliability, and performance for large-scale data processing and analytics.
+      </>
+    ),
+  },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
