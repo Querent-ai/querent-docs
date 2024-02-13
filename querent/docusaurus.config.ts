@@ -49,7 +49,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/querent_transparent.png',
+    image: 'img/querent_transparent.svg',
     navbar: {
       title: 'AI',
       logo: {
