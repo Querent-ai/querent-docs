@@ -28,6 +28,8 @@ Support of aarch64 is currently experimental.
 
 ## Download
 
+Check out various versions of Querent on [GitHub](https://github.com/querent-ai/distribution/releases).
+
 <RenderIf condition={useDocsVersion().version == 'current'}>
 
 Version: nightly -
