@@ -52,7 +52,7 @@ This layer empowers users to actively engage with the data by training their own
 
 - **Custom Predictive Analytics**: After training, users can deploy their models to make predictions, enabling them to uncover insights like node properties, potential links, and overall graph dynamics, thus leveraging the full potential of GNN within their domain.
 
-![Architecture Diagram](../assets/arch_v2.png)
+![Architecture Diagram](../assets/arch_v3.png)
 *Figure 1: Sequential Workflow of the Querent System Architecture - This diagram illustrates the flow of data through the Querent system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
 
 ## Data Flow and Interactions
