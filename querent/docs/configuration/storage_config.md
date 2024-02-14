@@ -17,7 +17,7 @@ PostgreSQL is used for index storage. You
 |---------------|---------------------------------------|-----------------------------------------------------------|
 | `name`        | Name of the PostgreSQL configuration  | `querent_test`                                            |
 | `storage_type`| Type of storage used                  | `index`                                                   |
-| `config.url`  | Connection URL to the PostgreSQL database | `postgres://querent:querent@localhost/querent_test?sslmode=prefer` |
+| `url`  | Connection URL to the PostgreSQL database | `postgres://querent:querent@localhost/querent_test?sslmode=prefer` |
 
 Example:
 
@@ -26,8 +26,7 @@ storage_configs:
   postgres:
     name: querent_test
     storage_type: index
-    config:
-      url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
+    url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
 ```
 
 ### Milvus Configuration
@@ -38,9 +37,9 @@ Milvus is used for vector storage. The configuration allows you to specify the c
 |---------------|---------------------------------------|-----------------------------------------------------------|
 | `name`        | Name of the Milvus configuration      | `semantic_milvus_db`                                      |
 | `storage_type`| Type of storage used                  | `vector`                                                  |
-| `config.url`  | Connection URL to the Milvus server   | `http://localhost:19530`                                  |
-| `config.username` | Username for Milvus server (if required) |                                                           |
-| `config.password` | Password for Milvus server (if required) |                                                           |
+| `url`  | Connection URL to the Milvus server   | `http://localhost:19530`                                  |
+| `username` | Username for Milvus server (if required) |                                                           |
+| `password` | Password for Milvus server (if required) |                                                           |
 
 Example:
 
@@ -49,10 +48,9 @@ storage_configs:
   milvus:
     name: semantic_milvus_db
     storage_type: vector
-    config:
-      url: http://localhost:19530
-      username: ""
-      password: ""
+    url: http://localhost:19530
+    username: ""
+    password: ""
 ```
 
 ### Neo4j Configuration
@@ -63,10 +61,10 @@ Neo4j is used for graph storage. You can configure the connection details to you
 |---------------|---------------------------------------|-----------------------------------------------------------|
 | `name`        | Name of the Neo4j configuration       | `semantic_neo4j_db`                                       |
 | `storage_type`| Type of storage used                  | `graph`                                                   |
-| `config.db_name` | Name of the Neo4j database          | `neo4j`                                                   |
-| `config.url`  | Connection URL to the Neo4j server    | `bolt://localhost:7687`                                   |
-| `config.username` | Username for Neo4j server          | `neo4j`                                                   |
-| `config.password` | Password for Neo4j server          | `password_neo`                                            |
+| `db_name` | Name of the Neo4j database          | `neo4j`                                                   |
+| `url`  | Connection URL to the Neo4j server    | `bolt://localhost:7687`                                   |
+| `username` | Username for Neo4j server          | `neo4j`                                                   |
+| `password` | Password for Neo4j server          | `password_neo`                                            |
 
 Example:
 
@@ -75,11 +73,10 @@ storage_configs:
   neo4j:
     name: semantic_neo4j_db
     storage_type: graph
-    config:
-      db_name: neo4j
-      url: bolt://localhost:7687
-      username: neo4j
-      password: password_neo
+    db_name: neo4j
+    url: bolt://localhost:7687
+    username: neo4j
+    password: password_neo
 ```
 
 ### Example Configuration
@@ -91,21 +88,18 @@ storage_configs:
   postgres:
     name: querent_test
     storage_type: index
-    config:
-      url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
+    url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
   milvus:
     name: semantic_milvus_db
     storage_type: vector
-    config:
-      url: http://localhost:19530
-      username: ""
-      password: ""
+    url: http://localhost:19530
+    username: ""
+    password: ""
   neo4j:
     name: semantic_neo4j_db
     storage_type: graph
-    config:
-      db_name: neo4j
-      url: bolt://localhost:7687
-      username: neo4j
-      password: password_neo
+    db_name: neo4j
+    url: bolt://localhost:7687
+    username: neo4j
+    password: password_neo
 ```
