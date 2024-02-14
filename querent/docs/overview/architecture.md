@@ -68,7 +68,8 @@ This layer empowers users to actively engage with the data by training their own
 9. Data flows through the Semantic Pipe, carrying processed events from the Semantic Layer.
 10. The Event Streamer captures and forwards these events.
 11. The Storage Mapper receives data events and aligns them for storage.
-12. The Indexer creates and maintains indexes for the stored data within the PostgreSQL database.
+12. The Indexer creates and maintains indexes.
+13. The indexed data is stored in Postgres database.
 14. Vector event data is stored in the Milvus database for vector information and graph event data is stored in the Neo4j database.
 15. The Storage Mapper facilitates the usage of Search APIs and Insights API, providing it with the necessary data.
 16. The Storage Mapper interacts with the Graph Neural Network, providing it with the necessary data.
