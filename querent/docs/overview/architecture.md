@@ -8,6 +8,7 @@ sidebar_position: 2
 Querent is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. It consists of several interconnected components that work together to ingest, analyze, and visualize data in the form of semantic graphs.
 
 ![Architecture Diagram](../assets/Arch_v2.png)
+*Figure 1: Sequential Workflow of the Querent System Architecture - This diagram illustrates the flow of data through the Querent system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
 
 ## Components
 
