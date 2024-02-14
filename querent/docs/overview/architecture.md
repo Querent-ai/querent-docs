@@ -7,12 +7,10 @@ sidebar_position: 2
 
 Querent is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. It consists of several interconnected components that work together to ingest, analyze, and visualize data in the form of semantic graphs.
 
-![Architecture Diagram](../assets/Arch_v2.png)
-*Figure 1: Sequential Workflow of the Querent System Architecture - This diagram illustrates the flow of data through the Querent system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
-
 ## Components
+Before detailing the interactions within the system, it is crucial to understand the individual components and their roles. Below is a list of key components, for reference:
 
-### 1. Querent Enterprise Layer
+### Querent Enterprise Layer
 Responsible for interfacing with external APIs and directing the flow of semantically processed data through the system, it consists of:
 
 - **Search APIs, Insights APIs, Semantic APIs**: Interfaces for various data operations and services.
@@ -25,14 +23,14 @@ Responsible for interfacing with external APIs and directing the flow of semanti
   
 - **Indexer**: Creates and maintains indexes for efficiently querying data within the PostgreSQL database.
 
-### 2. Synapse (pyo3 based rust bridge)
+### Synapse (pyo3 based rust bridge)
 Serves as an intermediary that bridges the Semantic Layer with the Enterprise Layer, utilizing pyo3 to allow Rust and Python interoperability. It provides support for:
 
 - **External Data Sources:** Integrates with databases, APIs, or data lakes to fetch additional information.
   
 - **Third-Party Tools:** Allows integration with analytics, visualization, or machine learning frameworks.
 
-### 3. Querent Semantic Layer
+### Querent Semantic Layer
 This is the core processing component of Querent, where semantic graph computations take place., involving:
 
 - **Data Ingestion Workflow**: This component is responsible for the continuous and asynchronous polling of data from a multitude of sources, including Azure, Google Cloud Storage, Drive, Slack, and Jira. It is designed to efficiently fetch and stage data in a queue without blocking the system's operations.
@@ -45,7 +43,7 @@ This is the core processing component of Querent, where semantic graph computati
   
 - **Vector Event**: Structured Vector Events containing vector embeddings of the extracted contexts, which are essential for powering the semantic search engine's ability to locate and relate information.
 
-### 4. Graph Neural Network (GNN) Experiment Layer
+### Graph Neural Network (GNN) Experiment Layer
 This layer empowers users to actively engage with the data by training their own GNN models and conducting predictions. It is a testament to the system's flexibility and user-centric design, facilitating advanced data analysis through:
 
 - **Graph Convolution Network (GCN)**: A powerful feature that enables users to apply convolutions on graph data, extracting essential features for a deep understanding of complex relationships.
@@ -54,23 +52,30 @@ This layer empowers users to actively engage with the data by training their own
 
 - **Custom Predictive Analytics**: After training, users can deploy their models to make predictions, enabling them to uncover insights like node properties, potential links, and overall graph dynamics, thus leveraging the full potential of GNN within their domain.
 
+![Architecture Diagram](../assets/arch_v2.png)
+*Figure 1: Sequential Workflow of the Querent System Architecture - This diagram illustrates the flow of data through the Querent system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
 
 ## Data Flow and Interactions
 
-1. **Enterprise Layer API Management**: The journey begins within the Enterprise Layer, where Search, Insights, and Semantic APIs manage interactions with incoming data. These APIs coordinate with the Semantic Pipe to direct the flow of data.
-
-2. **Synapse Bridging**: The Synapse acts as a crucial bridge, connecting the Semantic Layer with the Enterprise Layer, allowing for seamless data transfer and processing orchestration.
-
-3. **Initiation at Semantic Layer**: The Querent Semantic Layer initiates the data processing, preparing the data for ingestion and event creation.
-
-4. **Asynchronous Data Ingestion**: Data is ingested asynchronously from multiple sources and released as data events, ensuring continuous and non-blocking data flow.
-
-5. **Event Streaming**: Captured data events from the Async Data Ingestion are streamed by the Event Streamer and directed towards the Storage Mapper.
-
-6. **Storage and Indexing**: After streaming, data is systematically stored and indexed in databases like Milvus for vector data and Neo4j for graph data, facilitating efficient access and retrieval.
-
-7. **Graph Neural Network Analysis**: Finally, the indexed data is conveyed to the Graph Neural Network. Here, it undergoes analysis, and the system generates predictive insights, completing the data's journey through the Querent architecture.
+1. Workflow orchestration configurations are received from Semantic APIs within the Enterprise Layer.
+2. The Semantic Pipe facilitates the transmission of configuration commands between the Enterprise Layer and the Semantic Layer.
+3. The process begins with the initiation of the Querent Semantic Layer.
+4. Asynchronous Data Ingestion collects data from various external sources.
+5. The collected data is placed into an Async Queue, awaiting processing.
+6. The LLM Engine Workflow processes the data using transformer/language models.
+7. Graph Data Events and Vector Data Events are created based on the processed data.
+8. These events are then transferred back through the Semantic Pipe to the Enterprise Layer.
+9. Data flows through the Semantic Pipe, carrying processed events from the Semantic Layer.
+10. The Event Streamer captures and forwards these events.
+11. The Storage Mapper receives data events and aligns them for storage.
+12 & 13. The Indexer creates and maintains indexes for the stored data within the PostgreSQL database.
+14. Vector event data is stored in the Milvus database for vector information and graph event data is stored in the Neo4j database.
+15. The Storage Mapper facilitates the usage of Search APIs and Insights API, providing it with the necessary data.
+16. The Storage Mapper interacts with the Graph Neural Network, providing it with the necessary data.
+17. The Graph Neural Network receives input graphs and performs advanced analytics. Predictions are generated from the Graph Neural Network, including node classification, link prediction, and graph evolution.
 
 ## Conclusion
 
 Querent provides a scalable, flexible, and efficient platform for semantic graph computing, enabling organizations to derive actionable insights and knowledge from their data. By leveraging distributed processing, advanced analytics, and machine learning techniques, Querent empowers users to unlock the full potential of their data assets.
+
+
