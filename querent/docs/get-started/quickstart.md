@@ -164,12 +164,15 @@ networks:
 ```
 
 ## Environment setting
-Before running the querent, we need to make a directory named models with the following items in it:
+Before running the querent, we need to make a directory named "models" with the following items in it:
 
 - <a href = "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main">Llama ".gguf" model </a>
 - <a href = "https://www.nltk.org/nltk_data/">nltk library models</a>
-- grammar file
+- <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">grammar file </a>
 - <a href = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl">spacy models </a>
+
+Here is how your models folder should look like
+!["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
 
 
 Remember to set the $MODEL_PATH to the location where your model directory is located
