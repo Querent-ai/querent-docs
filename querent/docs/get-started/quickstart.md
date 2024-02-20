@@ -32,21 +32,24 @@ export MODEL_PATH=path/to/your/model/directory/
 ```
 ### Then do the below steps to setup the model directory:
 
-- If you would like to use an opensource LLM , please provide a GGUF format model file. These are readily available on huggingface platform and for reference the user can refer to <a href = "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main">this link </a> to access llama2 chat model 7b parameter model file. (optional, only when running "knowledge_graph_using_llama2_v1" workflow)
+- For utilizing an open-source Large Language Model (LLM), please provide a GGUF format model file. Such files are accessible on the Hugging Face platform. As a point of reference, users may acquire the llama-2-7b-chat.Q5_K_M.gguf model file <a href = "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main">here.</a> (This step is optional and only necessary for the "knowledge_graph_using_llama2_v1" workflow.)
+- In order to facilitate the generation of structured outputs by the open-source LLM, we are utilizing grammar files. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or create a new one. (This step is optional and only necessary for the "knowledge_graph_using_llama2_v1" workflow.)
 - Next download and store the nltk library.
 ```bash
 $ python3
 >>> import nltk
 >>> nltk.download('all', download_dir='$MODEL_PATH/nltk_data')
 ```
-- <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">grammar file </a>
+
 - Download spacy model :
-  1. Download the "en_core_web_lg-3.7.1.tar.gz" file from  <a href = "https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.7.1">official spacy releases </a>
-  2. Extract this file inside your $MODEL_PATH directory
+  1. Download the "en_core_web_lg-3.7.1.tar.gz" file from  <a href = "https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.7.1">official spacy releases.</a>
+  2. Decompress this file within your $MODEL_PATH directory utilizing the following command:
 ```bash
-     tar -xvzf en_core_web_sm-3.0.0.tar.gz -C /
+     tar -xvzf  ~/Downloads/en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
 ```
-Here is how your models folder should look like
+### Expected Structure of the Models Directory
+Below is a visual representation of the ideal organization within your models folder:
+
 !["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
 
 
