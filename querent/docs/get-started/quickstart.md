@@ -26,21 +26,31 @@ cd ./querent-v*/
 You can now move this executable directory wherever sensible for your environment and possibly add it to your `PATH` environment.
 
 ## Environment setting
-Before running the querent, we need to make a directory named "models" with the following items in it:
+Before running the querent, we need to make a directory named "model" with the following items and set the $MODEL_PATH to the location where your model directory is located
+```bash
+export MODEL_PATH=path/to/your/model/directory/
+```
+### Then do the below steps to setup the model directory:
 
-- <a href = "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main">Llama ".gguf" model </a>
-- <a href = "https://www.nltk.org/nltk_data/">nltk library models</a>
+- If you would like to use an opensource LLM , please provide a GGUF format model file. These are readily available on huggingface platform and for reference the user can refer to <a href = "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main">this link </a> to access llama2 chat model 7b parameter model file. (optional, only when running "knowledge_graph_using_llama2_v1" workflow)
+- Next download and store the nltk library.
+```bash
+$ python3
+>>> import nltk
+>>> nltk.download('all', download_dir='$MODEL_PATH/nltk_data')
+```
 - <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">grammar file </a>
-- <a href = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl">spacy models </a>
-
+- Download spacy model :
+  1. Download the "en_core_web_lg-3.7.1.tar.gz" file from  <a href = "https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.7.1">official spacy releases </a>
+  2. Extract this file inside your $MODEL_PATH directory
+```bash
+     tar -xvzf en_core_web_sm-3.0.0.tar.gz -C /
+```
 Here is how your models folder should look like
 !["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
 
 
-Remember to set the $MODEL_PATH to the location where your model directory is located
-```bash
-export MODEL_PATH=path/to/your/model/directory/
-```
+
 
 
 ## Use Querent's Docker image
