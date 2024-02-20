@@ -163,8 +163,33 @@ networks:
 
 ```
 
+## Environment setting
+model-gguf, ntlk, grammar file, spacy
+Before running the querent, we need to make a directory named models with the following items in it:
+
+- Llama ".gguf" model
+- nltk library models
+- grammar file
+- spacy models
+, remember to set the $MODEL_PATH to the location where your model directory is located
+```bash
+export MODEL_PATH=path/to/your/model/directory/
+```
+
+
 ```bash
 docker-compose up
+```
+
+## Common errors you might face
+If you encounter the following error while trying to start the querent
+```bash
+Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
+```
+
+Remember to run this command
+```
+export CUDA_VISIBLE_DEVICES=-1
 ```
 
 ## Start Querent server using standalone binary
