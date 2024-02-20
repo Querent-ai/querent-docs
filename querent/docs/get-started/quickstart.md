@@ -178,6 +178,8 @@ export MODEL_PATH=path/to/your/model/directory/
 ```
 
 
+To run the docker image, execute this command
+
 ```bash
 docker-compose up
 ```
@@ -188,7 +190,7 @@ If you encounter the following error while trying to start the querent
 Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
 ```
 
-Remember to run this command
+Run this command
 ```
 export CUDA_VISIBLE_DEVICES=-1
 ```
