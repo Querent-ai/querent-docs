@@ -164,14 +164,15 @@ networks:
 ```
 
 ## Environment setting
-model-gguf, ntlk, grammar file, spacy
 Before running the querent, we need to make a directory named models with the following items in it:
 
 - Llama ".gguf" model
 - nltk library models
 - grammar file
 - spacy models
-, remember to set the $MODEL_PATH to the location where your model directory is located
+
+
+Remember to set the $MODEL_PATH to the location where your model directory is located
 ```bash
 export MODEL_PATH=path/to/your/model/directory/
 ```
