@@ -48,7 +48,7 @@ You can now move this executable directory wherever sensible for your environmen
 
 ## Environment Setting
 
-### For Manual setup :
+### For Manual setup
 Before running Querent, we need to create a directory named "model" and set the $MODEL_PATH to the location where your model directory is located
 ```bash
 export MODEL_PATH=path/to/your/model/directory/
@@ -70,7 +70,7 @@ $ python3
      tar -xvzf  ~/Downloads/en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
 ```
 
-### For setup using a predefined bash script :
+### For setup using a predefined bash script
 - Download the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/querent-installation.sh">here.</a>
 - Make the Script Executable
  ```bash
