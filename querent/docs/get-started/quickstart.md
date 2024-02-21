@@ -245,6 +245,7 @@ docker-compose up
 <TabItem value="docker" label="Docker">
   
   ## Start Querent using docker run
+  This command runs the Querent container, mounting the current directory's querent_data folder to the container's /querent/querent_data directory and mapping the container's 1111 port to the host's 1111 port. The environment variable QUERENT_NODE_CONFIG is set to the path of your querent.config.yaml file, configuring the Querent node accordingly.
   ```bash
   docker run --rm -v $(pwd)/querent_data:/querent/querent_data -p 127.0.0.1:1111:1111 querent/querent env QUERENT_NODE_CONFIG=/path/to/querent.config.yaml
   ```
