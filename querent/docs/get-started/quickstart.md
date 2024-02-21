@@ -72,21 +72,19 @@ $ python3
 ```
 
 #### For setup using a predefined bash script :
-- Download the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">here.</a>
-- Convert the bash script into a executable file
-- run the bash script and provide it with a path where you would like to create a directory with directory name.
-- 
+- Download the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/querent-installation.sh">here.</a>
+- Make the Script Executable
  ```bash
 sudo chmod 755 querent-installation.sh
-source querent-installation.sh path-to-model-directory
+```
+- Execute it by providing the path where you'd like to create a new directory. 
+ ```bash
+source querent-installation.sh /path/to/desired/directory
 ```
 ### Expected Structure of the Models Directory
 Below is a visual representation of the ideal organization within your model folder:
 
 !["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
-
-### 
-
 
 
 ## Use Querent's Docker image
