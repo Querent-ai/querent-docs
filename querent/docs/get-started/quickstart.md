@@ -25,15 +25,15 @@ cd ./querent-v*/
 
 You can now move this executable directory wherever sensible for your environment and possibly add it to your `PATH` environment.
 
-## Environment setting
-Before running the querent, we need to make a directory named "model" with the following items and set the $MODEL_PATH to the location where your model directory is located
+## Environment Setting
+Before running Querent, we need to create a directory named "model" and set the $MODEL_PATH to the location where your model directory is located
 ```bash
 export MODEL_PATH=path/to/your/model/directory/
 ```
 ### Then do the below steps to setup the model directory:
 
-- For utilizing an open-source Large Language Model (LLM), please provide a GGUF format model file. Such files are accessible on the Hugging Face platform. As a point of reference, users may acquire the llama-2-7b-chat.Q5_K_M.gguf model file <a href = "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main">here.</a> (This step is optional and only necessary for the "knowledge_graph_using_llama2_v1" workflow.)
-- In order to facilitate the generation of structured outputs by the open-source LLM, we are utilizing grammar files. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or create a new one. (This step is optional and only necessary for the "knowledge_graph_using_llama2_v1" workflow.)
+- Querent enables users to leverage open-source Large Language Models (LLMs) through the "knowledge_graph_using_llama2_v1" workflow for running inference tasks. Please provide a GGUF format model file if you would like to utilize this workflow. Such files are accessible on the Hugging Face platform. For convenience and as a starting point, users can download the `llama-2-7b-chat.Q5_K_M.gguf` model file directly from [this link](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main). 
+- To enable the open-source Large Language Model (LLM) to produce structured outputs, we leverage grammar files designed to guide the model's interpretation and output format.If you opt for "knowledge_graph_using_llama2_v1" workflow, this step is mandatory. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or opt to develop a custom grammar file tailored to your use-case. 
 - Next download and store the nltk library.
 ```bash
 $ python3
@@ -48,7 +48,7 @@ $ python3
      tar -xvzf  ~/Downloads/en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
 ```
 ### Expected Structure of the Models Directory
-Below is a visual representation of the ideal organization within your models folder:
+Below is a visual representation of the ideal organization within your model folder:
 
 !["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
 
