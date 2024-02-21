@@ -54,6 +54,7 @@ export MODEL_PATH=path/to/your/model/directory/
 ```
 ### Then do the below steps to setup the model directory:
 
+#### For Manual setup :
 - Querent enables users to leverage open-source Large Language Models (LLMs) through the "knowledge_graph_using_llama2_v1" workflow for running inference tasks. Please provide a GGUF format model file if you would like to utilize this workflow. Such files are accessible on the Hugging Face platform. For convenience and as a starting point, users can download the `llama-2-7b-chat.Q5_K_M.gguf` model file directly from [this link](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main). 
 - To enable the open-source Large Language Model (LLM) to produce structured outputs, we leverage grammar files designed to guide the model's interpretation and output format.If you opt for "knowledge_graph_using_llama2_v1" workflow, this step is mandatory. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or opt to develop a custom grammar file tailored to your use-case. 
 - Next download and store the nltk library.
@@ -68,6 +69,16 @@ $ python3
   2. Decompress this file within your $MODEL_PATH directory utilizing the following command:
 ```bash
      tar -xvzf  ~/Downloads/en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
+```
+
+#### For setup using a predefined bash script :
+- Download the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">here.</a>
+- Convert the bash script into a executable file
+- run the bash script and provide it with a path where you would like to create a directory with directory name.
+- 
+ ```bash
+sudo chmod 755 querent-installation.sh
+source querent-installation.sh path-to-model-directory
 ```
 ### Expected Structure of the Models Directory
 Below is a visual representation of the ideal organization within your model folder:
