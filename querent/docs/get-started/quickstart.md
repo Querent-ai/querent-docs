@@ -48,13 +48,13 @@ cd ./querent-v*/
 You can now move this executable directory wherever sensible for your environment and possibly add it to your `PATH` environment.
 
 ## Environment Setting
+
+### For Manual setup :
 Before running Querent, we need to create a directory named "model" and set the $MODEL_PATH to the location where your model directory is located
 ```bash
 export MODEL_PATH=path/to/your/model/directory/
 ```
-### Then do the below steps to setup the model directory:
-
-#### For Manual setup :
+#### Then do the below steps to setup the model directory:
 - Querent enables users to leverage open-source Large Language Models (LLMs) through the "knowledge_graph_using_llama2_v1" workflow for running inference tasks. Please provide a GGUF format model file if you would like to utilize this workflow. Such files are accessible on the Hugging Face platform. For convenience and as a starting point, users can download the `llama-2-7b-chat.Q5_K_M.gguf` model file directly from [this link](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main). 
 - To enable the open-source Large Language Model (LLM) to produce structured outputs, we leverage grammar files designed to guide the model's interpretation and output format.If you opt for "knowledge_graph_using_llama2_v1" workflow, this step is mandatory. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or opt to develop a custom grammar file tailored to your use-case. 
 - Next download and store the nltk library.
@@ -71,7 +71,7 @@ $ python3
      tar -xvzf  ~/Downloads/en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
 ```
 
-#### For setup using a predefined bash script :
+### For setup using a predefined bash script :
 - Download the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/querent-installation.sh">here.</a>
 - Make the Script Executable
  ```bash
@@ -81,11 +81,6 @@ sudo chmod 755 querent-installation.sh
  ```bash
 source querent-installation.sh /path/to/desired/directory
 ```
-### Expected Structure of the Models Directory
-Below is a visual representation of the ideal organization within your model folder:
-
-!["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
-
 
 ## Use Querent's Docker image
 
