@@ -223,17 +223,6 @@ To run the docker image, execute this command
 docker-compose up
 ```
 
-## Common errors you might face
-If you encounter the following error while trying to start the querent
-```bash
-Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
-```
-
-Run this command
-```
-export CUDA_VISIBLE_DEVICES=-1
-```
-
 ## Start Querent server using standalone binary
 
 <Tabs>
@@ -242,6 +231,15 @@ export CUDA_VISIBLE_DEVICES=-1
 
 ```bash
 ./querent serve --config ./config/querent.config.yaml
+```
+### Common error you might face
+If you encounter the following error while trying to serve using Querent binary
+```bash
+Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
+```
+Run this command
+```
+export CUDA_VISIBLE_DEVICES=-1
 ```
 
 </TabItem>
