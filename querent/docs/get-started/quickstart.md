@@ -7,7 +7,29 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 In this quick start guide, we will install Querent, create an index, add documents and finally execute search queries. All the Querent commands used in this guide are documented [in the CLI reference documentation](/docs/reference/cli.md).
+## Install Dependencies if planning to run Querent standalone binary
 
+- **Install Python (v3.9 or above):** Ensure that Python version 3.9 or newer is installed on your system. You can verify the installed version of Python by running the following command in your terminal:
+
+```bash
+python3 --version
+```
+If Python is not installed, or if your version is older than 3.9, visit the [official Python website](https://www.python.org/downloads/) to download and install the latest version for your operating system.
+
+- **Create and activate a virtual environment:** Once Python is set up, create a virtual environment in your project directory. Use the following commands to create and activate a virtual environment:
+
+```bash
+python3 -m venv querent-env
+```
+To activate the virtual environment on macOS and Linux, run:
+```bash
+source querent-env/bin/activate
+```
+- **Download OCR package**
+```bash
+sudo apt-get -y install tesseract-ocr libtesseract-dev
+
+```
 ## Install Querent using Querent installer
 
 The Querent installer automatically picks the correct binary archive for your environment and then downloads and unpacks it in your working directory.
@@ -52,7 +74,7 @@ Below is a visual representation of the ideal organization within your model fol
 
 !["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
 
-
+### 
 
 
 
