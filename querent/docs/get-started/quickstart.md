@@ -14,14 +14,14 @@ In this quick start guide, we will install Querent, create an index, add documen
 ```bash
 python3 --version
 ```
-If Python is not installed, or if your version is older than 3.9, visit the [official Python website](https://www.python.org/downloads/) to download and install the latest version for your operating system.
+  If Python is not installed, or if your version is older than 3.9, visit the [official Python website](https://www.python.org/downloads/) to download and install the latest version for your operating system.
 
 - Once Python is set up, create a virtual environment in your project directory. Use the following commands to create and activate a virtual environment.
 
 ```bash
 python3 -m venv querent-env
 ```
-To activate the virtual environment on macOS and Linux, run:
+  To activate the virtual environment on macOS and Linux, run:
 ```bash
 source querent-env/bin/activate
 ```
