@@ -223,32 +223,31 @@ To run the docker image, execute this command
 docker-compose up
 ```
 
-## Start Querent server using standalone binary
-
 <Tabs>
 
 <TabItem value="cli" label="CLI">
 
-```bash
-./querent serve --config ./config/querent.config.yaml
-```
-### Common error you might face
-If you encounter the following error while trying to serve using Querent binary
-```bash
-Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
-```
-Run this command
-```
-export CUDA_VISIBLE_DEVICES=-1
-```
+  ## Start Querent server using standalone binary
+  ```bash
+  ./querent serve --config ./config/querent.config.yaml
+  ```
+  If you encounter the following error while trying to serve using Querent binary
+  ```bash
+  Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
+  ```
+  Run this command
+  ```
+  export CUDA_VISIBLE_DEVICES=-1
+  ```
 
 </TabItem>
 
 <TabItem value="docker" label="Docker">
-
-```bash
-docker run --rm -v $(pwd)/querent_data:/querent/querent_data -p 127.0.0.1:1111:1111 querent/querent env QUERENT_NODE_CONFIG=/path/to/querent.config.yaml
-```
+  
+  ## Start Querent using docker run
+  ```bash
+  docker run --rm -v $(pwd)/querent_data:/querent/querent_data -p 127.0.0.1:1111:1111 querent/querent env QUERENT_NODE_CONFIG=/path/to/querent.config.yaml
+  ```
 
 </TabItem>
 
