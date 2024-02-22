@@ -36,6 +36,7 @@ The Querent installer automatically picks the correct binary archive for your en
 This method works only for [some OS/architectures](installation.md#download), and you will also need to install some [external dependencies](installation.md#note-on-external-dependencies).
 
 ```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 pip3 install querent
 curl -L https://install.querent.xyz/install.sh | sh
 ```
