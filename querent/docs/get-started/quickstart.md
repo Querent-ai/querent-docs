@@ -37,15 +37,11 @@ sudo apt-get -y install tesseract-ocr libtesseract-dev
 
 ```
 
-## Download Querent Binary
-
-To download specific release of Querent binary, visit the [release page](
-  https://github.com/querent-ai/distribution/releases) and download the binary for your operating system.
-
 ## Install Querent Binary
 
-The Querent installer automatically picks the correct binary archive for your environment and then downloads and unpacks it in your working directory.
+The Querent installer automatically picks the [correct](https://github.com/querent-ai/distribution/releases) binary archive for your environment and then downloads and unpacks it in your working directory.
 This method works only for [some OS/architectures](installation.md#download), and you will also need to install some [external dependencies](installation.md#note-on-external-dependencies).
+
 
 ```bash
 pip3 install querent
