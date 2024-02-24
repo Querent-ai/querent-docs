@@ -31,11 +31,15 @@ source querent-env/bin/activate
 ```
 
 - Download OCR package.
-
 ```bash
 sudo apt-get -y install tesseract-ocr libtesseract-dev
-
 ```
+- Install torch
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+## Install Querent using Querent installer
 
 ## Install Querent Binary
 
