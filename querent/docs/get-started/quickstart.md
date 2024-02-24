@@ -7,25 +7,30 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 In this quick start guide, we will install Querent, create an index, add documents and finally execute search queries. All the Querent commands used in this guide are documented [in the CLI reference documentation](/docs/reference/cli.md).
+
 ## Pre-requisites for binary installation
 
-- Ensure that Python version 3.9 or newer is installed on your system. You can verify the installed version of Python by running the following command in your terminal:
+- Ensure that Python version 3.9 or newer is installed on your system. You can verify the installed version of Python by running the following command in your terminal.
 
 ```bash
 python3 --version
 ```
-  If Python is not installed, or if your version is older than 3.9, visit the [official Python website](https://www.python.org/downloads/) to   download and install the latest version for your operating system.
 
-- Once Python is set up, create a virtual environment in your project directory. Use the following commands to create and activate a virtual environment:
+  If Python is not installed, or if your version is older than 3.9, visit the [official Python website](https://www.python.org/downloads/) to download and install the latest version for your operating system.
+
+- Once Python is set up, create a virtual environment in your project directory. Use the following commands to create and activate a virtual environment.
 
 ```bash
 python3 -m venv querent-env
 ```
-To activate the virtual environment on macOS and Linux, run:
+
+  To activate the virtual environment on macOS and Linux, run:
+
 ```bash
 source querent-env/bin/activate
 ```
-- Download OCR package
+
+- Download OCR package.
 ```bash
 sudo apt-get -y install tesseract-ocr libtesseract-dev
 ```
@@ -36,8 +41,11 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 ## Install Querent using Querent installer
 
-The Querent installer automatically picks the correct binary archive for your environment and then downloads and unpacks it in your working directory.
+## Install Querent Binary
+
+The Querent installer automatically picks the [correct](https://github.com/querent-ai/distribution/releases) binary archive for your environment and then downloads and unpacks it in your working directory.
 This method works only for [some OS/architectures](installation.md#download), and you will also need to install some [external dependencies](installation.md#note-on-external-dependencies).
+
 
 ```bash
 pip3 install querent
@@ -52,16 +60,22 @@ cd ./querent-v*/
 You can now move this executable directory wherever sensible for your environment and possibly add it to your `PATH` environment.
 
 ## Environment Setting
+
+### For Manual setup
+
 Before running Querent, we need to create a directory named "model" and set the $MODEL_PATH to the location where your model directory is located
+
 ```bash
 export MODEL_PATH=path/to/your/model/directory/
 ```
-### Then do the below steps to setup the model directory:
 
-#### For Manual setup :
-- Querent enables users to leverage open-source Large Language Models (LLMs) through the "knowledge_graph_using_llama2_v1" workflow for running inference tasks. Please provide a GGUF format model file if you would like to utilize this workflow. Such files are accessible on the Hugging Face platform. For convenience and as a starting point, users can download the `llama-2-7b-chat.Q5_K_M.gguf` model file directly from [this link](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main). 
-- To enable the open-source Large Language Model (LLM) to produce structured outputs, we leverage grammar files designed to guide the model's interpretation and output format.If you opt for "knowledge_graph_using_llama2_v1" workflow, this step is mandatory. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or opt to develop a custom grammar file tailored to your use-case. 
+#### Download model weights
+
+- Currently the "knowledge_graph_using_llama2_v1" leveraging LLAMA2 model for multi-model inference requires GGUF format model file. For convenience and as a starting point, users can download the `llama-2-7b-chat.Q5_K_M.gguf` model file directly from [this link](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main).
+
+- Semantic knowledge workflows leverage grammar files designed to guide the model's interpretation and output format.If you opt for "knowledge_graph_using_llama2_v1" workflow, this step is mandatory. You can download <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/json.gbnf">this grammar file </a> or opt to develop a custom grammar file tailored to your use-case.
 - Next download and store the nltk library.
+
 ```bash
 $ python3
 >>> import nltk
@@ -71,27 +85,27 @@ $ python3
 - Download spacy model :
   1. Download the "en_core_web_lg-3.7.1.tar.gz" file from  <a href = "https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.7.1">official spacy releases.</a>
   2. Decompress this file within your $MODEL_PATH directory utilizing the following command:
+
 ```bash
-     tar -xvzf  ~/Downloads/en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
+     tar -xvzf en_core_web_lg-3.7.1.tar.gz -C $MODEL_PATH
 ```
 
-#### For setup using a predefined bash script :
+### Helper Script(s)
+
 - Download the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/querent-installation.sh">here.</a>
 - Make the Script Executable
+
  ```bash
 sudo chmod 755 querent-installation.sh
 ```
-- Execute it by providing the path where you'd like to create a new directory. 
+
+- Execute it by providing the path where you'd like to create a new directory.
+
  ```bash
 source querent-installation.sh /path/to/desired/directory
 ```
-### Expected Structure of the Models Directory
-Below is a visual representation of the ideal organization within your model folder:
 
-!["Ideal model directory"](https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/Screenshot%20from%202024-02-20%2022-19-06.png)
-
-
-## Use Querent's Docker image
+## Using Querent's Docker image
 
 You can also pull and run the Querent binary in an isolated Docker container.
 
@@ -199,7 +213,7 @@ services:
       start_period: 3s
   
   querent:
-    image: querent/quester:v0.0.3-rc9
+    image: querent/quester:v1.0.3
     ports:
       - "1111:1111"
       - "2222:2222"
@@ -230,6 +244,7 @@ networks:
 ```
 
 ## Running the docker image
+
 To run the docker image, execute this command
 
 ```bash
@@ -240,15 +255,20 @@ docker-compose up
 
 <TabItem value="cli" label="CLI">
 
-  ## Start Querent server using standalone binary
+## Start Querent server using standalone binary
+
   ```bash
   ./querent serve --config ./config/querent.config.yaml
   ```
+
   If you encounter the following error while trying to serve using Querent binary
+
   ```bash
   Unable to process tokens, can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first
   ```
+
   Run this command
+
   ```
   export CUDA_VISIBLE_DEVICES=-1
   ```
@@ -257,8 +277,10 @@ docker-compose up
 
 <TabItem value="docker" label="Docker">
   
-  ## Start Querent using docker run
+## Start Querent using docker run
+
   This command runs the Querent container, mounting the current directory's querent_data folder to the container's /querent/querent_data directory and mapping the container's 1111 port to the host's 1111 port. The environment variable QUERENT_NODE_CONFIG is set to the path of your querent.config.yaml file, configuring the Querent node accordingly.
+
   ```bash
   docker run --rm -v $(pwd)/querent_data:/querent/querent_data -p 127.0.0.1:1111:1111 querent/querent env QUERENT_NODE_CONFIG=/path/to/querent.config.yaml
   ```
