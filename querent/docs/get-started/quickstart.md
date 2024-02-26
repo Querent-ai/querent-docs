@@ -36,7 +36,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```
 ## Install Querent Binary
 
-The Querent installation process selects and retrieves the [correct binary archive](https://github.com/querent-ai/distribution/releases) for the user's environment, extracting it into the working directory. This procedure is compatible with [specific OS/architectures](installation.md#download), requiring the installation of [external dependencies](installation.md#note-on-external-dependencies).
+The Querent installation process selects and retrieves the [correct binary](https://github.com/querent-ai/distribution/releases) for the user's environment, extracting it into the working directory. This procedure is compatible with [specific OS/architectures](installation.md#download), requiring the installation of [external dependencies](installation.md#note-on-external-dependencies).
 
 ```bash
 pip3 install querent
