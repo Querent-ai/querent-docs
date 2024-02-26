@@ -31,10 +31,13 @@ source querent-env/bin/activate
 ```
 
 - Download OCR package.
+
 ```bash
 sudo apt-get -y install tesseract-ocr libtesseract-dev
 ```
+
 - Install torch
+
 ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
@@ -45,7 +48,6 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 The Querent installer automatically picks the [correct](https://github.com/querent-ai/distribution/releases) binary archive for your environment and then downloads and unpacks it in your working directory.
 This method works only for [some OS/architectures](installation.md#download), and you will also need to install some [external dependencies](installation.md#note-on-external-dependencies).
-
 
 ```bash
 pip3 install querent
