@@ -8,9 +8,11 @@ sidebar_position: 2
 Querent is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. It consists of several interconnected components that work together to ingest, analyze, and visualize data in the form of semantic graphs.
 
 ## Components
+
 Before detailing the interactions within the system, it is crucial to understand the individual components and their roles. Below is a list of key components, for reference:
 
 ### Querent Enterprise Layer
+
 Responsible for interfacing with external APIs and directing the flow of semantically processed data through the system, it consists of:
 
 - **Search APIs, Insights APIs, Semantic APIs**: Interfaces for various data operations and services.
@@ -24,6 +26,7 @@ Responsible for interfacing with external APIs and directing the flow of semanti
 - **Indexer**: Creates and maintains indexes for efficiently querying data within the PostgreSQL database.
 
 ### Synapse (pyo3 based rust bridge)
+
 Serves as an intermediary that bridges the Semantic Layer with the Enterprise Layer, utilizing pyo3 to allow Rust and Python interoperability. It provides support for:
 
 - **External Data Sources:** Integrates with databases, APIs, or data lakes to fetch additional information.
@@ -31,6 +34,7 @@ Serves as an intermediary that bridges the Semantic Layer with the Enterprise La
 - **Third-Party Tools:** Allows integration with analytics, visualization, or machine learning frameworks.
 
 ### Querent Semantic Layer
+
 This is the core processing component of Querent, where semantic graph computations take place., involving:
 
 - **Data Ingestion Workflow**: This component is responsible for the continuous and asynchronous polling of data from a multitude of sources, including Azure, Google Cloud Storage, Drive, Slack, and Jira. It is designed to efficiently fetch and stage data in a queue without blocking the system's operations.
@@ -44,6 +48,7 @@ This is the core processing component of Querent, where semantic graph computati
 - **Vector Event**: Structured Vector Events containing vector embeddings of the extracted contexts, which are essential for powering the semantic search engine's ability to locate and relate information.
 
 ### Graph Neural Network (GNN) Experiment Layer
+
 This layer empowers users to actively engage with the data by training their own GNN models and conducting predictions. It is a testament to the system's flexibility and user-centric design, facilitating advanced data analysis through:
 
 - **Graph Convolution Network (GCN)**: A powerful feature that enables users to apply convolutions on graph data, extracting essential features for a deep understanding of complex relationships.
@@ -80,6 +85,7 @@ This layer empowers users to actively engage with the data by training their own
 Querent provides a scalable, flexible, and efficient platform for semantic graph computing, enabling organizations to derive actionable insights and knowledge from their data. By leveraging distributed processing, advanced analytics, and machine learning techniques, Querent empowers users to unlock the full potential of their data assets.
 
 ## Associated Libraries
+
 - [querent-synapse (rust bridge)](https://crates.io/crates/querent-synapse)
 - [querent python package (querent semantic layer)](https://pypi.org/project/querent/)
 - [quester docker (quester enterprise layer)](https://hub.docker.com/r/querent/quester)
