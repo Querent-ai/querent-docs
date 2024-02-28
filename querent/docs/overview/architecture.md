@@ -90,3 +90,8 @@ Querent provides a scalable, flexible, and efficient platform for semantic graph
 - [querent python package (querent semantic layer)](https://pypi.org/project/querent/)
 - [quester docker (quester enterprise layer)](https://hub.docker.com/r/querent/quester)
 
+## Releases
+
+Current stable releases:
+
+- [Querent v1.1.0](https://github.com/Querent-ai/distribution/releases/tag/v1.1.0)
