@@ -59,7 +59,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/enterprise_architecture.svg').default,
     description: (
       <>
-        Querent is designed with an enterprise-scale architecture, ensuring scalability, reliability, and performance for large-scale data processing and analytics.
+        Querent is designed with an enterprise-grade architecture, ensuring scalability, reliability, and performance for large-scale data processing and analytics.
       </>
     ),
   },
