@@ -55,7 +55,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Enterprise-graph Architecture',
+    title: 'Enterprise-grade Architecture',
     Svg: require('@site/static/img/enterprise_architecture.svg').default,
     description: (
       <>
