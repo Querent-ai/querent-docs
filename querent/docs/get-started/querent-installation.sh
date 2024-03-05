@@ -4,7 +4,7 @@
 TARGET_DIR="$1"
 
 # URL of the file to download
-FILE_URL="https://raw.githubusercontent.com/Querent-ai/querent-docs/Local-model-Update/querent/docs/get-started/json.gbnf"
+FILE_URL="https://raw.githubusercontent.com/Querent-ai/querent-docs/main/querent/docs/get-started/json.gbnf"
 # The desired name for the downloaded file
 FILENAME="json.gbnf"
 
