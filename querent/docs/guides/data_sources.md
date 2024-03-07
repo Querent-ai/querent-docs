@@ -11,8 +11,6 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### Azure Blob Storage Collector
 
-<img src="../assets/collectors/azure.webp" alt="Azure Events Icon" width="100"/>
-
 - **Type:** `AzureCollectorConfig`
 - **Required Fields:**
   - `connection_string` - The Azure storage account connection string.
@@ -22,16 +20,12 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### Google Cloud Storage (GCS) Collector
 
-<img src="../assets/collectors/gcs.webp" alt="GCS Events Icon" width="100"/>
-
 - **Type:** `GCSCollectorConfig`
 - **Required Fields:**
   - `credentials` - The service account key for GCS access.
   - `bucket` - The name of the GCS bucket.
 
 ### Amazon S3 Collector
-
-<img src="../assets/collectors/aws.webp" alt="AWS Events Icon" width="100"/>
 
 - **Type:** `S3CollectorConfig`
 - **Required Fields:**
@@ -42,8 +36,6 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### Jira Collector
 
-<img src="../assets/collectors/jira.webp" alt="Jira Events Icon" width="100"/>
-
 - **Type:** `JiraCollectorConfig`
 - **Required Fields:**
   - `jira_server` - The URL of the Jira server.
@@ -52,8 +44,6 @@ This guide outlines the different collectors available within the Querent Node, 
   - `jira_query` - The JQL query for selecting issues.
 
 ### Google Drive Collector
-
-<img src="../assets/collectors/drive.webp" alt="Drive Events Icon" width="100"/>
 
 - **Type:** `GoogleDriveCollectorConfig`
 - **Required Fields:**
@@ -65,8 +55,6 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### Email Collector
 
-<img src="../assets/collectors/email.webp" alt="Email Events Icon" width="100"/>
-
 - **Type:** `EmailCollectorConfig`
 - **Required Fields:**
   - `imap_server` - The IMAP server address.
@@ -77,8 +65,6 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### Dropbox Collector
 
-<img src="../assets/collectors/dropbox.webp" alt="Dropbox Events Icon" width="100"/>
-
 - **Type:** `DropBoxCollectorConfig`
 - **Required Fields:**
   - `dropbox_app_key` - The app key for Dropbox API access.
@@ -88,8 +74,6 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### GitHub Collector
 
-<img src="../assets/collectors/github.webp" alt="GitHub Events Icon" width="100"/>
-
 - **Type:** `GithubCollectorConfig`
 - **Required Fields:**
   - `github_username` - The username for GitHub access.
@@ -98,16 +82,12 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ### Slack Collector
 
-<img src="../assets/collectors/slack.webp" alt="Slack Events Icon" width="100"/>
-
 - **Type:** `SlackCollectorConfig`
 - **Required Fields:**
   - `access_token` - The access token for Slack API access.
   - `channel_name` - The name of the Slack channel.
 
 ### News Collector
-
-<img src="../assets/collectors/news.webp" alt="News Events Icon" width="100"/>
 
 - **Type:** `NewsCollectorConfig`
 - **Required Fields:**
@@ -117,8 +97,6 @@ This guide outlines the different collectors available within the Querent Node, 
   - `to_date` - The end date for the news query.
 
 ## Ingested Tokens via WebSocket and API
-
-<img src="../assets/collectors/socket.webp" alt="Ingest Events Icon" width="100"/>
 
 In addition to the data collectors, the Querent Node supports ingesting tokens directly through WebSocket connections and a dedicated API endpoint. This functionality allows for real-time data ingestion from various sources, facilitating immediate processing and analysis.
 
@@ -142,8 +120,6 @@ In addition to the data collectors, the Querent Node supports ingesting tokens d
 For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provided by the Querent Node. Once connected, clients can stream `IngestedTokens` directly into the specified semantic pipeline. The WebSocket endpoint and specifics regarding the protocol and data format will depend on the implementation details of the Querent Node and the environment in which it is deployed.
 
 **Note:** The WebSocket ingestion mechanism requires a persistent connection and is suitable for scenarios where real-time data streaming is necessary.
-
-<img src="../assets/collectors/and_more.webp" alt="... And More" width="100"/>
 
 ### Summary
 
