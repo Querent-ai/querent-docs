@@ -11,55 +11,55 @@ This guide outlines the different collectors available within the Querent Node, 
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
     <div>
-        <img src="../assets/collectors/azure.webp" alt="Azure Blob Storage" style="width: 100px;">
+        <img src="../assets/collectors/azure.webp" alt="Azure Blob Storage" style="width: 100px;"/>
         <p>Azure Blob Storage</p>
     </div>
     <div>
-        <img src="../assets/collectors/gcs.webp" alt="Google Cloud Storage" style="width: 100px;">
+        <img src="../assets/collectors/gcs.webp" alt="Google Cloud Storage" style="width: 100px;"/>
         <p>Google Cloud Storage</p>
     </div>
     <div>
-        <img src="../assets/collectors/aws.webp" alt="Amazon S3" style="width: 100px;">
+        <img src="../assets/collectors/aws.webp" alt="Amazon S3" style="width: 100px;"/>
         <p>Amazon S3</p>
     </div>
     <div>
-        <img src="../assets/collectors/jira.webp" alt="Jira" style="width: 100px;">
+        <img src="../assets/collectors/jira.webp" alt="Jira" style="width: 100px;"/>
         <p>Jira</p>
     </div>
     <div>
-        <img src="../assets/collectors/drive.webp" alt="Google Drive" style="width: 100px;">
+        <img src="../assets/collectors/drive.webp" alt="Google Drive" style="width: 100px;"/>
         <p>Google Drive</p>
     </div>
     <div>
-        <img src="../assets/collectors/email .webp" alt="Email Collector" style="width: 100px;">
+        <img src="../assets/collectors/email .webp" alt="Email Collector" style="width: 100px;"/>
         <p>Email Collector</p>
     </div>
     <div>
-        <img src="../assets/collectors/dropbox.webp" alt="Dropbox" style="width: 100px;">
+        <img src="../assets/collectors/dropbox.webp" alt="Dropbox" style="width: 100px;"/>
         <p>Dropbox</p>
     </div>
     <div>
-        <img src="../assets/collectors/github .webp" alt="GitHub" style="width: 100px;">
+        <img src="../assets/collectors/github .webp" alt="GitHub" style="width: 100px;"/>
         <p>GitHub</p>
     </div>
     <div>
-        <img src="../assets/collectors/slack.webp" alt="Slack" style="width: 100px;">
+        <img src="../assets/collectors/slack.webp" alt="Slack" style="width: 100px;"/>
         <p>Slack</p>
     </div>
     <div>
-        <img src="../assets/collectors/news.webp" alt="News Collector" style="width: 100px;">
+        <img src="../assets/collectors/news.webp" alt="News Collector" style="width: 100px;"/>
         <p>News Collector</p>
     </div>
     <div>
-        <img src="../assets/collectors/socket.webp" alt="WebSocket" style="width: 100px;">
+        <img src="../assets/collectors/socket.webp" alt="WebSocket" style="width: 100px;"/>
         <p>WebSocket</p>
     </div>
     <div>
-        <img src="../assets/collectors/notion.webp" alt="API" style="width: 100px;">
+        <img src="../assets/collectors/notion.webp" alt="API" style="width: 100px;"/>
         <p>Notion</p>
     </div>
     <div>
-        <img src="../assets/collectors/and_more.webp" alt="And More" style="width: 100px;">
+        <img src="../assets/collectors/and_more.webp" alt="And More" style="width: 100px;"/>
         <p>... and more</p>
     </div>
 </div>
