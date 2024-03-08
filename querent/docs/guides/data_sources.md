@@ -9,7 +9,7 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ## Supported Sources
 
-![azure](../assets/collectors/azure.webp) ![gcs](../assets/collectors/gcs.webp) ![s3](../assets/collectors/aws.webp) ![jira](../assets/collectors/jira.webp) ![drive](../assets/collectors/drive.webp) ![email](../assets/collectors/email.webp) ![dropbox](../assets/collectors/dropbox.webp) ![github](../assets/collectors/github.webp) ![slack](../assets/collectors/slack.webp) ![news](../assets/collectors/news.webp) ![websocket](../assets/collectors/socket.webp) ![and more...](../assets/collectors/and_more.webp)
+![azure](../assets/collectors/azure.svg) ![gcs](../assets/collectors/gcs.svg) ![s3](../assets/collectors/aws.svg) ![jira](../assets/collectors/jira.svg) ![drive](../assets/collectors/drive.svg) ![email](../assets/collectors/email.svg) ![dropbox](../assets/collectors/dropbox.svg) ![github](../assets/collectors/github.svg) ![slack](../assets/collectors/slack.svg) ![news](../assets/collectors/news.svg) ![websocket](../assets/collectors/socket.svg) ![and more...](../assets/collectors/and_more.webp)
 
 ### Azure Blob Storage Collector
 
