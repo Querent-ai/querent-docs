@@ -9,6 +9,8 @@ This guide outlines the different collectors available within the Querent Node, 
 
 ## Supported Sources
 
+![azure](../assets/collectors/azure.webp) ![gcs](../assets/collectors/gcs.webp) ![s3](../assets/collectors/s3.webp) ![jira](../assets/collectors/jira.webp) ![drive](../assets/collectors/drive.webp) ![email](../assets/collectors/email.webp) ![dropbox](../assets/collectors/dropbox.webp) ![github](../assets/collectors/github.webp) ![slack](../assets/collectors/slack.webp) ![news](../assets/collectors/news.webp) ![websocket](../assets/collectors/socket.webp) ![and more...](../assets/collectors/and_more.webp)
+
 ### Azure Blob Storage Collector
 
 - **Type:** `AzureCollectorConfig`
