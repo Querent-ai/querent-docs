@@ -41,10 +41,10 @@ This section provides simplified descriptions of the event data structures gener
 
 **Schema:**
 
-- **ID:** A unique identifier for the event.
+- **ID:** A unique identifier for the event which is `Subject_Predicate_Object`.
 - **Embeddings:** A list of floating-point numbers representing the vector in high-dimensional space.
 - **Size:** The dimensionality of the vector.
-- **Namespace:** A categorization or grouping label for the event.
+- **Namespace:** A categorization or grouping label for the event. This is `Predicate` in the ID.
 
 ### Graph Events
 
