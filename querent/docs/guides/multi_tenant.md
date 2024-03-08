@@ -22,6 +22,8 @@ Storage configuration is optional but highly recommended for multi-tenant setups
 The system supports various storage backends, including but not limited to:
 
 - Relational databases (e.g., PostgreSQL, MySQL)
+- Graph Databases: Neo4j, Amazon Neptune, OrientDB
+- Vector Databases: TimescaleDB, InfluxDB, Milvus, Pinecone
 - NoSQL databases (e.g., MongoDB, Cassandra)
 - Search engines (e.g., Elasticsearch)
 - Cloud storage services (e.g., AWS S3, Azure Blob Storage)
