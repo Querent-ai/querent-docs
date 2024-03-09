@@ -51,6 +51,7 @@ This section provides simplified descriptions of the event data structures gener
 - **Embeddings:** A list of floating-point numbers representing the vector in high-dimensional space.
 - **Size:** The dimensionality of the vector.
 - **Namespace:** A categorization or grouping label for the event. This is `Predicate` in the ID.
+- **Sentence**: A textual representation or description of the vector.
 
 ### Graph Events
 
