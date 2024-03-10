@@ -33,7 +33,7 @@ Querent supports multiple installation methods to accommodate different environm
 
 For further details about installing Querent, including accessing specific binaries, using the install script, deploying the Docker image, or utilizing the Helm chart, please reach out to us. Our team is ready to assist you with any queries or support you may need to ensure a smooth installation process.
 
-- **Email:** [support@querent.io](mailto:contact@querent.xyz) or refer to our [website](https://querent.xyz) for more contact options.
+- **Email:** [contact@querent.xyz](mailto:contact@querent.xyz) or refer to our [website](https://querent.xyz) for more contact options.
 - **GitHub:** Feel free to open an issue in the [Querent Repository](https://github.com/Querent-ai/support/issues) for technical queries or installation issues.
 - **Discord:** Join our [Discord server](https://discord.gg/3fVAVmZXyh) to connect with the Querent community and get help from our team.
 
