@@ -69,7 +69,7 @@ $ python3
 
 ### Helper Script(s)
 
-- Acquire the bash script from <a href = "https://github.com/Querent-ai/querent-docs/blob/Local-model-Update/querent/docs/get-started/querent-installation.sh">here.</a>
+- Acquire the bash script from <a href="https://raw.githubusercontent.com/Querent-ai/querent-docs/main/querent/docs/get-started/querent-installation.sh">here.</a>
 - Change script permissions to make it executable:
 
  ```bash
