@@ -35,6 +35,12 @@ source querent-env/bin/activate
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
+- Querent Installation
+
+```bash
+pip3 install querent
+```
+
 ## Environment Setting
 
 ### Helper Script(s)
