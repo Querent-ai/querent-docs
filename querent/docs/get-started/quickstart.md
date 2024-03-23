@@ -35,11 +35,9 @@ source querent-env/bin/activate
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
-- Querent Installation
-
-```bash
-pip3 install querent
-```
+## Querent Installation
+  * Querent provides a base workbench in python for rapid prototyping and production deployment.
+  * Querent enables in memory python logic execution via its proprietary `rust` based scale engine.
 
 ## Environment Setting
 
