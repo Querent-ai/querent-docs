@@ -44,7 +44,7 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         googleAnalytics: {
-          trackingID: 'G-681SCK0Y0C',
+          trackingID: 'G-QZR5K62C3W',
           // Optional fields.
           anonymizeIP: true, // Should IPs be anonymized?
         },
