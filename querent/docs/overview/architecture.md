@@ -84,14 +84,9 @@ This layer empowers users to actively engage with the data by training their own
 
 Querent provides a scalable, flexible, and efficient platform for semantic graph computing, enabling organizations to derive actionable insights and knowledge from their data. By leveraging distributed processing, advanced analytics, and machine learning techniques, Querent empowers users to unlock the full potential of their data assets.
 
-## Associated Libraries
-
-- [querent-synapse (rust bridge)](https://crates.io/crates/querent-synapse)
-- [querent python package (querent semantic layer)](https://pypi.org/project/querent/)
-- [quester docker (quester enterprise layer)](https://hub.docker.com/r/querent/quester)
 
 ## Releases
 
-Current stable releases:
+Latest release:
 
-- [Querent v1.1.0](https://github.com/Querent-ai/distribution/releases/tag/v1.1.0)
+- [Querent v1.1.0](https://github.com/Querent-ai/distribution/releases/tag/v3.0.1)
