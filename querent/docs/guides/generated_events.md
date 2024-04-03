@@ -69,7 +69,7 @@ This section provides simplified descriptions of the event data structures gener
 **Schema:**
 - **Entity:** Represents the primary subject of the sentiment analysis.
 - **Entity Type:** Specifies the category or classification of the entity.
-- **Company Ticker (Optional):** If the entity is a publicly traded company, the company's stock symbol should be included. This is added as a property of the entity node.
+- **Symbol (Optional):** For entities that are identified or classified through a specific symbol. This is added as a property of the entity node.
 - **Sentiment:** Indicates the overall sentiment of the analyzed content—negative, neutral, or positive.
 - **Sentiment Score:** A numerical representation of the sentiment intensity or confidence.
 - **Predicate:** Defines the relationship between the entity and the sentiment nodes. This is consistently labeled as "has_sentiment".
