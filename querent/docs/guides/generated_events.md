@@ -54,11 +54,10 @@ This section provides simplified descriptions of the event data structures gener
 - **Sentence**: A textual representation or description of the vector.
 
 ### Graph Events
+**Description:** Graph events describe the relationships between entities, ideal for mapping connections and network structures. Below are the two main categories of graph events our system currently supports: Graph and Sentiment events.
 
-**Description:** Graph events describe the relationships between entities, ideal for mapping connections and network structures.
-
+#### Graph
 **Schema:**
-
 - **Subject:** The entity from which a relationship originates.
 - **Subject Type:** The classification or type of the subject entity.
 - **Object:** The entity to which the relationship points.
@@ -66,6 +65,20 @@ This section provides simplified descriptions of the event data structures gener
 - **Predicate:** The nature or description of the relationship between subject and object.
 - **Predicate Type:** The classification of the relationship.
 - **Sentence:** A textual representation or description of the relationship.
+#### Sentiment
+**Schema:**
+- **Entity:** Represents the primary subject of the sentiment analysis.
+- **Entity Type:** Specifies the category or classification of the entity.
+- **Symbol (Optional):** For entities that are identified or classified through a specific symbol. This is added as a property of the entity node.
+- **Sentiment:** Indicates the overall sentiment of the analyzed content—negative, neutral, or positive.
+- **Sentiment Score:** A numerical representation of the sentiment intensity or confidence.
+- **Predicate:** Defines the relationship between the entity and the sentiment nodes. This is consistently labeled as "has_sentiment".
+- **Topic Type:** Identifies the category of the article or content. This is added as a property of the predicate.
+- **Author (Optional):** The creator of the content. This is added as a property of the predicate.
+- **URL (Optional):** The web address where the original article or content can be found. This is added as a property of the predicate.
+- **Title:** The headline or title of the article. This is added as a property of the predicate.
+- **Published At (Optional):** The publication date and time of the content. This is added as a property of the predicate.
+
 
 ### Index Events
 
