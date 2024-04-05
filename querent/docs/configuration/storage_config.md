@@ -9,14 +9,14 @@ The storage configuration allows you to define and customize the storage provide
 
 ### PostgreSQL Configuration
 
-PostgreSQL is used for index storage. You
+PostgreSQL is used for index and vector storage. You
 
  can configure the connection details to your PostgreSQL database.
 
 | Property      | Description                           | Example Value                                             |
 |---------------|---------------------------------------|-----------------------------------------------------------|
 | `name`        | Name of the PostgreSQL configuration  | `querent_test`                                            |
-| `storage_type`| Type of storage used                  | `index`                                                   |
+| `storage_type`| Type of storage used                  | `index`/`vector`                                                  |
 | `url`  | Connection URL to the PostgreSQL database | `postgres://querent:querent@localhost/querent_test?sslmode=prefer` |
 
 Example:
@@ -88,6 +88,10 @@ storage_configs:
   postgres:
     name: querent_test
     storage_type: index
+    url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
+  postgres:
+    name: querent_test
+    storage_type: vector
     url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
   milvus:
     name: semantic_milvus_db
