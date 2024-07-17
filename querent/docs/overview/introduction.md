@@ -27,62 +27,30 @@ sidebar_position: 2
 
 **RIAN** is tailored for a wide range of use cases, including:
 
-- **AI Workflows Made Easy:** Integrate **RIAN** into your AI workflows to build knowledge graphs, perform complex graph computations, and run graph neural network experiments. This integration facilitates seamless data processing and advanced AI model training.
+- *AI Workflows Made Easy:** Integrate **RIAN** into your AI workflows to build semantic data fabric, perform complex graph computations, and run graph neural network experiments. This integration facilitates seamless data processing and advanced AI model training. **RIAN** provides AI-ready data, utilizing extracted knowledge for fine-tuning large language models and graph neural networks, enabling advanced AI applications like entity recognition and trend analysis.
 
-- **Semantic Graph Analysis:** Utilize **RIAN** to analyze complex data relationships and interactions as semantic graphs. This approach helps uncover hidden patterns and insights that traditional data analysis methods may overlook.
+- **Semantic Data Fabric:** Utilize **RIAN** to uncover hidden patterns and insights that traditional data analysis methods may overlook. Comprehensive data traversal helps uncover intricate connections and paths between entities, providing deeper insights.
 
-- **Knowledge Discovery and Reasoning:** Leverage **RIAN**'s capabilities to uncover hidden patterns, relationships, and insights within complex datasets. This empowers informed decision-making and strategic planning by providing a deeper understanding of the data.
+- **Knowledge Discovery and Reasoning:** Leverage **RIAN**'s capabilities to uncover hidden patterns, relationships, and insights within complex datasets. This empowers informed decision-making and strategic planning by providing a deeper understanding of the data. Efficient similarity search using natural language queries quickly finds top relevant documents, enhancing data retrieval efficiency and user experience.
 
-- **Energy Analytics:** Detect 
+- **Energy Analytics:** Use **RIAN** to connect and analyze research data from various sources, identifying similarities and patterns across different data sets. This capability enhances decision-making and strategic planning in the energy sector.
 
-- **Fraud Detection:** Detect and prevent fraudulent activities by analyzing transactional data, user behavior, and network interactions. **RIAN**'s ability to identify anomalies and suspicious patterns enhances security and minimizes risks.
+- **Fraud Detection:** Detect and prevent fraudulent activities by analyzing diverse data sources, identifying anomalies and suspicious patterns. **RIAN** enhances security measures by providing real-time insights to detect and respond to potential threats and vulnerabilities.
 
-- **Supply Chain Optimization:** Optimize supply chain operations by analyzing and visualizing the flow of goods, resources, and information across the entire supply chain network. **RIAN** helps identify bottlenecks and opportunities for efficiency improvements.
+- **Healthcare Analytics:** Analyze a variety of healthcare data, including patient records and clinical data, to identify trends, predict outcomes, and improve patient care and treatment.
 
-- **Healthcare Analytics:** Analyze patient records, medical images, and clinical data to identify trends, predict outcomes, and improve patient care and treatment. **RIAN** supports advanced healthcare analytics, leading to better health outcomes.
+- **Cybersecurity Analytics:** Process and analyze various types of security data to detect and respond to potential threats. **RIAN** provides real-time insights, enhancing the overall security posture of an organization through proactive threat detection and response.
 
-- **Cybersecurity Analytics:** Process and analyze security logs, network traffic, and threat intelligence data to detect and respond to security threats, vulnerabilities, and cyber attacks. **RIAN** enhances cybersecurity measures by providing real-time insights.
+- **Threat Intelligence:** Utilize **RIAN** to process and analyze threat intelligence data, enabling proactive detection and mitigation of potential security threats. This approach ensures that vulnerabilities are addressed before they can cause significant harm.
 
-- **Threat Intelligence:** Use **RIAN** to process and analyze threat intelligence data, enabling organizations to detect and respond to security threats, vulnerabilities, and cyber attacks proactively.
+- **Observability and Monitoring:** Analyze and monitor diverse logs, audit trails, and event streams in real-time to detect anomalies, troubleshoot issues, and ensure operational efficiency. **RIAN** improves system observability and reliability, allowing for prompt issue resolution and optimization.
 
-- **Observability and Monitoring:** Analyze and monitor logs, audit trails, and event streams in real-time to detect anomalies, troubleshoot issues, and ensure operational efficiency. **RIAN** improves system observability and reliability.
+- **Log Management:** Efficiently manage and analyze logs, audit trails, and event streams to maintain system health and performance. **RIAN** streamlines log management processes, making it easier to detect anomalies and troubleshoot issues.
 
-- **Log Management:** Efficiently manage and analyze logs, audit trails, and event streams to detect anomalies, troubleshoot issues, and ensure operational efficiency. **RIAN** streamlines log management processes.
+- **Distributed Tracing:** Trace and analyze interactions within distributed systems to optimize performance and identify bottlenecks. **RIAN** provides insights into complex system behaviors, facilitating performance improvements and system reliability.
 
-- **Distributed Tracing:** Trace and analyze interactions within distributed systems to optimize performance, identify bottlenecks, and enhance system reliability. **RIAN** provides insights into complex system behaviors.
+- **Conversational Data Analysis:** Extract insights from various conversational data sources, such as emails and messaging platforms. **RIAN** helps understand user behavior, sentiment, and preferences, driving better customer engagement and satisfaction.
 
-- **Conversational Data Analysis:** Extract insights from conversational data sources such as emails, texts, and messaging platforms. **RIAN** helps understand user behavior, sentiment, and preferences, driving better customer engagement.
-
-
-
-## Methodology: Attention-Based Graph Embeddings
-
-**RIAN** utilizes attention mechanisms in transformer models to identify and extract meaningful relationships between entities within the same sequence of tokens:
-
-- **Attention-Based Relationships:** Attention weights reveal the strength of relationships between entities, helping identify the most significant connections within the data.
-- **Build Knowledge Graphs:** These relationships underpin our knowledge graph, forming a comprehensive and contextually rich search space for more effective data exploration and insight generation.
-
-## Knowledge Representation
-
-Adjust the importance of embeddings (for Head Entity, Tail Entity, and Sentences/Context) by applying a bias to create a unique, precise, and comprehensive representation. This approach ensures a balanced and context-aware embedding, enhancing the accuracy and relevance of information retrieval and making it highly effective for extracting actionable insights from complex data.
-
-## Architecture: Graph and Vector Approach
-
-**RIAN** maps and analyzes relationships across heterogeneous data sources using a graph and vector approach. This architecture ensures efficient querying and knowledge retrieval by generating vector embeddings for each relationship, enabling sophisticated data analysis and insight generation.
-
-## Results: Embedding-Based and Graph Traverser-Based
-
-- **Embedding-Based Search Results:** Demonstrate the efficiency and relevance of search results obtained through embedding-based methods. **RIAN** provides precise and contextually aware search capabilities.
-- **Graph Traverser-Based Results:** Highlight the insights derived from traversing the knowledge graph, emphasizing the importance of entity relationships and connections. **RIAN** enables deep exploration of interconnected data.
-
-## Unlocking Benefits
-
-**RIAN** offers several key benefits that make it an invaluable tool for data-driven organizations:
-
-- **Efficient Similarity Search:** Use natural language queries to quickly find top relevant documents, enhancing data retrieval efficiency and user experience.
-- **Comprehensive Data Traversal:** Uncover intricate connections and paths between entities, providing deeper insights and facilitating comprehensive data analysis.
-- **AI-Ready Data:** Utilize extracted knowledge for fine-tuning large language models and graph neural networks, enabling advanced AI applications like entity recognition and trend analysis.
-- **Cost-Effective and Scalable:** Achieve efficient graph traversal and relationship mapping using PostgreSQL, reducing the need for a dedicated graph database. This solution scales well with large datasets, ensuring robust performance.
 
 ## Getting Started with RIAN
 

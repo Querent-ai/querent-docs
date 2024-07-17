@@ -1,11 +1,27 @@
 ---
 title: Architecture
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Overview
 
 Querent is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. It consists of several interconnected components that work together to ingest, analyze, and visualize data in the form of semantic graphs.
+
+
+## Architecture: Graph and Vector Approach
+
+**RIAN** maps and analyzes relationships across heterogeneous data sources using a graph and vector approach. This architecture ensures efficient querying and knowledge retrieval by generating vector embeddings for each relationship, enabling sophisticated data analysis and insight generation.
+
+## Methodology: Attention-Based Graph Embeddings
+
+**RIAN** utilizes attention mechanisms in transformer models to identify and extract meaningful relationships between entities within the same sequence of tokens:
+
+- **Attention-Based Relationships:** Attention weights reveal the strength of relationships between entities, helping identify the most significant connections within the data.
+- **Build Knowledge Graphs:** These relationships underpin our knowledge graph, forming a comprehensive and contextually rich search space for more effective data exploration and insight generation.
+
+## Knowledge Representation
+
+Adjust the importance of embeddings (for Head Entity, Tail Entity, and Sentences/Context) by applying a bias to create a unique, precise, and comprehensive representation. This approach ensures a balanced and context-aware embedding, enhancing the accuracy and relevance of information retrieval and making it highly effective for extracting actionable insights from complex data.
 
 ## Components
 
