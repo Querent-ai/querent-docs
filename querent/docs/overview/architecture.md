@@ -3,106 +3,59 @@ title: Architecture
 sidebar_position: 3
 ---
 
-## Overview
+## Architecture
 
-Querent is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. It consists of several interconnected components that work together to ingest, analyze, and visualize data in the form of semantic graphs.
-
-
-## Architecture: Graph and Vector Approach
-
-**RIAN** maps and analyzes relationships across heterogeneous data sources using a graph and vector approach. This architecture ensures efficient querying and knowledge retrieval by generating vector embeddings for each relationship, enabling sophisticated data analysis and insight generation.
-
-## Methodology: Attention-Based Graph Embeddings
-
-**RIAN** utilizes attention mechanisms in transformer models to identify and extract meaningful relationships between entities within the same sequence of tokens:
-
-- **Attention-Based Relationships:** Attention weights reveal the strength of relationships between entities, helping identify the most significant connections within the data.
-- **Build Knowledge Graphs:** These relationships underpin our knowledge graph, forming a comprehensive and contextually rich search space for more effective data exploration and insight generation.
-
-## Knowledge Representation
-
-Adjust the importance of embeddings (for Head Entity, Tail Entity, and Sentences/Context) by applying a bias to create a unique, precise, and comprehensive representation. This approach ensures a balanced and context-aware embedding, enhancing the accuracy and relevance of information retrieval and making it highly effective for extracting actionable insights from complex data.
+**R!AN** (Real-Time Information Aggregation Network) is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. The entire system is implemented in Rust, ensuring high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data in the form of semantic data fabric.
 
 ## Components
 
-Before detailing the interactions within the system, it is crucial to understand the individual components and their roles. Below is a list of key components, for reference:
+Below are the key components of the **R!AN** architecture, each playing a crucial role in the system's functionality:
 
-### Querent Enterprise Layer
+### LLM Engine Workflow and Async Data Ingestion
 
-Responsible for interfacing with external APIs and directing the flow of semantically processed data through the system, it consists of:
+The system begins with the LLM Engine Workflow and Async Data Ingestion, both operating concurrently:
 
-- **Search APIs, Insights APIs, Semantic APIs**: Interfaces for various data operations and services.
-  
-- **Semantic Pipe**: The Semantic Pipe serves as a vital conduit within the Querent system, enabling dynamic communication between the Enterprise Layer and the core processing engines. It orchestrates the data flow, ensuring that the Querent Semantic Layer can ingest data from sources as specified in the configuration. Additionally, it conveys parameters to the semantic engine, allowing it to initiate processing with the correct settings. It also acts as a bidirectional channel for transmitting processed data back through the system. In essence, the Semantic Pipe is crucial for the adaptability and responsiveness of the Querent system to changing data sources and processing requirements.
+- **Async Data Ingestion:** Continuously and asynchronously polls data from a variety of sources, staging it in an asyncio queue without blocking system operations.
+- **LLM Engine Workflow:** Utilizes transformer models to process data from the Async Queue, applying advanced natural language processing algorithms.
 
-- **Event Streamer**: Streams data events within the system.
-  
-- **Storage Mapper**: Aligns data from the event streamer to a common schema for different storage systems (Neo4j and Milvus).
-  
-- **Indexer**: Creates and maintains indexes for efficiently querying data within the PostgreSQL database.
+### Natural Language Processing and Entity Recognition
 
-### Synapse (pyo3 based rust bridge)
+Once data is ingested, the system processes it using a combination of NLP techniques:
 
-Serves as an intermediary that bridges the Semantic Layer with the Enterprise Layer, utilizing pyo3 to allow Rust and Python interoperability. It provides support for:
+- **Transformer / Large Language Models:** Employed to handle complex language processing tasks.
+- **Entity Recognition:** Identifies and extracts key entities from the data.
+- **User-Provided Entities:** Allows for the inclusion of entities specified by users.
+- **Attention Mechanism:** Helps to focus on the most relevant parts of the data for semantic triple extraction.
+- **Vector Embedding:** Transforms extracted semantic triple into vector embeddings for further processing.
 
-- **External Data Sources:** Integrates with databases, APIs, or data lakes to fetch additional information.
-  
-- **Third-Party Tools:** Allows integration with analytics, visualization, or machine learning frameworks.
+### Semantic Triple Extraction and Embedding
 
-### Querent Semantic Layer
+The processed data undergoes further analysis to generate meaningful insights:
 
-This is the core processing component of Querent, where semantic graph computations take place., involving:
+- **Identify Semantic Head and Tail Entity Pairs:** Determines the relationships between different entities.
+- **Beam Search in Attention Weight Matrices:** Refines the relationships using advanced search techniques.
+- **Dynamic Embedding for Precise Representation:** Adjusts embeddings dynamically to ensure accurate representation of data relationships.
 
-- **Data Ingestion Workflow**: This component is responsible for the continuous and asynchronous polling of data from a multitude of sources, including Azure, Google Cloud Storage, Drive, Slack, and Jira. It is designed to efficiently fetch and stage data in a queue without blocking the system's operations.
-  
-- **Async Queue**: An asyncio queue that temporarily holds data from the Data Ingestion workflow before it is processed.
-  
-- **LLM Engine Workflow**: Utilizes advanced language models to concurrently process the data in the Async Queue. This workflow is designed to run in parallel with the Data Ingestion, allowing for simultaneous data ingestion and processing, which maximizes throughput and efficiency in the system's operations.
-  
-- **Graph Event**: Structured Graph JSON events of semantic triples, detailing the subject, object, predicate, their respective types, and contextual sentences for each semantic relationship identified.
-  
-- **Vector Event**: Structured Vector Events containing vector embeddings of the extracted contexts, which are essential for powering the semantic search engine's ability to locate and relate information.
+### Graph and Vector Knowledge Representation
 
-### Graph Neural Network (GNN) Experiment Layer
+The final step involves mapping the processed data into a graph and vector representation:
 
-This layer empowers users to actively engage with the data by training their own GNN models and conducting predictions. It is a testament to the system's flexibility and user-centric design, facilitating advanced data analysis through:
+- **Graph and Vector Knowledge Representation:** Constructs a semantic knowledge graph with embedded vector representations, facilitating efficient querying and knowledge retrieval.
 
-- **Graph Convolution Network (GCN)**: A powerful feature that enables users to apply convolutions on graph data, extracting essential features for a deep understanding of complex relationships.
-
-- **User-Driven Model Training**: The system provides the capability for users to train GNN models on their specific graph data for tasks such as node classification and link prediction according to their unique analytical needs.
-
-- **Custom Predictive Analytics**: After training, users can deploy their models to make predictions, enabling them to uncover insights like node properties, potential links, and overall graph dynamics, thus leveraging the full potential of GNN within their domain.
-
-![Architecture Diagram](../assets/arch_v3.png)
-*Figure 1: Sequential Workflow of the Querent System Architecture - This diagram illustrates the flow of data through the Querent system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
+![Architecture Diagram](../assets/r!an_arch.png)
+*Figure 1: Sequential Workflow of the R!AN System Architecture - This diagram illustrates the flow of data through the R!AN system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
 
 ## Data Flow and Interactions
 
-1. Workflow orchestration configurations are received from Semantic APIs within the Enterprise Layer.
-2. The Semantic Pipe facilitates the transmission of configuration commands between the Enterprise Layer and the Semantic Layer.
-3. The process begins with the initiation of the Querent Semantic Layer.
-4. Asynchronous Data Ingestion collects data from various external sources.
-5. The collected data is placed into an Async Queue, awaiting processing.
-6. The LLM Engine Workflow processes the data using transformer/language models.
-7. Graph Data Events and Vector Data Events are created based on the processed data.
-8. These events are then transferred back through the Semantic Pipe to the Enterprise Layer.
-9. Data flows through the Semantic Pipe, carrying processed events from the Semantic Layer.
-10. The Event Streamer captures and forwards these events.
-11. The Storage Mapper receives data events and aligns them for storage.
-12. The Indexer creates and maintains indexes.
-13. The indexed data is stored in Postgres database.
-14. Vector event data is stored in the Milvus database for vector information and graph event data is stored in the Neo4j database.
-15. The Storage Mapper facilitates the usage of Search APIs and Insights API, providing it with the necessary data.
-16. The Storage Mapper interacts with the Graph Neural Network, providing it with the necessary data.
-17. The Graph Neural Network receives input graphs and performs advanced analytics. Predictions are generated from the Graph Neural Network, including node classification, link prediction, and graph evolution.
-
-## Conclusion
-
-Querent provides a scalable, flexible, and efficient platform for semantic graph computing, enabling organizations to derive actionable insights and knowledge from their data. By leveraging distributed processing, advanced analytics, and machine learning techniques, Querent empowers users to unlock the full potential of their data assets.
+1. Data ingestion begins with the Async Data Ingestion component, continuously polling data from various external sources.
+2. The ingested data is staged in an Async Queue, awaiting processing.
+3. The LLM Engine Workflow processes the data using transformer models and NLP algorithms.
+4. Entity Recognition identifies key entities within the processed data.
+5. User-provided entities are integrated for enhanced context.
+6. The Attention Mechanism identifies semantic relationships between head and tail entity pairs.
+7. Beam Search refines these relationships using the attention weight matrices.
+8. Dynamic embedding adjusts representations for accuracy.
+9. The processed data is then mapped into a comprehensive graph and vector knowledge representation.
+10. The knowledge graph facilitates efficient querying and retrieval of interconnected data insights.
 
 
-## Releases
-
-Latest release:
-
-- [Querent v1.1.0](https://github.com/Querent-ai/distribution/releases/tag/v3.0.1)
