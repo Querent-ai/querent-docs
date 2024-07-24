@@ -6,7 +6,7 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This guide outlines the steps to install Querent, including creating an index, adding documents, and executing search queries. The commands are detailed in the [in the CLI reference documentation](/docs/reference/cli.md).
+This guide outlines the steps to run R!an, including creating an index, adding documents, and executing search queries. The commands are detailed in the [in the CLI reference documentation](/docs/reference/cli.md).
 
 ## Pre-requisites for binary installation
 
@@ -15,25 +15,6 @@ This guide outlines the steps to install Querent, including creating an index, a
 python3 --version
 ```
 
-  If Python is below version 3.9, it should be updated from the [official Python website](https://www.python.org/downloads/).
-
-- A virtual environment is required in the project directory:
-```bash
-python3 -m venv querent-env
-```
-
-  To activate the virtual environment on macOS and Linux, run:
-
-```bash
-source querent-env/bin/activate
-```
-
-
-- PyTorch installation:
-
-```bash
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-```
 
 ## Querent Installation
   * Querent provides a base workbench in python for rapid prototyping and production deployment.
