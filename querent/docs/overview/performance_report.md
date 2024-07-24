@@ -42,8 +42,17 @@ sidebar_position: 4
 
 #### Visual Representations
 ![Number of Allocations](../assets/performance/num_allocations.png)
+
+<br>
+
 ![Temporary Allocations](../assets/performance/temp_allocations.png)
+
+<br>
+
 ![Memory Allocations](../assets/performance/mem_allocations.png)
+
+<br>
+
 ![Memory Consumed](../assets/performance/mem_consumed.png)
 
 #### Summary
