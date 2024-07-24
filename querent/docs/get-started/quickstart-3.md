@@ -1,0 +1,43 @@
+---
+title: Quickstart - Semantic Data Discovery and Insights
+sidebar_position: 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+This guide provides an overview of data discovery and insight generation in R!an, how it differs from traditional methods, and its benefits. 
+
+## Data Discovery with R!an
+
+1. **Contextually Aware Embeddings**: R!an uses contextually aware embeddings to create a semantic data fabric. These embeddings, called as knowledge vectors, capture the semantic meaning of data by understanding the context in which data appears, enabling more accurate and meaningful insights.
+
+2. **Knowledge Integration**: Unlike traditional data discovery, which focuses on raw data, R!an uses knowledge vectors that point to relevant information and context.
+
+3. **Enhanced Insight Generation**: By utilizing semantic data fabric, R!an can uncover complex relationships and patterns within the data.
+
+4. **Scalability**: R!an is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance.
+
+
+There are 2 types of data discovery available to the users. 
+
+### 1. Similarity Search
+
+Users can perform similarity searches on the semantic data fabric to find relevant documents and context by providing a natural language query. Here’s how you can do it:
+
+Convert your query into a vector embedding using the same embedding model used for creating the embeddings in the embedding table.
+
+Find similar matches: Perform a similarity search in the embedding table to find the top N similar embeddings.
+
+Retrieve relevant data: Use the event_id from the similar embeddings to fetch the corresponding data from the metadata table.
+
+This approach is highly useful when dealing with thousands of files, as it essentially creates pointers to knowledge, making it easy to retrieve relevant information efficiently.
+
+
+## Conclusion
+
+
+
+---
+
+This document outlines the benefits and process of data discovery with R!an, providing a comprehensive guide to utilizing its advanced capabilities for generating meaningful knowledge embeddings.

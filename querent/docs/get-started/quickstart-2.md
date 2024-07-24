@@ -1,12 +1,12 @@
 ---
-title: Quickstart - Using R!an
+title: Quickstart - Create Semantic Data Fabric
 sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This guide outlines the steps on how to use R!an, including creating an index, adding documents, and executing search queries.
+This guide outlines the steps on how to use R!an to create a semantic data fabric over your private data by initializing data sources and executing semantic data fabric query.
 
 ## Access the R!an Dashboard
 
@@ -18,21 +18,21 @@ Once you have started the R!an server, you can access the R!an dashboard to star
 
    Depending on your configuration, start the R!an server using one of the following commands:
 
-   **With PostgreSQL:**
+    **With PostgreSQL:**
 
-   ```bash
+    ```bash
    
-   rian serve --config path/to/your/node.yaml
-  
-  ```
+    rian serve --config path/to/your/node.yaml
+    ```
 
-  **With SurrealDB:**
+    **With SurrealDB:**
 
-   ```bash
+    ```bash
    
-   rian serve
-  
-  ```
+    rian serve
+    ```
+
+
 2. **Navigate to the Dashboard**
 
   Starting a R!an server in serve mode will automatically open the dashboard in a browser tab.
@@ -64,7 +64,7 @@ Semantic Pipelines: Runs semantic pipelines assigned by the control plane.
 #### Node Health
 Health Monitoring: Monitors the health and performance of the node, providing detailed metrics and status reports.
 
-### 1. Setup up Data Sources
+### Setup up Data Sources
 
 #### Navigate to the Semantic Service Section
 
@@ -97,7 +97,7 @@ To initialize a local file folder source, use the following configuration:
 In this example, we are initializing a single data source. You can add additional data sources based on your specific data locations and requirements.
 
 
-### 2. Create Semantic Data Fabric
+### Create Semantic Data Fabric
 
 #### Start the Semantics service
 
@@ -140,10 +140,5 @@ The following options are customizable:
   - Pass 1 to use the geology-based NER model.
   - If no model and no entities are specified, the default is the English-based NER model.
 
-
-### 2. Data Fabric Enable Search and Data Discovery
-
-
-
-Summary
-TBD
+## Summary
+The R!an dashboard simplifies the management of your data and services, providing a user-friendly interface to interact with and monitor your cluster. By following the steps outlined in this guide, you have created a semantic data fabric using R!an.
