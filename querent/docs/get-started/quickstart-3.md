@@ -33,25 +33,25 @@ This guide provides an overview of data discovery and insight generation in R!an
 
   - **Customize the Options**
 
-    ```json
-      {
-        "agent_name": "string",
-        "semantic_pipeline_id": "string",
-        "session_type": "Retriever"
-      }
-    ```
+  ```json
+    {
+      "agent_name": "string",
+      "semantic_pipeline_id": "string",
+      "session_type": "Retriever"
+    }
+  ```
 
-    - agent_name: A custom name for your discovery session. 
-    - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](../get-started/quickstart-2.md).
-    - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../guides/retriever_traversar_review.md) :
-      1. `Retriever`: Configures the discovery session to enable similarity searches over the semantic data fabric.
-      2. `Traverser`: Configures the discovery session to enable graph-traversal based searches over the semantic data fabric.
+  - agent_name: A custom name for your discovery session. 
+  - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](../get-started/quickstart-2.md).
+  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../guides/retriever_traversar_review.md) :
+    1. `Retriever`: Configures the discovery session to enable similarity searches over the semantic data fabric.
+    2. `Traverser`: Configures the discovery session to enable graph-traversal based searches over the semantic data fabric.
   
   Once the customization section is complete and the user starts a discovery session, a unique `discovery_session_id` is returned. This session ID is unique because it signifies a session created by an expert who understands the domain and is asking relevant questions from their data. This process helps in downstream tasks such as generating insights from the focused or discovered data, running Graph Neural Networks (GNN), fine-tuning models, etc., on the discovered data.
 
   - **Search the Semantic Data Fabric**
   ![Search the Semantic Data Fabric](../assets/get-started/discovery_search.png)
-  
+
   <br>
 
   ```json
@@ -59,13 +59,13 @@ This guide provides an overview of data discovery and insight generation in R!an
   "query": "string",
   "session_id": "string"
     }
-    ```
+  ```
   - query: Your search query in natural language.
   - session_id: The unique discovery_session_id received after customizing and starting the discovery session.
 
   - **Discovery Results**
-    1. Retrieve Similarity Results
-       In a retriever-type discovery session, the system will fetch the top 10 results that are most similar to the user's query. The results will be formatted as follows:
+      
+      The results will be formatted as follows:
       ```json
       {
         "insights": [
@@ -89,10 +89,51 @@ This guide provides an overview of data discovery and insight generation in R!an
       - source: The source of the document, such as a file path or URL.
       - tags: head and tail tags associated with the sentence.
 
-    If the user asks the same query again, the system will retrieve the next 10 best results based on similarity.
+
+  1. **Retrieve Similarity Results**
+      
+      In a retriever-type discovery session, the system will fetch the top 10 results that are most similar to the user's query. If the user asks the same query again, the system will retrieve the next 10 best results based on similarity.
+      
+      As an example this section shows the results of retriever-based discovery session for the query: "What are the key factors influencing hydrocarbon recovery efficiencies in the Eagle Ford Shale?". A document corpus of 1000 research documents from different reservoirs around the world was used for this:
+
+     ![Retriever Results](../assets/get-started/embedding_based_search.png)
+
+     <br>
+
+      Key Highlights of Retriever-Based Search:
+
+      - Relevant Documents and Sources: The retriever-based search was able to identify documents and sources directly related to the query, such as high rock compressibility and reservoir quality.
+
+      - Direct Answers: The search results provided exact sentences from documents that specifically answer the query, offering clear and direct insights into factors like thermal maturity, lithology, and production variability.
+      
+      - Contextual Relevance: By using contextually aware embeddings, the retriever-based search could surface highly relevant information that accurately addressed the query.
+
+
+  2. **Graph Traversal Results**
+      
+      In a traverser-type discovery session, the system allows for a more interconnected and context-aware exploration of the data, revealing complex relationships and patterns that traditional search methods might miss. It's particularly valuable for tasks requiring a comprehensive understanding of intricate data relationships, such as research, intelligence analysis, or complex problem-solving scenarios.
+
+      The algorithm first identifies the top searches based on the user's query, similar to the retriever-type session and then analyzes entity relationships from search results, creating a dynamic, interconnected view of the information. It then explores these connections, tracing paths between related entities to reveal insights that might not be apparent from individual documents alone.
+
+      What sets this method apart is its ability to maintain context across multiple queries within a session. The system builds upon previous searches, continuously refining its understanding of the user's intent and the relationships within the data. This results in a more nuanced, comprehensive exploration of the semantic data fabric.
+
+      ![Traverser Results](../assets/get-started/traverser_based_search.png)
+      <br>
+
+      Key Highlights of Traverser-Based Search:
+
+        - Interconnected Insights: The traverser-based search provided more interconnected and detailed information, such as capillary pressure effects and geomechanical properties, which may not have been immediately apparent in the retriever-based search.
+        - Deeper Understanding: By exploring relationships between entities, the traverser-based search uncovered deeper connections within the data, offering a more holistic understanding of factors influencing hydrocarbon recovery.
+        - Complex Relationships: This method revealed additional factors like well injection pressure and reservoir pressure mapping, showcasing the interconnected nature of various elements affecting recovery efficiencies.
+      
 
 
 ## Conclusion
+  Both retriever-based and traverser-based searches have unique strengths.
+  
+  Retriever-Based Search: Ideal for quickly finding relevant documents and specific answers using contextually aware embeddings. It excels in providing direct, contextually relevant information based on the query.
+  
+  Traverser-Based Search: Builds on retriever-based search by exploring complex relationships within the data. It offers deeper insights and a more comprehensive understanding of the interconnected factors affecting the query topic.
 
 
 
