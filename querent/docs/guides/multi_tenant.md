@@ -5,13 +5,13 @@ sidebar_position: 3
 
 ## Overview
 
-This document provides guidance on configuring the Querent Node for multi-tenancy. It outlines how to set up and manage multiple tenants using the optional storage configuration input, ensuring data isolation and optimal performance for each tenant.
+This document provides guidance on configuring the R!an Node for multi-tenancy. It outlines how to set up and manage multiple tenants using the optional storage configuration input, ensuring data isolation and optimal performance for each tenant.
 
 ## Configuring Storage for Multi-Tenancy
 
 ### Introduction
 
-The Querent Node supports multi-tenancy through configurable storage options. This flexibility allows administrators to allocate separate storage resources for each tenant, ensuring data isolation and security.
+The R!an Node supports multi-tenancy through configurable storage options. This flexibility allows administrators to allocate separate storage resources for each tenant, ensuring data isolation and security.
 
 ### Storage Configuration
 
@@ -23,7 +23,7 @@ The system supports various storage backends, including but not limited to:
 
 - Relational databases (e.g., PostgreSQL, MySQL)
 - Graph Databases: Neo4j, Amazon Neptune, OrientDB
-- Vector Databases: TimescaleDB, InfluxDB, Milvus, Pinecone
+- Vector Databases: PGVector, SurrealDB, Milvus
 - NoSQL databases (e.g., MongoDB, Cassandra)
 - Search engines (e.g., Elasticsearch)
 - Cloud storage services (e.g., AWS S3, Azure Blob Storage)
@@ -46,8 +46,8 @@ To set up a new tenant, follow these steps:
 
 1. Determine the appropriate storage backend for the tenant.
 2. Create a storage instance or database for the tenant.
-3. Configure the storage settings in the `storageConfig` section of your Querent Node configuration file.
-4. Restart or reload the Querent Node to apply the new configuration.
+3. Configure the storage settings in the `storageConfig` section of your R!an Node configuration file.
+4. Restart or reload the R!an Node to apply the new configuration.
 
 ### Best Practices for Multi-Tenancy
 
@@ -58,4 +58,4 @@ To set up a new tenant, follow these steps:
 
 ## Summary
 
-Configuring the Querent Node for multi-tenancy involves setting up separate storage configurations for each tenant. By following the guidelines provided in this document, administrators can ensure efficient data isolation, security, and performance for a multi-tenant environment.
+Configuring the R!an Node for multi-tenancy involves setting up separate storage configurations for each tenant. By following the guidelines provided in this document, administrators can ensure efficient data isolation, security, and performance for a multi-tenant environment.

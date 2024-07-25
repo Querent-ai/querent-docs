@@ -1,11 +1,11 @@
 ---
-title: Knowledge Sources
+title: Knowledge Sources and Supported File Types
 sidebar_position: 1
 ---
 
 ## Overview
 
-This guide outlines the different collectors available within the Querent Node, detailing the required configuration properties for each. Collectors are integral for gathering data from various sources to be processed and analyzed by the Querent Node.
+This guide outlines the different collectors available within the R!an Node, detailing the required configuration properties for each and the supported file types.
 
 ## Supported Sources
 
@@ -15,10 +15,12 @@ This guide outlines the different collectors available within the Querent Node, 
 
 - **Type:** `AzureCollectorConfig`
 - **Required Fields:**
+  - `chunk_size` -  The data size chunk size. 
   - `connection_string` - The Azure storage account connection string.
   - `account_url` - The URL of the Azure storage account.
   - `credentials` - Credentials used for authentication.
   - `container` - The name of the Azure Blob Storage container.
+  - `id` - A unique id for the collector.
 
 ### Google Cloud Storage (GCS) Collector
 
@@ -26,6 +28,7 @@ This guide outlines the different collectors available within the Querent Node, 
 - **Required Fields:**
   - `credentials` - The service account key for GCS access.
   - `bucket` - The name of the GCS bucket.
+  - `id` - A unique id for the collector.
 
 ### Amazon S3 Collector
 
@@ -35,6 +38,7 @@ This guide outlines the different collectors available within the Querent Node, 
   - `secret_key` - The AWS secret access key.
   - `region` - The AWS region of the S3 bucket.
   - `bucket` - The name of the S3 bucket.
+  - `id` - A unique id for the collector.
 
 ### Jira Collector
 
@@ -44,6 +48,7 @@ This guide outlines the different collectors available within the Querent Node, 
   - `jira_username` - The username for Jira access.
   - `jira_project` - The key of the Jira project.
   - `jira_query` - The JQL query for selecting issues.
+  - `id` - A unique id for the collector.
 
 ### Google Drive Collector
 
@@ -54,6 +59,18 @@ This guide outlines the different collectors available within the Querent Node, 
   - `drive_scopes` - The scopes for Google Drive API access.
   - `drive_client_id` - The client ID for Google Drive API access.
   - `drive_client_secret` - The client secret for Google Drive API access.
+  - `id` - A unique id for the collector.
+
+### One Drive Collector
+- **Type:** `OneDriveConfig`
+- **Required Fields:**
+  - `client_id` - Client ID of the app.
+  - `client_secret` - Client secret of the app.
+  - `folder_path` - Folder path of the app.
+  - `redirect_uri` - Redirect URI.
+  - `refresh_token` - The refresh token for One Drive api access.
+  - `id` - A unique id for the collector.
+
 
 ### Email Collector
 
@@ -64,6 +81,7 @@ This guide outlines the different collectors available within the Querent Node, 
   - `imap_username` - The username for IMAP access.
   - `imap_password` - The password for IMAP access.
   - `imap_folder` - The IMAP folder to collect emails from.
+  - `id` - A unique id for the collector.
 
 ### Dropbox Collector
 
@@ -73,6 +91,7 @@ This guide outlines the different collectors available within the Querent Node, 
   - `dropbox_app_secret` - The app secret for Dropbox API access.
   - `folder_path` - The path of the Dropbox folder.
   - `dropbox_refresh_token` - The refresh token for Dropbox API access.
+  - `id` - A unique id for the collector.
 
 ### GitHub Collector
 
@@ -81,6 +100,7 @@ This guide outlines the different collectors available within the Querent Node, 
   - `github_username` - The username for GitHub access.
   - `github_access_token` - The access token for GitHub API access.
   - `repository` - The name of the GitHub repository.
+  - `id` - A unique id for the collector.
 
 ### Slack Collector
 
@@ -88,6 +108,7 @@ This guide outlines the different collectors available within the Querent Node, 
 - **Required Fields:**
   - `access_token` - The access token for Slack API access.
   - `channel_name` - The name of the Slack channel.
+  - `id` - A unique id for the collector.
 
 ### News Collector
 
@@ -97,6 +118,7 @@ This guide outlines the different collectors available within the Querent Node, 
   - `query` - The query string for the news API.
   - `from_date` - The start date for the news query.
   - `to_date` - The end date for the news query.
+  - `id` - A unique id for the collector.
 
 ## Ingested Tokens via WebSocket and API
 
@@ -123,6 +145,34 @@ For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provi
 
 **Note:** The WebSocket ingestion mechanism requires a persistent connection and is suitable for scenarios where real-time data streaming is necessary.
 
+
+## Supported File Types
+
+  R!an supports a wide variety of file types for ingestion, ensuring that you can process and analyze data from numerous sources. Below are the types of files you can ingest into the system:
+
+  ```css
+    ingestors
+  └── src
+      ├── audio
+      ├── code
+      ├── csv
+      ├── doc
+      ├── docx
+      ├── html
+      ├── image
+      ├── json
+      ├── odp
+      ├── pdf
+      ├── pptx
+      ├── processors
+      ├── txt
+      ├── utils
+      ├── xlsx
+      └── xml
+  ```
+
+
+
 ### Summary
 
-Both API and WebSocket ingestion methods offer flexibility for integrating the Querent Node with a wide range of data sources, allowing for both batch and real-time data processing. The choice between these ingestion methods depends on the specific requirements of the application, such as the need for real-time processing, the volume of data, and the preferred integration pattern.
+Both API and WebSocket ingestion methods offer flexibility for integrating the R!an Node with a wide range of data sources, allowing for both batch and real-time data processing. The choice between these ingestion methods depends on the specific requirements of the application, such as the need for real-time processing, the volume of data, and the preferred integration pattern.
