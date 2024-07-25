@@ -129,7 +129,7 @@ rian serve --config path/to/your/node.yaml
 ```
 ![r!an serve with postgres](../assets/get-started/rian_with_pg.png)
 
-<br>
+<br />
 
 
 
@@ -140,4 +140,4 @@ rian serve
 ```
 ![r!an serve with surreal-db](../assets/get-started/rian_with_surreal.png)
 
-<br>
+<br />

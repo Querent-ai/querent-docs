@@ -39,7 +39,7 @@ Once you have started the R!an server, you can access the R!an dashboard to star
 
   ![r!an dashboard](../assets/get-started/rian_dashboard.png)
 
-<br>
+<br />
 
 ## Using the R!an Dashboard
 
@@ -70,7 +70,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 ![r!an dashboard](../assets/get-started/semantic_service.png)
 
-<br>
+<br />
 
 #### Initialize Data Source(s)
 
@@ -78,7 +78,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 ![r!an dashboard](../assets/get-started/collector_initialize.png)
 
-<br>
+<br />
 
   To initialize a local file folder source, use the following configuration:
 
@@ -106,7 +106,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 1. **Navigate to the Semantic Pipeline Request**
 ![Semantic Data Fabric api](../assets/get-started/semantic_api.png)
 
-<br>
+<br />
 
 
 2. **Customize the Options**
@@ -150,7 +150,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 ![Semantic Data Fabric api](../assets/get-started/pipeline_id.png)
 
-<br>
+<br />
 
   **Important Note**
     
