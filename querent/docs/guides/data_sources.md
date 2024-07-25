@@ -55,6 +55,15 @@ This guide outlines the different collectors available within the Querent Node, 
   - `drive_client_id` - The client ID for Google Drive API access.
   - `drive_client_secret` - The client secret for Google Drive API access.
 
+### One Drive Collector
+- **Type:** `GoogleDriveCollectorConfig`
+- **Required Fields:**
+  - `drive_refresh_token` - The refresh token for Google Drive API access.
+  - `drive_token` - The access token for Google Drive API access.
+  - `drive_scopes` - The scopes for Google Drive API access.
+  - `drive_client_id` - The client ID for Google Drive API access.
+  - `drive_client_secret` - The client secret for Google Drive API access.
+
 ### Email Collector
 
 - **Type:** `EmailCollectorConfig`
@@ -122,6 +131,12 @@ In addition to the data collectors, the Querent Node supports ingesting tokens d
 For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provided by the Querent Node. Once connected, clients can stream `IngestedTokens` directly into the specified semantic pipeline. The WebSocket endpoint and specifics regarding the protocol and data format will depend on the implementation details of the Querent Node and the environment in which it is deployed.
 
 **Note:** The WebSocket ingestion mechanism requires a persistent connection and is suitable for scenarios where real-time data streaming is necessary.
+
+
+## Supported File Types
+
+
+
 
 ### Summary
 
