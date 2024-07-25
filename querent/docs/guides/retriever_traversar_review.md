@@ -34,7 +34,7 @@ The semantic data fabric overlays contextually aware embeddings to create a stru
 
 ![Semantic Data Fabric](../assets/get-started/Seamantic_data_fabric.png)
 *A voronoi point map to represent a 2D plot of contextually aware vectors as interconnected points in the semantic data fabric.*
-<br>
+<br />
 
 #### Key Features:
  - **Integrated Context:** Combines multiple data points and their relationships, capturing the full context of the information.
