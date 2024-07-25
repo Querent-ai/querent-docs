@@ -33,7 +33,7 @@ Retriever-based search is designed to find relevant documents and contexts using
 The semantic data fabric overlays contextually aware embeddings to create a structured, interconnected representation of your data. This fabric not only enhances retrieval capabilities but also supports advanced graph traversal techniques for deeper insights.
 
 ![Semantic Data Fabric](../assets/get-started/Seamantic_data_fabric.png)
-*This image represents a 2D plot of contextually aware vectors as interconnected points in the semantic data fabric.*
+*A voronoi point map to represent a 2D plot of contextually aware vectors as interconnected points in the semantic data fabric.*
 <br>
 
 #### Key Features:
