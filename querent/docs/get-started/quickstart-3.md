@@ -29,7 +29,7 @@ This guide provides an overview of data discovery and insight generation in R!an
 
   ![start discovery session](../assets/get-started/start_discovery_session.png)
 
-  <br>
+  <br />
 
   - **Customize the Options**
 
@@ -52,7 +52,7 @@ This guide provides an overview of data discovery and insight generation in R!an
   - **Search the Semantic Data Fabric**
   ![Search the Semantic Data Fabric](../assets/get-started/discovery_search.png)
 
-  <br>
+  <br />
 
   ```json
     {
@@ -97,7 +97,7 @@ This guide provides an overview of data discovery and insight generation in R!an
       As an example this section shows the results of retriever-based discovery session for the query: "What are the key factors influencing hydrocarbon recovery efficiencies in the Eagle Ford Shale?". A document corpus of 1000 research documents from different reservoirs around the world was used for this:
 
      ![Retriever Results](../assets/get-started/embedding_based_search.png)
-     <br>
+     <br />
 
       Key Highlights of Retriever-Based Search:
 
@@ -115,7 +115,7 @@ This guide provides an overview of data discovery and insight generation in R!an
       What sets this method apart is its ability to maintain context across multiple queries within a session. The system builds upon previous searches, continuously refining its understanding of the user's intent and the relationships within the data. This results in a more nuanced, comprehensive exploration of the semantic data fabric.
 
       ![Traverser Results](../assets/get-started/traverser_based_search.png)
-      <br>
+      <br />
 
       Key Highlights of Traverser-Based Search:
 
