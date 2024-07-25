@@ -42,7 +42,7 @@ The final step involves mapping the processed data into a graph and vector repre
 
 - **Graph and Vector Knowledge Representation:** Constructs a semantic knowledge graph with embedded vector representations, facilitating efficient querying and knowledge retrieval.
 
-![Architecture Diagram](../assets/r!an_arch.png)
+![Architecture Diagram](../assets/rian_arch.png)
 *Figure 1: Sequential Workflow of the R!AN System Architecture - This diagram illustrates the flow of data through the R!AN system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
 
 ## Data Flow and Interactions

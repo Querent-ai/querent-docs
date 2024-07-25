@@ -37,7 +37,7 @@ Once you have started the R!an server, you can access the R!an dashboard to star
 
   Starting a R!an server in serve mode will automatically open the dashboard in a browser tab.
 
-  ![r!an dashboard](../assets/get-started/r!an_dashboard.png)
+  ![r!an dashboard](../assets/get-started/rian_dashboard.png)
 
 <br>
 
@@ -74,7 +74,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 #### Initialize Data Source(s)
 
-  - R!an supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](..//guides/data_sources.md).
+  - R!an supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../guides/data_sources.md).
 
 ![r!an dashboard](../assets/get-started/collector_initialize.png)
 
