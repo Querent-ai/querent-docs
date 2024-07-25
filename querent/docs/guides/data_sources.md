@@ -175,4 +175,4 @@ For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provi
 
 ### Summary
 
-Both API and WebSocket ingestion methods offer flexibility for integrating the Querent Node with a wide range of data sources, allowing for both batch and real-time data processing. The choice between these ingestion methods depends on the specific requirements of the application, such as the need for real-time processing, the volume of data, and the preferred integration pattern.
+Both API and WebSocket ingestion methods offer flexibility for integrating the R!an Node with a wide range of data sources, allowing for both batch and real-time data processing. The choice between these ingestion methods depends on the specific requirements of the application, such as the need for real-time processing, the volume of data, and the preferred integration pattern.
