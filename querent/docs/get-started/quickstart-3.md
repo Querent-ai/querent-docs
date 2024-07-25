@@ -97,15 +97,12 @@ This guide provides an overview of data discovery and insight generation in R!an
       As an example this section shows the results of retriever-based discovery session for the query: "What are the key factors influencing hydrocarbon recovery efficiencies in the Eagle Ford Shale?". A document corpus of 1000 research documents from different reservoirs around the world was used for this:
 
      ![Retriever Results](../assets/get-started/embedding_based_search.png)
-
      <br>
 
       Key Highlights of Retriever-Based Search:
 
       - Relevant Documents and Sources: The retriever-based search was able to identify documents and sources directly related to the query, such as high rock compressibility and reservoir quality.
-
       - Direct Answers: The search results provided exact sentences from documents that specifically answer the query, offering clear and direct insights into factors like thermal maturity, lithology, and production variability.
-      
       - Contextual Relevance: By using contextually aware embeddings, the retriever-based search could surface highly relevant information that accurately addressed the query.
 
 
