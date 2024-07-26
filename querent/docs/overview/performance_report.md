@@ -4,7 +4,7 @@ sidebar_position: 4
 ---
 
 #### Application Overview
-- **Binary:** `rian`
+- **Binary:** `R!AN`
 - **System:** `linux`
 - **Total Runtime:** `28min 38s`
 - **System Memory:** `16.1GB`
