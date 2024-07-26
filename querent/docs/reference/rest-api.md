@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## API Version
 
-All endpoints in the R!an API start with the `api/v1/` prefix, indicating the usage of version 1 of the API.
+All endpoints in the R!AN API start with the `api/v1/` prefix, indicating the usage of version 1 of the API.
 
 ## OpenAPI Specification
 

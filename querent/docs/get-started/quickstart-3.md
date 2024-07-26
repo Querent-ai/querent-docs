@@ -6,17 +6,17 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This guide provides an overview of data discovery and insight generation in R!an, how it differs from traditional methods, and its benefits. 
+This guide provides an overview of data discovery and insight generation in R!AN, how it differs from traditional methods, and its benefits. 
 
-## Data Discovery with R!an
+## Data Discovery with R!AN
 
-1. **Contextually Aware Embeddings**: R!an uses contextually aware embeddings to create a semantic data fabric. These embeddings, called as knowledge vectors, capture the semantic meaning of data by understanding the context in which data appears, enabling more accurate and meaningful insights.
+1. **Contextually Aware Embeddings**: R!AN uses contextually aware embeddings to create a semantic data fabric. These embeddings, called as knowledge vectors, capture the semantic meaning of data by understanding the context in which data appears, enabling more accurate and meaningful insights.
 
-2. **Knowledge Integration**: Unlike traditional data discovery, which focuses on raw data, R!an uses knowledge vectors that act as pointers to relevant context and file in which the contesxt appears. This integration allows for deeper and more comprehensive insights.
+2. **Knowledge Integration**: Unlike traditional data discovery, which focuses on raw data, R!AN uses knowledge vectors that act as pointers to relevant context and file in which the contesxt appears. This integration allows for deeper and more comprehensive insights.
 
-3. **Enhanced Insight Generation**: By utilizing semantic data fabric, R!an can uncover complex relationships and patterns within the data, leading to more actionable insights.
+3. **Enhanced Insight Generation**: By utilizing semantic data fabric, R!AN can uncover complex relationships and patterns within the data, leading to more actionable insights.
 
-4. **Scalability**: R!an is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance. Please refer to [performance report](../overview/performance_report.md) for more information.
+4. **Scalability**: R!AN is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance. Please refer to [performance report](../overview/performance_report.md) for more information.
 
 
   There are two types of data discovery available to the users:
@@ -136,4 +136,4 @@ This guide provides an overview of data discovery and insight generation in R!an
 
 ---
 
-This document outlines the benefits and process of data discovery with R!an, providing a comprehensive guide to utilizing its advanced capabilities for generating meaningful knowledge embeddings.
+This document outlines the benefits and process of data discovery with R!AN, providing a comprehensive guide to utilizing its advanced capabilities for generating meaningful knowledge embeddings.
