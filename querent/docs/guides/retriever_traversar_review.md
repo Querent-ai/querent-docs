@@ -1,12 +1,12 @@
 
 ---
-title: Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search
+title: Retriever-Based Search vs. Traverser-Based Search
 sidebar_position: 4
 ---
 
 ## Overview
 
-This guide outlines the different data discovery methods available within R!an, detailing the required configuration properties for each. These methods are integral for discovering data efficiently to generate meaningful insights.
+This guide outlines the different data discovery methods available within R!AN, detailing the required configuration properties for each. These methods are integral for discovering data efficiently to generate meaningful insights.
 
 ### Retriever-Based Search
 
@@ -60,8 +60,8 @@ Traverser-based search leverages graph traversal techniques to explore the relat
 
 Both retriever-based and traverser-based searches have unique strengths that cater to different types of queries and data analysis needs. Retriever-based search is ideal for quick, similarity-based searches using natural language queries, enhanced by the use of contextually aware embeddings. Traverser-based search, on the other hand, excels in exploring complex relationships within the data through graph traversal, offering deeper insights and a more comprehensive understanding of the data landscape.
 
-By leveraging these advanced search methods, R!an empowers users to extract meaningful insights from their data, tailored to their specific requirements and contexts.
+By leveraging these advanced search methods, R!AN empowers users to extract meaningful insights from their data, tailored to their specific requirements and contexts.
 
 ---
 
-This document provides a detailed conceptual overview of the two main search methods used in R!an, highlighting their unique features and advantages.
+This document provides a detailed conceptual overview of the two main search methods used in R!AN, highlighting their unique features and advantages.
