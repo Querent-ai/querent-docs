@@ -6,11 +6,11 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This guide outlines the steps to setup and run R!an. The commands are detailed in the [CLI reference documentation](../reference/cli.md).
+This guide outlines the steps to setup and run R!AN. The commands are detailed in the [CLI reference documentation](../reference/cli.md).
 
 ## Pre-requisites for Binary Installation
 
-To run the R!an binary, you need to ensure the following prerequisites are met:
+To run the R!AN binary, you need to ensure the following prerequisites are met:
 
 - **PostgreSQL with `pgvector` extension installed**: If you choose to use PostgreSQL for indexing the data.
 - **Embedded SurrealDB**: If PostgreSQL is not provided, the system will use `surreal_embedded`, which is included in the binary.
