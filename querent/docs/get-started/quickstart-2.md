@@ -6,17 +6,17 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This guide outlines the steps on how to use R!an to create a semantic data fabric over your private data by initializing data sources and executing semantic data fabric queries.
+This guide outlines the steps on how to use R!AN to create a semantic data fabric over your private data by initializing data sources and executing semantic data fabric queries.
 
-## Access the R!an Dashboard
+## Access the R!AN Dashboard
 
-Once you have started the R!an server, you can access the R!an dashboard to start creating semantic data fabric with your data.
+Once you have started the R!AN server, you can access the R!AN dashboard to start creating semantic data fabric with your data.
 
 ### Steps to Access the Dashboard
 
-1. **Start the R!an Server**
+1. **Start the R!AN Server**
 
-   Depending on your configuration, start the R!an server using one of the following commands:
+   Depending on your configuration, start the R!AN server using one of the following commands:
 
     **With PostgreSQL:**
 
@@ -35,16 +35,16 @@ Once you have started the R!an server, you can access the R!an dashboard to star
 
 2. **Navigate to the Dashboard**
 
-  Starting a R!an server in serve mode will automatically open the dashboard in a browser tab.
+  Starting a R!AN server in serve mode will automatically open the dashboard in a browser tab.
 
   ![r!an dashboard](../assets/get-started/rian_dashboard.png)
 
 <br />
 
-## Using the R!an Dashboard
+## Using the R!AN Dashboard
 
 ### Overview
-The R!an dashboard provides an intuitive interface for managing your data, including sections for Cluster Info, Node Info, Discovery, Insights, Semantic Service, and Node Health.
+The R!AN dashboard provides an intuitive interface for managing your data, including sections for Cluster Info, Node Info, Discovery, Insights, Semantic Service, and Node Health.
 
 #### Cluster Info
 Cluster Information: Provides details about the cluster, including nodes, status, and configuration.
@@ -74,7 +74,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 #### Initialize Data Source(s)
 
-  - R!an supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../guides/data_sources.md).
+  - R!AN supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../guides/data_sources.md).
 
 ![r!an dashboard](../assets/get-started/collector_initialize.png)
 
@@ -131,7 +131,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
   }
 
   ```
-  - attention_threshold: R!an uses attention matrices from transformer models to construct the semantic data fabric. This threshold filters out data fabrics that fall below the specified score.  
+  - attention_threshold: R!AN uses attention matrices from transformer models to construct the semantic data fabric. This threshold filters out data fabrics that fall below the specified score.  
   - collectors: A list of sources to be used for fetching data.
   - fixed_entities: A list of entities around which the semantic data fabric will be constructed.
   - sample_entities: The types of the entities specified in fixed_entities.
@@ -157,4 +157,4 @@ Health Monitoring: Monitors the health and performance of the node, providing de
   Remember to note down the pipeline_id returned after each successful execution of a semantic pipeline. This ID is crucial for performing searches and generating insights later. Each pipeline_id ensures that you can accurately reference and utilize the specific data fabric created during your session.
 
 ## Summary
-  The R!an dashboard simplifies the management of your data and services, providing a user-friendly interface to interact with and monitor your cluster. By following the steps outlined in this guide, you have created a semantic data fabric using R!an.
+  The R!AN dashboard simplifies the management of your data and services, providing a user-friendly interface to interact with and monitor your cluster. By following the steps outlined in this guide, you have created a semantic data fabric using R!AN.
