@@ -6,28 +6,17 @@ sidebar_position: 4
 #### Application Overview
 - **Binary:** `R!AN`
 - **System:** `linux`
-- **Total Runtime:** `28min 38s`
 - **System Memory:** `16.1GB`
-- **Files Processed:** `500 PDF files`
-- **Data Volume:** `1 GB`
-- **Events Produced:** `1500`
 
-#### Memory Usage Analysis
-- **Peak Heap Memory Consumption:** `1.1GB` after `1min 17s`
-- **Peak RSS (Including Heaptrack Overhead):** `1.6GB`
-- **Total Memory Leaked:** `314.0MB (42.5kB suppressed)`
+### Test Results
 
-#### Memory Allocation Statistics
-- **Total Calls to Allocation Functions:** `1,097,586,777` (`638,813/s`)
-- **Temporary Allocations:** `238,100,983` (`21.69%`, `138,578/s`)
+| Test Name           | Total Runtime | Files Processed | Data Source       | Data Volume | Events Produced | Peak Heap Memory | Peak RSS   | Memory Leaked | Allocation Calls  | Temporary Allocations | Avg. Processing Time | Peak Latency | Avg. Throughput | Peak Throughput |
+|---------------------|---------------|-----------------|-------------------|-------------|-----------------|------------------|------------|---------------|-------------------|-----------------------|----------------------|--------------|-----------------|-----------------|
+| **Test 1**          | 28min 38s     | 500 PDF files   | Local File Folder | 1 GB        | 1500            | 1.1GB            | 1.6GB      | 314.0MB       | 1,097,586,777     | 238,100,983           | 3.43s                | 5.12s        | 17.5 files/min  | 22 files/min    |
+| **Test 2**          |               |                 |                   |             |                 |                  |            |               |                   |                       |                      |              |                 |                 |
+| **Test 3**          |               |                 |                   |             |                 |                  |            |               |                   |                       |                      |              |                 |                 |
+| **Test 4**          |               |                 |                   |             |                 |                  |            |               |                   |                       |                      |              |                 |                 |
 
-#### Latency and Throughput Analysis
-- **Latency:**
-  - Average processing time per file: `3.43s`
-  - Peak latency: `5.12s`
-- **Throughput:**
-  - Average throughput: `17.5 files/min`
-  - Peak throughput: `22 files/min`
 
 #### Graphical Analysis of Memory Consumption
 
