@@ -153,7 +153,6 @@ For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provi
   ```css
     ingestors
   └── src
-      ├── audio
       ├── code
       ├── csv
       ├── doc

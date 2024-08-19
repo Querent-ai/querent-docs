@@ -7,9 +7,14 @@ sidebar_position: 4
 
 This guide outlines the different data discovery methods available within R!AN, detailing the required configuration properties for each. These methods are integral for discovering data efficiently to generate meaningful insights.
 
+
 ### Retriever-Based Search
 
 Retriever-based search is designed to find relevant documents and contexts using natural language queries. It utilizes [contextually aware embeddings](../advanced/contextually_aware_embedding.md) to perform similarity searches over the semantic data fabric. This approach focuses on retrieving documents that are semantically similar to the query, making it efficient for identifying relevant information quickly.
+
+![Retriever-Based Search](../assets/guides/Contextually%20Aware%20Embeddings%20Search.png)
+
+*Figure 1: Query Vector Representation and Top-k Retrieval Process - This diagram illustrates how a query is transformed into a vector representation, serving as the anchor point for the search. The algorithm calculates the similarity between the query vector and other knowledge vectors in the semantic data fabric, retrieving the top-k vectors that most closely align with the query, representing the most relevant documents or data points.*
 
 
 #### Key Features:
@@ -22,6 +27,12 @@ Retriever-based search is designed to find relevant documents and contexts using
 ### Traverser-Based Search
 
 Traverser-based search leverages graph traversal techniques to explore the relationships between entities within the semantic data fabric. This method provides a deeper understanding of the interconnected data, uncovering hidden connections and patterns that might be missed by retrieval methods.
+
+
+
+![Traverser-Based Search](../assets/guides/Semantic_fabric.png)
+
+*Figure 2: Traverser-Based Search Process - This image visualizes how a query vector identifies the most relevant embeddings within the semantic data fabric. The traversal process then examines surrounding data points, uncovering not only direct matches but also related entities and connections, thereby providing a broader contextual understanding.*
 
 #### Key Features:
 
