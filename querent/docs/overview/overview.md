@@ -1,6 +1,6 @@
 ---
 title: overview
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Overview
@@ -43,8 +43,6 @@ The current stable version of R!AN is v1.0.0
 R!AN is tailored for a wide range of use cases, including:
 
 - **AI Workflows Made Easy:** Integrate R!AN into your AI workflows to build semantic data fabric, perform complex graph computations, and run graph neural network experiments. This integration facilitates seamless data processing and AI-ready data for model training/fine-tuning over private datasets.
-
-- **Semantic Data Fabric:** Use R!AN to uncover hidden patterns and insights that traditional data analysis methods may overlook. Comprehensive data traversal helps uncover intricate connections and paths between entities, providing deeper insights.
 
 - **Knowledge Discovery and Reasoning:** Leverage R!AN's capabilities to uncover hidden patterns, relationships, and insights within complex datasets. This empowers informed decision-making and strategic planning by providing a deeper understanding of the data. Efficient similarity search using natural language queries quickly finds top relevant documents, enhancing data retrieval efficiency and user experience.
 

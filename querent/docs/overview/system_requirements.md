@@ -1,6 +1,6 @@
 ---
 title: System Requirements
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 
@@ -21,6 +21,6 @@ sidebar_position: 3
 For the best experience with **R!AN**, consider the following recommended specifications:
 
 - **Processor**: Octa-core CPU (Intel i7 or AMD Ryzen 7 equivalent or better)
-- **Minimal Available RAM Needed**: 2GB
+- **Minimal Available RAM Needed**: 2 GB
 - **Storage**: 10 GB of available storage
 

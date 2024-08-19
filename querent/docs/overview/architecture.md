@@ -1,11 +1,11 @@
 ---
 title: Architecture
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Architecture
 
-**R!AN** (Real-Time Information Aggregation Network) is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. Implemented in `rust`, R!AN ensures high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data in the form of a semantic data fabric.
+Implemented in `rust`, **R!AN** ensures high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data in the form of a semantic data fabric.
 
 ## Components
 
@@ -20,7 +20,7 @@ The system initiates with the LLM Engine Workflow and Asynchronous Data Ingestio
 
 ### Natural Language Processing Tasks
 
-Parallely during data ingestion, the system starts processesing the data using a combination of NLP techniques:
+In parallel with data ingestion, the system initiates data processing using a combination of NLP techniques:
 
 - **Transformer / Large Language Models:**  Execute core natural language processing tasks.
 - **Entity Recognition:**  Identifies and extracts key entities from the data.
