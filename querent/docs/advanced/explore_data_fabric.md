@@ -35,7 +35,7 @@ Traditional keyword-based search methods rely heavily on exact matches between s
 2. **Limited Precision:** Without understanding the semantics or underlying meaning of the data, keyword searches can return irrelevant results or miss relevant ones that do not include the exact keyword.
 3. **Scalability Issues:** As datasets grow, keyword-based searches can become less efficient and slower, especially when dealing with unstructured data.
 
-In contrast, your system's Semantic Data Fabric enables:
+In contrast, R!AN's Semantic Data Fabric enables:
 
 - **Contextual Understanding:** By capturing relationships through graph events and semantic connections, the system can retrieve data based on meaning and context, not just keywords.
 - **High Dimensionality Searches:** Vector events allow for similarity searches and machine learning models that can find patterns and insights beyond the reach of keyword searches.
@@ -44,7 +44,3 @@ In contrast, your system's Semantic Data Fabric enables:
 ### Conclusion
 
 By integrating Index, Graph, and Vector events using a unified Event ID schema within PostgreSQL and specialized databases, your system creates a powerful Semantic Data Fabric. This approach not only enhances data connectivity and retrieval but also enables advanced search functionalities that go beyond traditional methods, providing richer, more accurate insights from your data.
-
---- 
-
-This documentation update should help users understand the benefits of your system's architecture, particularly how it enables more powerful and context-aware search capabilities.
