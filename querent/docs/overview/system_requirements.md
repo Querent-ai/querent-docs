@@ -21,6 +21,6 @@ sidebar_position: 3
 For the best experience with **R!AN**, consider the following recommended specifications:
 
 - **Processor**: Octa-core CPU (Intel i7 or AMD Ryzen 7 equivalent or better)
-- **Memory**: 16 GB or more
-- **Storage**: 100 GB of available SSD storage
-- **Graphics**: Dedicated graphics card with at least 2 GB of VRAM
+- **Minimal Available RAM Needed**: 2GB
+- **Storage**: 10 GB of available storage
+

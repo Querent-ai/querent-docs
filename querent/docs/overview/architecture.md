@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Architecture
 
-**R!AN** (Real-Time Information Aggregation Network) is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. Implemented in Rust, R!AN ensures high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data in the form of a semantic data fabric.
+**R!AN** (Real-Time Information Aggregator Network) is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. Implemented in Rust, R!AN ensures high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data in the form of a semantic data fabric.
 
 ## Components
 

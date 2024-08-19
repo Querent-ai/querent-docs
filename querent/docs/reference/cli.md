@@ -3,7 +3,7 @@ title: Command-line options
 sidebar_position: 2
 ---
 
-R!an command line tool lets you start a server and manage indexes (create, delete, ingest), splits and sources (create, delete, toggle). To start a server, `r!an` needs a [node config file path](../configuration/node_config.md).
+R!AN command line tool lets you start a server and manage indexes (create, delete, ingest), splits and sources (create, delete, toggle). To start a server, `r!an` needs a [node config file path](../configuration/node_config.md).
 
 This page documents all the available commands, related options, and environment variables.
 
