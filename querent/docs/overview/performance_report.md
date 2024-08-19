@@ -6,39 +6,26 @@ sidebar_position: 4
 #### Application Overview
 - **Binary:** `R!AN`
 - **System:** `linux`
-- **Total Runtime:** `28min 38s`
 - **System Memory:** `16.1GB`
-- **Files Processed:** `500 PDF files`
-- **Data Volume:** `1 GB`
-- **Events Produced:** `1500`
 
-#### Memory Usage Analysis
-- **Peak Heap Memory Consumption:** `1.1GB` after `1min 17s`
-- **Peak RSS (Including Heaptrack Overhead):** `1.6GB`
-- **Total Memory Leaked:** `314.0MB (42.5kB suppressed)`
+### Test Results
 
-#### Memory Allocation Statistics
-- **Total Calls to Allocation Functions:** `1,097,586,777` (`638,813/s`)
-- **Temporary Allocations:** `238,100,983` (`21.69%`, `138,578/s`)
+| Test Name           | Total Runtime | Files Processed | Data Source       | Data Volume | Events Produced | Peak Heap Memory | Peak RSS   | Memory Leaked | Allocation Calls  | Temporary Allocations | Avg. Processing Time | Avg. Throughput |
+|---------------------|---------------|-----------------|-------------------|-------------|-----------------|------------------|------------|---------------|-------------------|-----------------------|----------------------|--------------|-----------------|-----------------|
+| **Test 1**          | 28min 38s     | 122 Docx files   | Google Drive | 1 GB        | 4300           | 959.1MB           | 1.1GB      | 8.5MB       | 2,551,287,988     | 77,949,818           | 14.08s               | 4.26 files/min       |
 
-#### Latency and Throughput Analysis
-- **Latency:**
-  - Average processing time per file: `3.43s`
-  - Peak latency: `5.12s`
-- **Throughput:**
-  - Average throughput: `17.5 files/min`
-  - Peak throughput: `22 files/min`
+
 
 #### Graphical Analysis of Memory Consumption
 
 - **Memory Consumption Graph:**
   - Demonstrates robust handling of dynamic data sets.
   - Several spikes in memory usage effectively managed within reasonable bounds.
-  - Indicates the system's capability to handle significant loads with resilience, typical of processing extensive and diverse data sets like PDF files.
+  - Indicates the system's capability to handle significant loads with resilience, typical of processing extensive and diverse data sets.
 
 - **Allocation and Temporary Allocation Trends:**
   - The allocation graph illustrates a progressive increase in memory allocations consistent with the workload, reflecting the system’s scalable design in processing high volumes of data.
-  - Temporary allocations increased significantly, showcasing the system's effective use of temporary data structures to ensure efficient processing.
+  - Low Temporary allocations showcase the system's effective use of temporary data structures to ensure efficient processing.
 
 #### Visual Representations
 ![Number of Allocations](../assets/performance/num_allocations.png)

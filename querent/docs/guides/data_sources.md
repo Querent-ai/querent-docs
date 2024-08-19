@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Overview
 
-This guide outlines the different collectors available within the R!an Node, detailing the required configuration properties for each and the supported file types.
+This guide outlines the different collectors available within the R!AN Node, detailing the required configuration properties for each and the supported file types.
 
 ## Supported Sources
 
@@ -148,12 +148,11 @@ For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provi
 
 ## Supported File Types
 
-  R!an supports a wide variety of file types for ingestion, ensuring that you can process and analyze data from numerous sources. Below are the types of files you can ingest into the system:
+  R!AN supports a wide variety of file types for ingestion, ensuring that you can process and analyze data from numerous sources. Below are the types of files you can ingest into the system:
 
   ```css
     ingestors
   └── src
-      ├── audio
       ├── code
       ├── csv
       ├── doc
@@ -175,4 +174,4 @@ For WebSocket-based ingestion, clients can connect to a WebSocket endpoint provi
 
 ### Summary
 
-Both API and WebSocket ingestion methods offer flexibility for integrating the R!an Node with a wide range of data sources, allowing for both batch and real-time data processing. The choice between these ingestion methods depends on the specific requirements of the application, such as the need for real-time processing, the volume of data, and the preferred integration pattern.
+Both API and WebSocket ingestion methods offer flexibility for integrating the R!AN Node with a wide range of data sources, allowing for both batch and real-time data processing. The choice between these ingestion methods depends on the specific requirements of the application, such as the need for real-time processing, the volume of data, and the preferred integration pattern.

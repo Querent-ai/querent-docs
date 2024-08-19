@@ -60,8 +60,6 @@ This section provides simplified descriptions of the event data structures gener
 - **Subject Type:** The classification or type of the subject entity.
 - **Object:** The entity to which the relationship points.
 - **Object Type:** The classification or type of the object entity.
-- **Predicate:** The nature or description of the relationship between subject and object.
-- **Predicate Type:** The classification of the relationship.
 - **Sentence:** A textual representation or description of the relationship.
 - **document_id:** The name of file to which the sentence belongs to.
 - **document_source:** The source (file folder, google drive, azure blob storage etc.) where the document resides.
@@ -75,5 +73,14 @@ This section provides simplified descriptions of the event data structures gener
 **Description:** Index events are structured records designed for efficient storage and retrieval, facilitating quick access to information.
 
 **Schema:**
+- **Subject:** The entity from which a relationship originates.
+- **Subject Type:** The classification or type of the subject entity.
+- **Object:** The entity to which the relationship points.
+- **Object Type:** The classification or type of the object entity.
+- **Sentence:** A textual representation or description of the relationship.
+- **document_id:** The name of file to which the sentence belongs to.
+- **document_source:** The source (file folder, google drive, azure blob storage etc.) where the document resides.
+- **collection_id:** A unique id of the semantic data fabric.
+- **image_id:** - A unique id for the image. 
+- **Event ID:** A unique identifier for the event.
 
-- Similar to traditional database records, Index events are characterized by their structured format, which includes various fields like ID, Name, Description, and Timestamp, among others. The specific fields depend on the application and the data being indexed.

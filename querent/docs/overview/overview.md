@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Overview
 
-**R!AN** (Real-Time Information Aggregation Network) is a semantic graph computing platform designed to empower enterprises and individuals to create a semantic data fabric from their domain-specific data for critical reasoning. With a focus on scalability, flexibility, and efficiency, R!AN transforms how we process, analyze, and visualize complex data relationships.
+**R!AN** (Real-Time Information Aggregator Network) is a semantic graph computing platform designed to empower enterprises and individuals to create a semantic data fabric from their domain-specific data for critical reasoning. With a focus on scalability, flexibility, and efficiency, R!AN transforms how we process, analyze, and visualize complex data relationships.
 
 
 The current stable version of R!AN is v1.0.0

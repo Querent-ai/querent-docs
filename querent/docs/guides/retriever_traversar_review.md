@@ -7,41 +7,32 @@ sidebar_position: 4
 
 This guide outlines the different data discovery methods available within R!AN, detailing the required configuration properties for each. These methods are integral for discovering data efficiently to generate meaningful insights.
 
+
 ### Retriever-Based Search
 
-Retriever-based search is designed to find relevant documents and contexts using natural language queries. It utilizes contextually aware embeddings to perform similarity searches over the semantic data fabric. This approach focuses on retrieving documents that are semantically similar to the query, making it efficient for identifying relevant information quickly.
+Retriever-based search is designed to find relevant documents and contexts using natural language queries. It utilizes [contextually aware embeddings](../advanced/contextually_aware_embedding.md) to perform similarity searches over the semantic data fabric. This approach focuses on retrieving documents that are semantically similar to the query, making it efficient for identifying relevant information quickly.
+
+![Retriever-Based Search](../assets/guides/Contextually%20Aware%20Embeddings%20Search.png)
+
+*Figure 1: Query Vector Representation and Top-k Retrieval Process - This diagram illustrates how a query is transformed into a vector representation, serving as the anchor point for the search. The algorithm calculates the similarity between the query vector and other knowledge vectors in the semantic data fabric, retrieving the top-k vectors that most closely align with the query, representing the most relevant documents or data points.*
 
 
 #### Key Features:
 
-- **Contextually Aware Embeddings**: Uses embeddings that capture the semantic meaning of both the query and data by understanding the context in which data appears. This is more sophisticated than simple vector embeddings that only consider isolated data points.
+- **Contextually Aware Embeddings**: Uses embeddings that capture the semantic meaning of both the query and data by understanding the context in which data appears.
 - **Natural Language Queries**: Suitable for quick searches using natural language, making it user-friendly.
 - **Similarity-Based Retrieval**: Retrieves documents based on their similarity to the query, providing relevant results efficiently.
 
-#### Why Contextually Aware Embeddings are Better:
-
-- **Enhanced Semantic Understanding**: Unlike simple vector embeddings that represent data points without considering their context, contextually aware embeddings understand the surrounding context, which leads to a more accurate and meaningful representation of data.
-- **Reduced Noise**: By focusing on the context, these embeddings filter out irrelevant information, reducing noise and increasing the precision of the search results.
-- **Improved Relevance**: The embeddings prioritize critical information, ensuring that the most relevant insights are surfaced during the search process.
-
-
-
-
-
-### Semantic Data Fabric
-The semantic data fabric overlays contextually aware embeddings to create a structured, interconnected representation of your data. This fabric not only enhances retrieval capabilities but also supports advanced graph traversal techniques for deeper insights.
-
-![Semantic Data Fabric](../assets/get-started/Seamantic_data_fabric.png)
-*A voronoi point map to represent a 2D plot of contextually aware vectors as interconnected points in the semantic data fabric.*
-<br />
-
-#### Key Features:
- - **Integrated Context:** Combines multiple data points and their relationships, capturing the full context of the information.
- - **Structured Representation:** Forms a network of interconnected data points, enabling advanced search and analysis techniques.
 
 ### Traverser-Based Search
 
-Traverser-based search leverages graph traversal techniques to explore the relationships between entities within the semantic data fabric. This method provides a deeper understanding of the interconnected data, uncovering hidden connections and patterns that might be missed by retrieval methods.
+Traverser-based search leverages graph traversal techniques to explore the relationships between entities within the [semantic data fabric](../advanced/explore_data_fabric.md). This method provides a deeper understanding of the interconnected data, uncovering hidden connections and patterns that might be missed by retrieval methods.
+
+
+
+![Traverser-Based Search](../assets/guides/Semantic_fabric.png)
+
+*Figure 2: Traverser-Based Search Process - This image visualizes how a query vector identifies the most relevant embeddings within the semantic data fabric. The traversal process then examines surrounding data points, uncovering not only direct matches but also related entities and connections, thereby providing a broader contextual understanding.*
 
 #### Key Features:
 
