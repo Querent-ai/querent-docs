@@ -1,46 +1,36 @@
 ---
 title: Architecture
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Architecture
 
-**R!AN** (Real-Time Information Aggregator Network) is a distributed semantic graph computing platform designed to capture, process, and derive knowledge from diverse data sources. Implemented in Rust, R!AN ensures high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data in the form of a semantic data fabric.
+Implemented in `rust`, **R!AN** ensures high performance, safety, and concurrency. The architecture consists of several interconnected components that work together to ingest and analyze data, ultimately forming a semantic data fabric.
 
 ## Components
 
-Below are the key components of the **R!AN** architecture, each playing a crucial role in the system's functionality:
+The **R!AN** architecture is composed of several key components, each integral to the system's overall functionality:
 
 ### LLM Engine Workflow and Async Data Ingestion
 
-The system begins with the LLM Engine Workflow and Async Data Ingestion, both operating concurrently:
+The system initiates with two critical workflows that operate in parallel:
 
-- **Async Data Ingestion:** Continuously and asynchronously polls data from a variety of sources, staging it in an asyncio queue without blocking system operations.
-- **LLM Engine Workflow:** Utilizes transformer models to process data from the Async Queue, applying natural language processing algorithms.
+- **Async Data Ingestion:** This component continuously and asynchronously polls data from various sources, staging it in an asyncio queue. The asynchronous nature ensures that other system operations are not blocked, allowing for smooth and efficient data processing.
+- **LLM Engine Workflow:** This component leverages transformer models to process data from the Async Queue, applying natural language processing tasks described below.
 
-### Natural Language Processing and Entity Recognition
+### Natural Language Processing Tasks
 
-Once data is ingested, the system processes it using a combination of NLP techniques:
 
-- **Transformer / Large Language Models:**  Handle complex language processing tasks.
+- **Transformer / Large Language Models:**  Execute core natural language processing tasks, enabling the system to understand and process complex language structures.
 - **Entity Recognition:**  Identifies and extracts key entities from the data.
-- **User-Provided Entities:** Allows for the inclusion of entities specified by users.
-- **Attention Mechanism:** Focuses on the most relevant parts of the data for semantic triple extraction.
-- **Vector Embedding:** Transforms extracted semantic triples into vector embeddings for further processing.
+- **User-Provided Entities:** Allows users to input specific entities or concepts, ensuring that the analysis is tailored to their needs and context.
+- **Attention Mechanism:** This mechanism focuses on the most relevant parts of the data, facilitating the extraction of semantic triples that capture the relationships between identified entities or concepts.
+- **Contextually Aware Embeddings:** Converts extracted semantic triples into [contextually aware embeddings](../advanced/contextually_aware_embedding.md), also referred to as knowledge vectors. These vectors act as precise pointers to relevant knowledge, laying the foundation for the [semantic data fabric](../advanced/explore_data_fabric.md).
 
-### Semantic Triple Extraction and Embedding
-
-The processed data undergoes further analysis to generate meaningful insights:
-
-- **Identify Semantic Head and Tail Entity Pairs:** Determines the relationships between different entities.
-- **Beam Search in Attention Weight Matrices:** Refines the relationships using advanced search techniques.
-- **Dynamic Embedding for Precise Representation:** Adjusts embeddings dynamically to ensure accurate representation of data relationships.
 
 ### Graph and Vector Knowledge Representation
 
-The final step involves mapping the processed data into a graph and vector representation:
-
-- **Graph and Vector Knowledge Representation:** Constructs a semantic data fabric with embedded vector representations, facilitating efficient querying and knowledge retrieval.
+The final step involves constructing a [semantic data fabric](../advanced/explore_data_fabric.md) with embedded vector representations. This facilitates efficient querying and retrieval of interconnected knowledge, making it easier for users to derive insights from their private datasets.
 
 ![Architecture Diagram](../assets/rian_arch.png)
 *Figure 1: Sequential Workflow of the R!AN System Architecture - This diagram illustrates the flow of data through the R!AN system, depicting how various components interact to process and analyze data using advanced graph neural network techniques.*
@@ -54,8 +44,8 @@ The final step involves mapping the processed data into a graph and vector repre
 5. **Integration:** User-provided entities are integrated for enhanced context.
 6. **Attention Mechanism:** Identifies semantic relationships between head and tail entity pairs.
 7. **Beam Search:** Refines these relationships using the attention weight matrices.
-8. **Dynamic Embedding:** Adjusts representations for accuracy.
+8. **Contextually Aware Embedding:** Adjusts representations for accuracy.
 9. **Mapping:** The processed data is then mapped into a comprehensive graph and vector knowledge representation.
-10. **Knowledge Graph:** Facilitates efficient querying and retrieval of interconnected data insights.
+10. **Semantic Data Fabric:** Facilitates efficient querying and retrieval of interconnected data insights.
 
 

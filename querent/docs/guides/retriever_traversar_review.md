@@ -52,6 +52,3 @@ Both retriever-based and traverser-based searches have unique strengths that cat
 
 By leveraging these advanced search methods, R!AN empowers users to extract meaningful insights from their data, tailored to their specific requirements and contexts.
 
----
-
-This document provides a detailed conceptual overview of the two main search methods used in R!AN, highlighting their unique features and advantages.
