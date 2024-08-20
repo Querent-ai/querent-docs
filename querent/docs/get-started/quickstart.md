@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Setup Rian
+title: Quickstart - Setup R!AN
 sidebar_position: 2
 ---
 
