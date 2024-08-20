@@ -24,7 +24,7 @@ This documentation provides a comprehensive guide to R!AN, from installation to 
 
 ### Core Features
 
-- **Semantic Data Fabric:** R!AN constructs a semantic data fabric by transforming private data into knowledge vectors, which serve as interconnected data points. These vectors act as precise pointers to relevant knowledge, enabling semantic understanding and effective data utilization.
+- **Semantic Data Fabric:** R!AN constructs a [semantic data fabric](../advanced/explore_data_fabric.md) by transforming private data into knowledge vectors, which serve as interconnected data points. These vectors act as precise pointers to relevant knowledge, enabling semantic understanding and effective data utilization.
 - **Attention-Based Graph Embeddings:** Using transformer models, R!AN employs attention mechanisms to identify and extract meaningful relationships between entities or concepts. This process creates a comprehensive and contextually rich search space, making it easier to uncover significant connections within the data.
 
 ### Deployment Options
@@ -75,8 +75,6 @@ R!AN is tailored for a wide range of use cases, including:
 
 Discover the power of R!AN and unlock the full potential of your data with our comprehensive resources:
 
-- **Get Started Guide:** Follow our step-by-step quickstart guide to begin processing and analyzing your data with R!AN.
-- **Guides Documentation:** Explore the underlying architecture, components, and interactions of R!AN for a deeper understanding of its capabilities.
-- **FAQs:** Stay informed with the latest features, enhancements, and releases.
-
-Ready to transform your data into actionable insights? Get started with **R!AN** today. Join our community and contribute to the future of semantic graph computing!
+- **[Get Started Guide](../get-started/quickstart.md):** Follow our step-by-step quickstart guide to begin processing and analyzing your data with R!AN.
+- **[Architecture Documentation](../overview/architecture.md):** Explore the underlying architecture, components, and interactions of R!AN for a deeper understanding of its capabilities.
+- **[FAQs](../faqs/):** Stay informed with the latest features, enhancements, and releases.
