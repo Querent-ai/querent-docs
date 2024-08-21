@@ -43,7 +43,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
   - agent_name: A custom name for your discovery session. 
   - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](../get-started/quickstart-2.md).
-  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../guides/retriever_traversar_review.md) :
+  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../advanced/retriever_traversar_review.md) :
     1. `Retriever`: Configures the discovery session to enable similarity searches over the semantic data fabric.
     2. `Traverser`: Configures the discovery session to enable graph-traversal based searches over the semantic data fabric.
   
