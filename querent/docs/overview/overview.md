@@ -3,9 +3,9 @@ title: Overview
 sidebar_position: 2
 ---
 
-# Overview
+# Introduction
 
-**R!AN** (Real-Time Information Aggregator Network) is a semantic graph computing platform engineered to empower enterprises and individuals to create a semantic data fabric from their domain-specific data. With a focus on scalability, flexibility, and efficiency, R!AN transforms the way data from disparate sources are processed, analyzed, and visualized, enabling critical reasoning and insight generation.
+**R!AN** (Real-Time Information Aggregator Network) is a data fabric computing platform engineered to empower enterprises and individuals to create a semantic data fabric from their domain-specific data. With a focus on scalability, flexibility, and efficiency, R!AN transforms the way data from disparate sources are processed, analyzed, and visualized, enabling critical reasoning and insight generation.
 
 
 The current stable version of R!AN is v1.0.0
@@ -77,4 +77,5 @@ Discover the power of R!AN and unlock the full potential of your data with our c
 
 - **[Get Started Guide](../get-started/quickstart.md):** Follow our step-by-step quickstart guide to begin processing and analyzing your data with R!AN.
 - **[Architecture Documentation](../overview/architecture.md):** Explore the underlying architecture, components, and interactions of R!AN for a deeper understanding of its capabilities.
+- **[Example](../quick-application/agn_quickstart.md):** Follow our tutorial "Build Attention Fabric for Exploration Geology" to get a quick introduction to a working integration and a starting place to explore the possibilities with R!AN.
 - **[FAQs](../faqs/):** Stay informed with the latest features, enhancements, and releases.
