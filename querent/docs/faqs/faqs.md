@@ -28,8 +28,8 @@ R!AN can be scaled in two ways:
 ## What is the license for R!AN?
 We offer two variants: R!AN and R!AN+.
 
-- **R!AN**: Supports starting one node with one pipeline per session. It allows data sources from local file systems and supports [retriever-type](../guides/retriever_traversar_review.md) searches/data discovery.
-- **R!AN+**: Offers all data sources [listed here](../guides/data_sources.md). It also provides advanced features like [traversing the semantic data fabric](../guides/retriever_traversar_review.md) for detailed data discovery and using GraphRag over these traversed results to identify themes and semantic concepts grounded on your private domain datasets. This helps connect information across large volumes of data and answer complex questions beyond the capabilities of keyword and retriever-type data discovery.
+- **R!AN**: Supports starting one node with one Attention Graph Fabric pipeline per session. It allows data sources from local file systems and supports [retriever-type](../guides/retriever_traversar_review.md) searches/data discovery.
+- **R!AN+**: Offers all data sources [listed here](../guides/data_sources.md) and [semantic data fabrics](../advanced/explore_data_fabric.md). It also provides advanced features like [traversing the semantic data fabric](../guides/retriever_traversar_review.md) for detailed data discovery and using GraphRag over these traversed results to identify themes and semantic concepts grounded on your private domain datasets. This helps connect information across large volumes of data and answer queries beyond the capabilities of keyword and retriever-type data discovery.
 
 ## Do I need to purchase a license for development use?
 No, R!AN is free to use for all development and pre-production purposes.

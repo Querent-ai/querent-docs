@@ -1,6 +1,6 @@
 ---
 title: Retriever-Based Search vs. Traverser-Based Search
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 ## Overview

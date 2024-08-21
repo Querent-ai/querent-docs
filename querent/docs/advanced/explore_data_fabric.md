@@ -15,6 +15,41 @@ A Semantic Data Fabric creates a structured, interconnected representation of yo
  - **Structured Representation:** Forms a network of interconnected data points, enabling advanced search and analysis techniques.
  - **Enhanced Retrieval:** Supports natural language search queries that go beyond mere keyword matching to consider the context and connections embedded in the data.
 
+### Creating a Semantic Data Fabric
+There are various methodologies to create a data fabric, each tailored to different types of data and analytical needs:
+
+#### 1. **Attention Graph Fabric**
+![index](../assets/advanced/CF_logo.png)
+Attention Graph Fabric is an approach that leverages attention matrices from transformer models (Large Language Models). This method focuses on the relationships identified by attention weights between different tokens or entities within a sequence of data.
+
+- **Attention Mechanisms**: Attention matrices reveal the strength and relevance of connections between data points, making it possible to build a graph that highlights the most significant relationships.
+
+- **Fabric Construction**: These attention-weighted relationships are then mapped into a graph structure, where nodes represent entities and edges signify the strength of their connections.
+
+- **Use Case**: Ideal for scenarios where semantic understanding of textual data is crucial, such as in natural language processing tasks, seamntic search space queries or any textual data analysis.
+
+#### 2. **Code Fabric**
+![index](../assets/advanced/CF_logo.png)
+
+Code Fabric is a method designed to enhance the efficiency of code management and discovery within enterprises. Every piece of code—whether classes, objects, or methods—can be represented as a graph, where the relationships between these components form the fabric.
+
+- **Fabric Representation of Code**: In this approach, code is treated as a network of interconnected components (e.g., classes, methods, variables). The system identifies and maps these relationships, allowing for easy discovery and reuse of similar code snippets.
+
+- **Efficiency in Code Reuse**: By finding and connecting related pieces of code, this fabric helps developers quickly identify reusable components, thereby improving development efficiency.
+
+- **Use Case**: Particularly useful in large codebases where finding and reusing existing code components can save time and resources, especially in collaborative environments.
+
+#### 3. **Time Series Fabric**
+![index](../assets/advanced/TSF_logo.png)
+
+Time Series Fabric leverages a module based framework, which converts time-series data into text-based inputs that a Large Language Model (LLM) can process.
+
+- **Textual Conversion of Time-Series Data**: Time-series data is transformed into text, capturing the temporal patterns and trends within the data.
+
+- **Anomaly Detection and Forecasting**: Once the time-series data is converted to text, it can be utilized by an LLM to identify anomalies or forecast future data points as part of a comprehensive anomaly detection pipeline.
+
+- **Use Case**: This approach is particularly useful in fields like finance or IoT, where understanding temporal trends or detecting anomalies in time-series data is critical.
+
 
 ## Semantic Data Fabric and Event Management
 
