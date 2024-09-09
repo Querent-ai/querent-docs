@@ -24,6 +24,8 @@ R!AN supports multiple installation methods to accommodate different environment
 - **AppImage Installation**: For Linux users, R!AN is also available as an AppImage, a portable application format. Download the latest version from our GitHub releases page. This method allows for easy installation without needing superuser privileges. More information about AppImage installation can be found [here](https://github.com/AppImage/AppImageKit/wiki/FUSE).
 - **Docker Image**:R!AN is available as a Docker image, ideal for users who prefer deploying software in containerized environments. Access the latest Docker release on our [R!AN Docker Hub](https://hub.docker.com/r/querent) for details on the available images.
 - **Helm Chart**: Kubernetes users can deploy R!AN using our [Helm chart](https://helm.querent.xyz), facilitating integration into Kubernetes clusters for scalable and manageable deployments.
+- **Optional OCR** Support with Tesseract: If your use case requires Optical Character Recognition (OCR), R!AN can optionally be installed with Tesseract for OCR capabilities. Tesseract is a powerful open-source OCR engine. To integrate Tesseract into R!AN, simply install it as per your operating system’s package management system (e.g., apt for Linux, brew for macOS, or downloading from the official Tesseract project for Windows). Follow Tesseract’s official installation guide here.
+
 
 ## System Requirements
 
