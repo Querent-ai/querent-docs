@@ -78,4 +78,4 @@ Discover the power of R!AN and unlock the full potential of your data with our c
 - **[Get Started Guide](../get-started/quickstart.md):** Follow our step-by-step quickstart guide to begin processing and analyzing your data with R!AN.
 - **[Architecture Documentation](../overview/architecture.md):** Explore the underlying architecture, components, and interactions of R!AN for a deeper understanding of its capabilities.
 - **[Example](../get-started/agn_quickstart.md):** Follow our tutorial "Build Attention Fabric for Exploration Geology using Standalone R!AN" to get a quick introduction to a working integration and a starting place to explore the possibilities with R!AN.
-- **[FAQs](../docs/faqs/):** Stay informed with the latest features, enhancements, and releases.
+- **[FAQs](../faqs/):** Stay informed with the latest features, enhancements, and releases.
