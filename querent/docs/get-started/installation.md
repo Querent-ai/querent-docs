@@ -35,9 +35,9 @@ R!AN supports multiple installation methods to accommodate different environment
 
 ### Operating Systems
 
-- **Windows**: Windows 10 or later
-- **Linux**: Ubuntu 18.04 or later, Fedora 30 or later, or equivalent distributions
-- **macOS**: macOS 10.15 (Catalina) or later
+- **Windows**: Windows 11 or later
+- **Linux**: Ubuntu 22.04 or later, Fedora 30 or later, or equivalent distributions
+- **macOS**: macOS on Apple Silicone
 
 ### Recommended Specifications
 
