@@ -7,7 +7,8 @@ View some of the frequently asked questions regarding R!AN. Questions which are 
 
 ## Is R!AN ready for production use?
 
-Yes, R!AN is currently in version v1.0.1 which is a stable version.
+Yes, R!AN+, our enterprise version is currently in version v1.0.1 which is a stable version.
+R!AN is free for non-commericial, pre-production use, [check out ](https://github.com/Querent-ai/distribution/blob/main/LICENSE)
 
 
 ## Where can I find the latest features?
