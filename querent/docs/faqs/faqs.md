@@ -7,7 +7,7 @@ View some of the frequently asked questions regarding R!AN. Questions which are 
 
 ## Is R!AN ready for production use?
 
-Yes, R!AN is currently in version v1.0.0 which is a stable version.
+Yes, R!AN is currently in version v1.0.1 which is a stable version.
 
 
 ## Where can I find the latest features?
