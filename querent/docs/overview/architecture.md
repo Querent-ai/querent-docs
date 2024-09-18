@@ -9,7 +9,7 @@ Implemented in `rust`, **R!AN** ensures high performance, safety, and concurrenc
 
 ## Components
 
-Based on the principles of Komonovc Arnold Networks (KAN), R!AN specializes in extracting structured knowledge, such as semantic triples (subject-predicate-object), using a streamlined, attention-based architecture optimized for real-time applications. The **R!AN** architecture is composed of several key components, each integral to the system's overall functionality:
+Based on the principles of Kolmogorov Arnold Networks (KAN), R!AN specializes in extracting structured knowledge, such as semantic triples (subject-predicate-object), using a streamlined, attention-based architecture optimized for real-time applications. The **R!AN** architecture is composed of several key components, each integral to the system's overall functionality:
 
 ### LLM Engine Workflow and Async Data Ingestion
 
