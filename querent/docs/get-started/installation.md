@@ -35,9 +35,11 @@ R!AN supports multiple installation methods to accommodate different environment
 
 ### Operating Systems
 
-- **Windows**: Windows 11 or later
+- ***Windows**: Windows 11 or later
 - **Linux**: Ubuntu 22.04 or later, Fedora 30 or later, or equivalent distributions
 - **macOS**: macOS on Apple Silicone
+
+*For windows, the user will need to ensure that Microsoft Visual C++ Redistributable is installed. It can be downloaded from official microsoft website.
 
 ### Recommended Specifications
 
@@ -46,6 +48,7 @@ For the best experience with **R!AN**, consider the following recommended specif
 - **Processor**: Octa-core CPU (Intel i7 or AMD Ryzen 7 equivalent or better)
 - **Minimal Available RAM Needed**: 2 GB
 - **Storage**: 10 GB of available storage
+
 
 
 ## Contact Us
