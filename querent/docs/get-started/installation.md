@@ -13,18 +13,20 @@ export const RenderIf = ({children, condition}) => (
     </>
 );
 
-R!AN is designed to be accessible and easy to install across various platforms. Below, we outline the primary methods available for installing R!AN. For detailed instructions, configuration guidance, or if you encounter any issues during the installation process, please do not hesitate to [contact us](#contact-us).
+R!AN is designed for easy installation across various platforms. Below are the primary methods to install R!AN. If you need detailed instructions or encounter any issues, please [contact us](#contact-us).
 
 
-## Available Installation Methods
+## Installation Methods
 
-R!AN supports multiple installation methods to accommodate different environments and user preferences:
+- **Manual Download**: Download binaries for Linux, Windows, and macOS from our [GitHub releases page](https://github.com/querent-ai/distribution). This method simplifies the process of getting R!AN up and running on your system. The latest stable version is v1.0.1. Choose the appropriate file for your system (e.g., .tar.gz, .msi).
 
-- **Manual Download**: Directly download binaries for Linux, Windows, and macOS from our [GitHub releases page](https://github.com/querent-ai/distribution). This method simplifies the process of getting R!AN up and running on your system. The latest stable version available is v1.0.1 for different architectures (e.g., aarch64, x86_64), can be downloaded in formats like .tar.gz or .exe.
-- **AppImage Installation**: For Linux users, R!AN is also available as an AppImage, a portable application format. Download the latest version from our GitHub releases page. This method allows for easy installation without needing superuser privileges. More information about AppImage installation can be found [here](https://github.com/AppImage/AppImageKit/wiki/FUSE).
-- **Docker Image**:R!AN is available as a Docker image, ideal for users who prefer deploying software in containerized environments. Access the latest Docker release on our [R!AN Docker Hub](https://hub.docker.com/r/querent) for details on the available images.
-- **Helm Chart**: Kubernetes users can deploy R!AN using our [Helm chart](https://helm.querent.xyz), facilitating integration into Kubernetes clusters for scalable and manageable deployments.
-- **Optional OCR** Support with Tesseract: If your use case requires Optical Character Recognition (OCR), R!AN can optionally be installed with Tesseract for OCR capabilities. Tesseract is a powerful open-source OCR engine. To integrate Tesseract into R!AN, simply install it as per your operating system’s package management system (e.g., apt for Linux, brew for macOS, or downloading from the official Tesseract project for Windows). Follow Tesseract’s official installation guide here.
+- **AppImage (Linux)**: Download the AppImage from our GitHub releases page for a portable installation without superuser privileges. Learn more about AppImage [here](https://github.com/AppImage/AppImageKit/wiki/FUSE).
+
+- **Docker Image**:For containerized environments, use our Docker image available on [R!AN Docker Hub](https://hub.docker.com/r/querent) for details on the available images.
+
+- **Helm Chart (Kubernetes)**: Deploy R!AN in Kubernetes clusters using our [Helm chart](https://helm.querent.xyz) for scalable and manageable deployments.
+
+- **Optional OCR Support**: If you need Optical Character Recognition (OCR), install Tesseract OCR separately. Follow the official [Tesseract’s official installation guide](https://tesseract-ocr.github.io/tessdoc/Installation.html) here.
 
 
 ## System Requirements
@@ -39,13 +41,11 @@ R!AN supports multiple installation methods to accommodate different environment
 - **Linux**: Ubuntu 22.04 or later, Fedora 30 or later, or equivalent distributions
 - **macOS**: macOS on Apple Silicone
 
-*For windows, the user will need to ensure that Microsoft Visual C++ Redistributable is installed. It can be downloaded from official microsoft website.
+*Note for Windows Users: Ensure that Microsoft Visual C++ Redistributable is installed. It can be downloaded from official microsoft website.
 
 ### Recommended Specifications
 
-For the best experience with **R!AN**, consider the following recommended specifications:
-
-- **Processor**: Octa-core CPU (Intel i7 or AMD Ryzen 7 equivalent or better)
+- **Processor**: 8-core CPU (Intel i7, AMD Ryzen 7, or better)
 - **Minimal Available RAM Needed**: 2 GB
 - **Storage**: 10 GB of available storage
 
@@ -53,10 +53,11 @@ For the best experience with **R!AN**, consider the following recommended specif
 
 ## Contact Us
 
-For further details about installing R!AN, including accessing specific binaries, using the install script, deploying the Docker image, or utilizing the Helm chart, please reach out to us. Our team is ready to assist you with any queries or support you may need to ensure a smooth installation process.
+If you have questions or need assistance:
 
-- **Email**: [contact@querent.xyz](mailto:contact@querent.xyz) or refer to our [website](https://querent.xyz) for more contact options.
-- **GitHub**: Feel free to open an issue in the [R!AN Repository](https://github.com/Querent-ai/support/issues) for technical queries or installation issues.
-- **Discord**: Join our [Discord server](https://discord.gg/3fVAVmZXyh) to connect with the R!AN community and get help from our team.
+- **Email**: [contact@querent.xyz](mailto:contact@querent.xyz) 
+- **Website**: Visit our [website](https://querent.xyz) for more contact options.
+- **GitHub**: FOpen an issue in our [R!AN Repository](https://github.com/Querent-ai/support/issues).
+- **Discord**: Join our community on [Discord server](https://discord.gg/3fVAVmZXyh).
 
 We look forward to helping you get started with R!AN!
