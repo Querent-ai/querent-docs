@@ -29,7 +29,7 @@ This is the simplest way to get started.
 Navigate to the directory containing the R!AN binary and run:
 
 ```bash
-./rian
+./rian serve
 ```
 
 R!AN will start and automatically initialize an embedded PostgreSQL instance using pg-embed.
