@@ -1,25 +1,25 @@
 ---
-title: Build Attention Fabric for Exploration Geology using Standalone R!AN
-sidebar_position: 5
+title: Getting Started with R!AN: Building an Attention Fabric for Exploration Geology
+sidebar_position: 2
 ---
 
 ### Introduction 
 
-Welcome to R!AN (Real-time Information Aggregator Network), a standalone application designed to build attention fabric for exploration geology. This guide will walk you through the steps to use R!AN effectively, from launching the application to utilizing its advanced features for data discovery and analysis.
+Welcome to R!AN (Real-time Information Aggregator Network), a standalone application designed to help you build a data fabric for exploration geology or any other domain-specific data. This guide will walk you through the steps to effectively use R!AN, from launching the application to utilizing its advanced features for data discovery and analysis.
 
 ### **Launching the Application**
 
-When you first launch the R!AN application, you will see the Dashboard page, which provides an overview of the application's functionalities and real-time statistics.
+After installing R!AN, launch the R!AN application to get started. You will see the Dashboard page, which provides an overview of the application's functionalities and real-time statistics.
 
 
 #### Dashboard Overview
-The Dashboard page is the main landing page of the R!AN application. It gives users a quick glance at the current status and key metrics of their data processing activities. The page is divided into several sections:
+The Dashboard is your main hub in R!AN, giving you a quick glance at the status of your data processing activities. It is divided into several sections:
 
   ![r!an dashboard](../assets/get-started/example/dashboard.png)
 
-- **Total Events Graph**: A real-time graph showing the number of events released over time in seconds. This helps users monitor the activity and flow of data within the application.
+- **Total Events Graph**: Displays a real-time graph showing the number of events processed over time, helping you monitor data flow within the application.
 
-- **Pipeline Stats**: A detailed summary of the data pipeline's status, including:
+- **Pipeline Stats**: Summarizes key metrics of your data pipeline, including:
 
 1. Total Documents processed
 2. Total Events
@@ -35,198 +35,202 @@ The Dashboard page is the main landing page of the R!AN application. It gives us
 12. Total Vector Events
 13. Total Data Processed Size
 
-- **Most Frequent Connections**: A visual data fabric representation of the connections within the dataset. This network digaram highlights significant and rare connections, providing insights into the underlying data relationships.
+- **Most Frequent Connections**: Provides a visual representation of the most significant and rare connections within your dataset, offering insights into underlying data relationships.
 
 
 #### Navigating the Dashboard
-The dashboard menu on the left side of the screen provides easy access to different features and data sources within the R!AN application:
+Use the left-hand menu to access R!AN's features:
 
-- **Data Sources**: Add and explore both historical and real-time data inputs.
-- **Data Fabric**: Initialize and create different types of data fabrics.
-- **Discovery**: Perform data discovery tasks, such as running semantic searches and analyzing results.
-- **Insights**: View generated insights based on your data.
-- **Querent Docs**: Access the documentation and user guides for additional support.
-- **Support**: Reach out for technical support or further assistance with using the application.
+- **Data Sources**:  Add and manage data inputs.
+- **Data Fabric**: Create and manage different types of data fabrics.
+- **Discovery**: Explore your data through semantic searches and analysis.
+- **Insights**: Generate deeper insights from your data.
+- **Querent Docs**: Access user guides and support.
+- **Support**: Reach out for technical assistance.
 
 ### **Adding a Data Source**
-To begin analyzing your data with R!AN, you need to add a data source. Follow the steps below to select and configure your data input method:
+To begin analyzing your data with R!AN, you'll need to add a data source. Follow these steps:
 
 
 1. **Navigate to Data Sources**:
 
-- Go to the `Data Sources` section on the left-hand menu of the dashboard.
+- Click on `Data Sources` in the left-hand menu.
 
-- Choose `Historical` to access the option for selecting your data input method.
+- Select `Historical` to add a data source.
 
 ![r!an dashboard](../assets/get-started/example/data_source.png)
 
 2. **Add a New Data Source**: 
 
-- Click on Add New Source to open the data source configuration options.
+- Click on Add New Source.
 
-- Select `Local Storage` as your preferred method for adding data.
+- Choose `Local Storage` as your data input method.
 
 ![r!an dashboard](../assets/get-started/example/add_new_source.png)
 
 
 3. **Configure the Data Source**:
 
-- Enter the Directory Path where your data is stored.
-- Provide a unique name for this data source to easily identify it later.
+- Enter the `Directory Path` where your data is stored.
+- Provide a unique `Name` for the data source for easy identification.
 
 ![r!an dashboard](../assets/get-started/example/File%20Storage.png)
 
 4. **Verify the Added Data Source**: 
 
-- Once the new data source is configured, verify that it has been added successfully to the list of available data sources. This will ensure that R!AN can access and process the data correctly.
+- Ensure that your new data source appears in the list of available sources.
 
 ![r!an dashboard](../assets/get-started/example/Saved_data_source.png)
 
 
 ### **Setting Up a Data Fabric**
 
-To effectively manage and analyze your data, you need to set up a data fabric in R!AN. Follow these steps to configure your data fabric:
+With your data source added, you can now set up a data fabric to manage and analyze your data.
 
 1. **Navigate to Data Fabric**:  
-   - From the dashboard menu, click on `Data Fabric` to view and manage all available data fabrics.
+   - Click on `Data Fabric` in the left-hand menu.
 
 2. **Start a New Pipeline**:  
-   - Click on `Start New Pipeline` to initiate the process of creating a new data fabric pipeline.
+   - Click on `Start New Pipeline` to create a new data fabric pipeline.
 
 3. **Select Data Fabric Type**:  
-   - Under "Available Data Fabrics," choose the `Attention Data Fabric` option. This option will guide you through setting up a fabric that utilizes attention mechanisms for data analysis.
+   - Choose `Attention Data Fabric` from the available options.
 
    ![R!AN Dashboard - Available Data Fabrics](../assets/get-started/example/All%20Data%20Fabrics_Select%20AGN.png)
 
 4. **Select Your Data Source(s)**:  
-   - In the "Select Source" dropdown menu, choose the data source you previously added. This step links the data fabric to the data you want to analyze.
+   - In the "Select Source" dropdown menu, choose the data source you added earlier.
 
    ![R!AN Dashboard - Select Data Source](../assets/get-started/example/AGN_Data_Fabric.png)
 
-5. **Upload Entities or Enter Manually**:  
-   - You have the option to upload a CSV file containing entities and their types, or manually enter each `entity` and `entity_type`. It is important to provide both `entity` and `entity_type`; partial data cannot be processed.
+5. **Add Entities**:
+
+   - **Option 1**: Upload a CSV file containing `entity` and `entity_type`.
+   - **Option 2**: Manually enter each `entity` and `entity_type`.
+
+     *Note: Both `entity` and `entity_type` are required for processing.*
 
 6. **Choose an NER Model (Optional)**:  
-   - If you haven’t provided entities, you can choose an English-based Named Entity Recognition (NER) model from the "Model" dropdown menu. This model will automatically detect entities in your data.
+   - If you haven't provided entities, select a Named Entity Recognition (NER) model to automatically detect entities in your data.
 
    ![R!AN Dashboard - Select NER Model](../assets/get-started/example/Entities_Model.png)
 
 7. **Start the Pipeline**:  
-   - After configuring your data source and entities, click on `Start Pipeline` to begin processing. This action initiates the creation of the data fabric, allowing R!AN to process and analyze your data based on the specified parameters.
+   - Click on `Start Pipeline` to begin processing your data.
 
 
-8. **Verify Pipeline Status**:  
-   - Once the pipeline is started, you can monitor its status in the "Pipeline Status" section. Ensure the status is active and the data is being processed correctly.
+8. **Monitor Pipeline Status**:  
+   - Check the `Pipeline Status` section to ensure your pipeline is active and processing data.
 
    ![R!AN Dashboard - Pipeline Status](../assets/get-started/example/Staretd_Pipeline.png)
 
-9. **Ready for Discovery**:  
-   - With the pipeline active, your data fabric is now ready for discovery. You can proceed to the `Discovery` section to explore insights and uncover hidden patterns within your data.
+9. **Optionally Monitor Pipeline Status on Dashboard**:  
+   - Check the `Pipeline Stats` section and 'Total Events' graph to observe pipeline stats.
 
-By following these steps, you can effectively set up and manage a data fabric in R!AN, facilitating powerful data analysis and discovery processes tailored to your specific needs.
+   ![R!AN Dashboard - Pipeline Status](../assets/get-started/example/pipeline_status_dashboard.png)
 
+10. **Proceed to Discovery**:  
+   - With the pipeline running, your data fabric is ready for exploration.
 
 
 ### **Discovery: Exploring Your Data Fabric**
 
-The **Discovery** feature in R!AN is designed to help users explore and understand the semantic connections within their data fabric. By using this tool, users can gain insights into the patterns and relationships present in their datasets.
+The **Discovery** feature allows you to explore and understand the semantic connections within your data fabric.
 
 ![R!AN Dashboard - Pipeline Status](../assets/get-started/example/Discovery_1.png)
 
-#### **1. Initial Insights Generation**
+#### **Initial Insights**
 
-When you first access the **Discovery** section, R!AN automatically generates some preliminary insights to help you get started. These insights provide a snapshot of the data's semantic structure and highlight both common and unique connections:
+Upon accessing the **Discovery** section, R!AN generates preliminary insights:
 
 - **Rare Semantic Data Fabric Interactions**:  
-  This insight identifies rare and potentially significant connections within your semantic data fabric. These rare interactions can uncover underlying patterns and dynamics that are otherwise difficult to detect.
+   Highlights rare and potentially significant connections in your data.
 
 - **Diverse Semantic Data Fabric Interactions**:  
-  This insight focuses on documents or data points that exhibit a rich diversity of semantic connections. These connections span across a wide range of topics, showcasing the depth and breadth of the data fabric.
+  Showcases documents with a wide range of semantic connections.
 
-#### **2. Performing Discovery Queries**
+#### **Performing Discovery Queries**
 
-After reviewing the initial insights, users can delve deeper into their data fabric by sending custom queries:
+Dive deeper by sending custom natural language queries:
 
 - **Enter a Query**:  
-  Use the search bar at the top of the **Discovery** page to type in your query. This query can be a phrase, or a more complex request designed to explore specific aspects of the data fabric.
+  Use the search bar to type a query or phrase relevant to your analysis.
 
 - **Select Search Method**:  
-  - **Retriever-Based Search** (available in the freemium version): Converts the user's query into contextually aware embeddings and searches the data fabric to return the top 10 unique results that best match the query. This method is useful for quick searches that need relevant results without deep analysis.
-  - **Traverser-Based Search** (available in the Pro version): This method goes beyond simple retrieval, allowing users to traverse the connections within the data fabric. It is ideal for complex queries that require an understanding of relationships between entities.
+  - **Retriever-Based Search** (Freemium): Converts the user's query into contextually aware embedding and searches the data fabric to return search results that best match the query.
 
-#### **3. Viewing and Navigating Search Results**
+  - **Traverser-Based Search** (Pro): Allows traversal of connections for complex queries requiring an understanding of data fabric.
 
-The Discovery tool displays search results in a paginated format, making it easy to browse and analyze:
+#### **Viewing and Navigating Results**
 
 - **Paginated Results**:  
-  The initial search results display the top 10 matches. Users can click "Next" to view subsequent sets of results, allowing for a comprehensive exploration of the data fabric.
+  Browse through results using the pagination controls.
 
 - **Result Interactions**:  
-  Each result provides options to further interact with the data, such as viewing the source document or exploring the semantic tags associated with each finding. This interactive approach allows users to gain deeper insights and refine their queries as needed.
-
-By utilizing the Discovery feature, users can explore their data fabric more effectively, identify significant patterns, and derive actionable insights to support their decision-making process.
+  View source documents or explore semantic tags associated with each result.
 
 
 ### **Insights: Generating Deeper Understanding from Your Data Fabric**
 
-The **Insights** feature in R!AN provides users with advanced tools to interact with and derive valuable information from their data fabric. This feature allows users to utilize different models and techniques to generate meaningful insights tailored to their specific needs.
+The **Insights** feature provides advanced tools to derive valuable information from your data fabric.
 
 
-#### **1. Selecting the Type of Insight**
+#### **Selecting the Type of Insight**
 
-To generate meaningful insights, users first need to select the type of insight they wish to explore. R!AN offers a range of options designed to cater to various analytical needs:
+(Freemium) Choose from various insight types tailored to your analytical needs:
 
-- **Querent xAI**: This insight leverages generative models to conduct a directed traversal within R!AN's attention data fabric. Instead of directly parsing documents, it generates responses by using the data fabric as a guide for the language model. This approach ensures more accurate and contextually relevant outputs. Currently, there are three options available under Querent xAI:
-  - **OpenAI**: Requires an API key from the OpenAI platform.
-  - **Claude**: Also requires an API key, available through the Claude platform.
-  - **OLLAMA**: An open-source option where users can set up their own LLM (Large Language Model) server. This option is ideal for those who prefer a self-hosted solution.
+- **Querent xAI**: Leverages generative models to interact with your data fabric.
+  - **Option**:
+    - **OpenAI**: Requires an OpenAI API key.
+    - **Claude**: Requires a Claude API key.
+    - **OLLAMA**: An open-source option for self-hosted large language models (LLMs).
 
-Other types of insights available include:
-- **Querent Transfer Learning**: Applies knowledge acquired from solving one problem to a different but related problem, enhancing the adaptability of models across diverse use cases.
-- **Querent Anomaly Detection**: Detects unusual patterns or outliers within data fabrics, crucial for applications like fraud detection or predictive maintenance.
-- **Querent Cross Document Summarization**: Synthesizes information from multiple documents to create a unified summary, highlighting key insights and themes from various sources.
-- **Querent Report Generation**: Produces detailed reports based on the semantic data fabric, summarizing essential insights, trends, and patterns across the dataset.
+- **Querent Graph Builder**: Saves data fabric in a neo4j instance.
 
-   ![R!AN Dashboard - List of Insights](../assets/get-started/example/Insights_1.png)
+(Pro) Other types of insights available include:
 
-#### **2. Using Querent xAI with GPT35 Turbo**
+- **Querent Transfer Learning**: Applies knowledge from one problem to another.
 
-For this example, we will demonstrate how to use the **Querent xAI with GPT35 Turbo**:
+- **Querent Anomaly Detection**: Identifies unusual patterns or outliers.
 
-- **Initiate the Insight**: Start by selecting "Querent xAI with GPT35 Turbo" from the list of insights. This will open a chat modal, allowing the user to interact directly with the data fabric.
-  1. **API Key Requirement**: Users need to provide their OpenAI API key since the system does not include one by default.
-  2. **Custom Prompt (Optional)**: Users can also enter a custom prompt, which will replace the default prompt used to generate the response to the user’s query.
+- **Querent Cross Document Summarization**: Summarizes information from multiple documents.
 
-  ![R!AN Dashboard - Querent xAI with GPT35 Turbo](../assets/get-started/example/Insights_2.png)
+- **Querent Report Generation**: Generates detailed reports based on your data.
 
-- **Interacting with the Data Fabric**: Within the chat modal, users can input natural language queries to engage with the data fabric. The generative AI model will navigate the data fabric according to the user's query and produce a natural language response. For example, if a user inquires, "What is the porosity of the Eagle Ford Shale reservoir?" the system will analyze relevant data points within the fabric and provide a detailed answer based on the available data.
+   ![R!AN Dashboard - List of Insights](../assets/get-started/example/insights_full_view.png)
 
-  ![R!AN Dashboard - Insight Chat Modal](../assets/get-started/example/Insights_3.png)
+#### **Using Querent xAI with GPT35 Turbo**
+As an example, let's use Querent xAI with GPT-3.5 Turbo:
 
-By utilizing these insight tools, users can unlock the full potential of their data, uncover hidden patterns, and make more informed decisions.
+1. **Initiate the Insight**:
 
+   - Select **Querent xAI with GPT-3.5 Turbo**.
 
+     ![Querent xAI with GPT-3.5 Turbo](../assets/get-started/example/Insights_2.png)
 
+2. **Provide API Key**:
 
+   - Enter your OpenAI API key when prompted.
 
+3. **(Pro) Enter a Custom Prompt**:
 
+   - Provide a custom prompt to guide the model's response if desired.
 
+4. **Interact with the Data Fabric**:
 
+   - Use the chat interface to ask questions in natural language.
 
+     **Example Query**: "What is the porosity of the Eagle Ford Shale reservoir?"
 
+     ![Insight Chat Modal](../assets/get-started/example/Insights_3.png)
 
+   - The model will analyze your data fabric and provide a detailed answer based on the available data.
 
+By leveraging these insight tools, you can unlock the full potential of your data, uncover hidden patterns, and make informed decisions.
 
+## Conclusion
 
-
-
-
-
-
-
-
-
-
+You've now learned how to use R!AN to build an attention fabric, explore your data, and generate valuable insights. Whether you're working in exploration geology or any other field, R!AN empowers you to harness the power of your data for better analysis and decision-making.
 
 
 

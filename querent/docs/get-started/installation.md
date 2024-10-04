@@ -18,16 +18,13 @@ R!AN is designed for easy installation across various platforms. Below are the p
 
 ## Installation Methods
 
-- **Manual Download**: Download binaries for Linux, Windows, and macOS from our [GitHub releases page](https://github.com/querent-ai/distribution). This method simplifies the process of getting R!AN up and running on your system. The latest stable version is v1.0.1. Choose the appropriate file for your system (e.g., .tar.gz, .msi).
-
-- **AppImage (Linux)**: Download the AppImage from our GitHub releases page for a portable installation without superuser privileges. Learn more about AppImage [here](https://github.com/AppImage/AppImageKit/wiki/FUSE).
+- **Standalone Application (Recommended for Most Users):**: Download and run R!AN as a standalone application with a user-friendly interface. Download Linux, Windows, and MacOS from our [product page](https://www.querent.xyz/rian/). This method simplifies the process of getting R!AN up and running on your system. For more information you can refer to [GitHub releases page](https://github.com/querent-ai/distribution). 
 
 - **Docker Image**:For containerized environments, use our Docker image available on [R!AN Docker Hub](https://hub.docker.com/r/querent) for details on the available images.
 
 - **Helm Chart (Kubernetes)**: Deploy R!AN in Kubernetes clusters using our [Helm chart](https://helm.querent.xyz) for scalable and manageable deployments.
 
-- **Optional OCR Support**: If you need Optical Character Recognition (OCR), install Tesseract OCR separately. Follow the official [Tesseract’s official installation guide](https://tesseract-ocr.github.io/tessdoc/Installation.html) here.
-
+- **Optional OCR Support**: If your use case involves processing scanned documents or images containing text, you can enable Optical Character Recognition (OCR) by installing, install Tesseract OCR separately. Follow the official [Tesseract’s official installation guide](https://tesseract-ocr.github.io/tessdoc/Installation.html) here.
 
 ## System Requirements
 
@@ -42,6 +39,38 @@ R!AN is designed for easy installation across various platforms. Below are the p
 - **macOS**: macOS on Apple Silicone
 
 *Note for Windows Users: Ensure that Microsoft Visual C++ Redistributable is installed. It can be downloaded from official microsoft website.
+
+
+## Installation Instructions
+
+### **Windows Installation**
+
+1. **Download**: [R!AN for Windows](https://www.querent.xyz/rian/windows)
+2. **Run the Installer**: Double-click the downloaded `.msi` file.
+3. **Follow Prompts**: Complete the installation wizard steps.
+
+### **macOS Installation**
+
+1. **Download**: [R!AN for macOS](https://www.querent.xyz/rian/macos)
+2. **Install Application**:
+   - Open the downloaded `.dmg` file.
+   - Drag the R!AN app to your **Applications** folder.
+3. **Launch R!AN**: Open it from the **Applications** folder.
+
+### **Linux Installation**
+
+1. **Download**: [R!AN for Linux](https://www.querent.xyz/rian/linux)
+2. **Make AppImage Executable**:
+   ```bash
+   chmod +x rian.AppImage
+   ```
+3. **Run R!AN**:
+   ```bash
+   ./rian.AppImage
+   ```
+
+
+
 
 ### Recommended Specifications
 
