@@ -103,7 +103,7 @@ With your data source added, you can now set up a data fabric to manage and anal
 
    ![R!AN Dashboard - Select Data Source](../assets/get-started/example/AGN_Data_Fabric.png)
 
-5. **Add Entities**:
+5. **Add Entities/Concepts**:
 
    - **Option 1**: Upload a CSV file containing `entity` and `entity_type`.
    - **Option 2**: Manually enter each `entity` and `entity_type`.

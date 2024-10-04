@@ -1,6 +1,6 @@
 ---
 title: Exploring Semantic Data Fabric
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## Semantic Data Fabric
