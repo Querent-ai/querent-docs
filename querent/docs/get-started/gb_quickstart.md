@@ -1,5 +1,5 @@
 ---
-title: Using the Graph Builder for Advanced Data Visualization
+title: Graph Builder for Visualization
 sidebar_position: 3
 ---
 
@@ -129,13 +129,4 @@ By leveraging the Graph Builder, you can transform complex data fabrics into int
 - **Integrate with Machine Learning Tools**:
 
   - Export your graph data for use with GNN frameworks like [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/) or [DGL](https://www.dgl.ai/).
-
-
-## Need Help?
-
-If you encounter any issues or have questions:
-
-- **Email**: [contact@querent.xyz](mailto:contact@querent.xyz)
-- **Support Repository**: [GitHub Issues](https://github.com/Querent-ai/support/issues)
-- **Community Discord**: [Join Our Discord](https://discord.gg/3fVAVmZXyh)
 

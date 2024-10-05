@@ -10,7 +10,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
 ## Data Discovery with R!AN
 
-1. **Contextually Aware Embeddings**: R!AN uses contextually aware embeddings to create a semantic data fabric. These embeddings, called as knowledge vectors, capture the semantic meaning of data by understanding the context in which data appears, enabling more accurate and meaningful insights.
+1. **Attention-Based Graph Embeddings**: R!AN uses Attention-Based Graph Embeddings to create a semantic data fabric. These embeddings, called as knowledge vectors, capture the semantic meaning of data by understanding the context in which data appears, enabling more accurate and meaningful insights.
 
 2. **Knowledge Integration**: Unlike traditional data discovery, which focuses on raw data, R!AN uses knowledge vectors that act as pointers to relevant context and file in which the contesxt appears. This integration allows for deeper and more comprehensive insights.
 
@@ -103,7 +103,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
       - Relevant Documents and Sources: The retriever-based search was able to identify documents and sources directly related to the query, such as high rock compressibility and reservoir quality.
       - Direct Answers: The search results provided exact sentences from documents that specifically answer the query, offering clear and direct insights into factors like thermal maturity, lithology, and production variability.
-      - Contextual Relevance: By using contextually aware embeddings, the retriever-based search could surface highly relevant information that accurately addressed the query.
+      - Contextual Relevance: By using Attention-Based Graph Embeddings, the retriever-based search could surface highly relevant information that accurately addressed the query.
 
 
   2. **Graph Traversal Results**
@@ -128,7 +128,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 ## Conclusion
   Both retriever-based and traverser-based searches have unique strengths.
   
-  Retriever-Based Search: Ideal for quickly finding relevant documents and specific answers using contextually aware embeddings. It excels in providing direct, contextually relevant information based on the query.
+  Retriever-Based Search: Ideal for quickly finding relevant documents and specific answers using Attention-Based Graph Embeddings. It excels in providing direct, contextually relevant information based on the query.
   
   Traverser-Based Search: Builds on retriever-based search by exploring complex relationships within the data. It offers deeper insights and a more comprehensive understanding of the interconnected factors affecting the query topic.
 

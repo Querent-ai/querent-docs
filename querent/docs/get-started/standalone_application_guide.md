@@ -1,5 +1,5 @@
 ---
-title: Getting Started with R!AN: Building an Attention Fabric for Exploration Geology
+title: Getting Started with R!AN
 sidebar_position: 2
 ---
 
@@ -157,7 +157,7 @@ Dive deeper by sending custom natural language queries:
   Use the search bar to type a query or phrase relevant to your analysis.
 
 - **Select Search Method**:  
-  - **Retriever-Based Search** (Freemium): Converts the user's query into contextually aware embedding and searches the data fabric to return search results that best match the query.
+  - **Retriever-Based Search** (Freemium): Converts the user's query into Attention-Based Graph Embeddings and searches the data fabric to return search results that best match the query.
 
   - **Traverser-Based Search** (Pro): Allows traversal of connections for complex queries requiring an understanding of data fabric.
 

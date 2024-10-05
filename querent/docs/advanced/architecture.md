@@ -25,7 +25,7 @@ The system initiates with two critical workflows that operate in parallel:
 - **Entity Recognition:**  Identifies and extracts key entities from the data.
 - **User-Provided Entities:** Allows users to input specific entities or concepts, ensuring that the analysis is tailored to their needs and context.
 - **Attention Mechanism:** This mechanism focuses on the most relevant parts of the data, facilitating the extraction of semantic triples that capture the relationships between identified entities or concepts.
-- **Contextually Aware Embeddings:** Converts extracted semantic triples into [contextually aware embeddings](../advanced/contextually_aware_embedding.md), also referred to as knowledge vectors. These vectors act as precise pointers to relevant knowledge, laying the foundation for the [semantic data fabric](../advanced/explore_data_fabric.md).
+- **Attention-Based Graph Embeddings:** Converts extracted semantic triples into [Attention-Based Graph Embeddings](../advanced/attention_embedding.md), also referred to as knowledge vectors. These vectors act as precise pointers to relevant knowledge, laying the foundation for the [semantic data fabric](../advanced/explore_data_fabric.md).
 
 
 ### Graph and Vector Knowledge Representation
@@ -44,7 +44,7 @@ The final step involves constructing a [semantic data fabric](../advanced/explor
 5. **Integration:** User-provided entities are integrated for enhanced context.
 6. **Attention Mechanism:** Identifies semantic relationships between head and tail entity pairs.
 7. **Beam Search:** Refines these relationships using the attention weight matrices.
-8. **Contextually Aware Embedding:** Adjusts representations for accuracy.
+8. **Attention-Based Graph Embeddings:** Adjusts representations for accuracy.
 9. **Mapping:** The processed data is then mapped into a comprehensive graph and vector knowledge representation.
 10. **Semantic Data Fabric:** Facilitates efficient querying and retrieval of interconnected data insights.
 
