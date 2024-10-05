@@ -16,7 +16,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
 3. **Enhanced Insight Generation**: By utilizing semantic data fabric, R!AN can uncover complex relationships and patterns within the data, leading to more actionable insights.
 
-4. **Scalability**: R!AN is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance. Please refer to [performance report](../overview/performance_report.md) for more information.
+4. **Scalability**: R!AN is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance. Please refer to [performance report](../../overview/performance_report.md) for more information.
 
 
   There are two types of data discovery available to the users:
@@ -27,7 +27,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
   - **Start Discovery Session**
 
-  ![start discovery session](../assets/get-started/start_discovery_session.png)
+  ![start discovery session](../../assets/get-started/start_discovery_session.png)
 
   <br />
 
@@ -42,15 +42,15 @@ This guide provides an overview of data discovery and insight generation in R!AN
   ```
 
   - agent_name: A custom name for your discovery session. 
-  - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](../get-started/quickstart-2.md).
-  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../advanced/retriever_traversar_review.md) :
+  - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](../../get-started/quickstart-2.md).
+  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../../advanced/retriever_traversar_review.md) :
     1. `Retriever`: Configures the discovery session to enable similarity searches over the semantic data fabric.
     2. `Traverser`: Configures the discovery session to enable graph-traversal based searches over the semantic data fabric.
   
   Once the customization section is complete and the user starts a discovery session, a unique `discovery_session_id` is returned. This session ID is unique because it signifies a session created by an expert who understands the domain and is asking relevant questions from their data. This process helps in downstream tasks such as generating insights from the focused or discovered data, running Graph Neural Networks (GNN), fine-tuning models, etc., on the discovered data.
 
   - **Search the Semantic Data Fabric**
-  ![Search the Semantic Data Fabric](../assets/get-started/discovery_search.png)
+  ![Search the Semantic Data Fabric](../../assets/get-started/discovery_search.png)
 
   <br />
 
@@ -96,7 +96,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
       
       As an example this section shows the results of retriever-based discovery session for the query: "What are the key factors influencing hydrocarbon recovery efficiencies in the Eagle Ford Shale?". A document corpus of 1000 research documents from different reservoirs around the world was used for this:
 
-     ![Retriever Results](../assets/get-started/embedding_based_search.png)
+     ![Retriever Results](../../assets/get-started/embedding_based_search.png)
      <br />
 
       Key Highlights of Retriever-Based Search:
@@ -114,7 +114,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
       What sets this method apart is its ability to maintain context across multiple queries within a session. The system builds upon previous searches, continuously refining its understanding of the user's intent and the relationships within the data. This results in a more nuanced, comprehensive exploration of the semantic data fabric.
 
-      ![Traverser Results](../assets/get-started/traverser_based_search.png)
+      ![Traverser Results](../../assets/get-started/traverser_based_search.png)
       <br />
 
       Key Highlights of Traverser-Based Search:

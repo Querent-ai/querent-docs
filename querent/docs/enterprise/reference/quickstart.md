@@ -9,14 +9,14 @@ import TabItem from '@theme/TabItem';
 
 # Quickstart - Setup R!AN
 
-This guide will help you set up and run **R!AN** cli quickly. For detailed command options, refer to the [CLI Reference](../reference/cli.md).
+This guide will help you set up and run **R!AN** cli quickly. For detailed command options, refer to the [CLI Reference](../../reference/cli.md).
 
 ## Prerequisites
 
 Before you begin, ensure you have the following:
 
 - **Docker**: Installed on your system. [Get Docker](https://docs.docker.com/get-docker/)
-- **R!AN Binary**: Downloaded for your operating system. See [Installation Guide](../get-started/installation.md).
+- **R!AN Binary**: Downloaded for your operating system. See [Installation Guide](../../get-started/installation.md).
 
 **Note**: R!AN can run with its embedded PostgreSQL using pg-embed by default or with an external PostgreSQL database if you prefer.
 
@@ -35,7 +35,7 @@ Navigate to the directory containing the R!AN binary and run:
 R!AN will start and automatically initialize an embedded PostgreSQL instance using pg-embed.
 
 
-![R!AN running with Embedded PostgreSQL](../assets/get-started/rain_startup_pgembed.png)
+![R!AN running with Embedded PostgreSQL](../../assets/get-started/rain_startup_pgembed.png)
 
 ## Option 2: Running R!AN with PostgreSQL
 
@@ -126,7 +126,7 @@ Replace `path/to/your/node.yaml` with the actual path to your configuration file
 
 You should see output indicating that R!AN is running with PostgreSQL.
 
-![R!AN running with PostgreSQL](../assets/get-started/rian_with_pg.png)
+![R!AN running with PostgreSQL](../../assets/get-started/rian_with_pg.png)
 
 ## Verify Installation
 
@@ -145,8 +145,8 @@ For both options, R!AN should now be up and running, ready to process and analyz
 
 ## Next Steps
 
-- **Explore R!AN's Capabilities**: Check out our [Hands-On Tutorial](../get-started/agn_quickstart.md).
-- **Refer to the CLI Reference**: Learn more about command options in the [CLI Reference](../reference/cli.md).
+- **Explore R!AN's Capabilities**: Check out our [Hands-On Tutorial](../../get-started/agn_quickstart.md).
+- **Refer to the CLI Reference**: Learn more about command options in the [CLI Reference](../../reference/cli.md).
 
 
 

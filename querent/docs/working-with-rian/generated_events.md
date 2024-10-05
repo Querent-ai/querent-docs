@@ -73,11 +73,3 @@ R!AN's event-based architecture allows for efficient data processing and storage
 
 By understanding these event types and their schemas, you can effectively integrate R!AN into your data processing workflows and leverage its capabilities for advanced data management.
 
-## Need Help?
-
-If you have questions or need assistance:
-
-- **Email**: [contact@querent.xyz](mailto:contact@querent.xyz)
-- **GitHub**: [Open an Issue](https://github.com/Querent-ai/support/issues)
-- **Discord**: [Join Our Community](https://discord.gg/3fVAVmZXyh)
-

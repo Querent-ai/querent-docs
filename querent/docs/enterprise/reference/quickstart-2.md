@@ -37,7 +37,7 @@ Once you have started the R!AN server, you can access the R!AN dashboard to star
 
   Starting a R!AN server in serve mode will automatically open the dashboard in a browser tab.
 
-  ![r!an dashboard](../assets/get-started/rian_dashboard.png)
+  ![r!an dashboard](../../assets/get-started/rian_dashboard.png)
 
 <br />
 
@@ -68,15 +68,15 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 #### Navigate to the Semantic Service Section
 
-![r!an dashboard](../assets/get-started/semantic_service.png)
+![r!an dashboard](../../assets/get-started/semantic_service.png)
 
 <br />
 
 #### Initialize Data Source(s)
 
-  - R!AN supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../guides/data_sources.md).
+  - R!AN supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../../guides/data_sources.md).
 
-![r!an dashboard](../assets/get-started/collector_initialize.png)
+![r!an dashboard](../../assets/get-started/collector_initialize.png)
 
 <br />
 
@@ -104,7 +104,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
   To start processing the data and create a semantic data fabric over your private data, follow these steps:
 
 1. **Navigate to the Semantic Pipeline Request**
-![Semantic Data Fabric api](../assets/get-started/semantic_api.png)
+![Semantic Data Fabric api](../../assets/get-started/semantic_api.png)
 
 <br />
 
@@ -148,7 +148,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
   - Organized Data Management: With unique pipeline_ids, users can manage and organize their data fabrics efficiently, ensuring that each fabric can be referenced, modified, or analyzed independently.
   - Enhanced Insight Generation: By creating multiple semantic data fabrics, users can uncover a broader range of insights and patterns, improving decision-making and strategic planning.
 
-![Semantic Data Fabric api](../assets/get-started/pipeline_id.png)
+![Semantic Data Fabric api](../../assets/get-started/pipeline_id.png)
 
 <br />
 

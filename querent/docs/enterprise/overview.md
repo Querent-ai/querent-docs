@@ -1,6 +1,6 @@
 ---
-title: Overview
-sidebar_position: 2
+title: Get Started
+sidebar_position: 1
 ---
 
 # Introduction
@@ -50,7 +50,7 @@ _For detailed features, visit the [Features](../features/overview.md) page._
 
 ## Enterprise
 
-- **[Start Here](../enterprise/overview.md)**
+- **[Start Here](../get-started/installation.md)**
 
 ## Contact Us
 

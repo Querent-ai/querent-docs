@@ -215,12 +215,3 @@ R!AN supports a wide variety of file types, ensuring you can process and analyze
 ## Summary
 
 R!AN's flexible ingestion methods and support for numerous data sources and file types make it a powerful tool for both batch and real-time data processing. Whether you need immediate processing, handle large data volumes, or prefer specific integration patterns, R!AN can adapt to your application's requirements.
-
-
-## Need Help?
-
-If you have questions or need assistance configuring collectors or ingesting data, please reach out:
-
-- **Email**: [contact@querent.xyz](mailto:contact@querent.xyz)
-- **GitHub**: [Open an Issue](https://github.com/Querent-ai/support/issues)
-- **Discord**: [Join Our Community](https://discord.gg/3fVAVmZXyh)
