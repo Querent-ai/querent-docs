@@ -48,8 +48,8 @@ Explore the following subsections to get started:
 
 ### Getting Started
 
-- **New to R!AN Enterprise?** Begin with the [Configuration](./configuration/) section to set up your environment.
-- **Ready to Deploy?** Proceed to the [Deployment](./deployment/) guides for detailed instructions.
+- **New to R!AN Enterprise?** Begin with the [Configuration](./configuration/index.md) section to set up your environment.
+- **Ready to Deploy?** Proceed to the [Deployment](./deployment/deployment-modes.md) guides for detailed instructions.
 - **Need Detailed Information?** Visit the [Reference](./reference/quickstart.md) section for in-depth documentation.
 
 

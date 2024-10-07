@@ -143,12 +143,6 @@ For both options, R!AN should now be up and running, ready to process and analyz
 - **`./rian`**: Executes the R!AN binary.
 - **`serve`**: Starts the R!AN server.
 
-## Next Steps
-
-- **Refer to the CLI Reference**: Learn more about command options in the [CLI Reference](../../reference/cli.md).
-
-
-
 
 ### Troubleshooting Tips
 
