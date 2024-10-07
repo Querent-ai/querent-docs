@@ -40,8 +40,8 @@ Traverser-based search uses graph traversal techniques to explore connections be
 
 #### Advantages of Traverser-Based Search:
 
-- **Richer Insights**: By traversing the seamntic data fabric, this method uncovers deeper connections and patterns within the data, offering more detailed and insightful results.
-- **Enhanced Data Connectivity**: It reveals hidden relationships between entities, leading to a more holistic understanding of the data.
+- **Richer Insights**: By traversing the data fabric, this method uncovers deeper connections and patterns within the data, offering more detailed and insightful results.
+- **Enhanced Data Connectivity**: It reveals hidden connections between data points, leading to a more holistic understanding of the data.
 - **Advanced Query Capabilities**: Traverser-based search can handle more complex queries, leveraging the interconnected nature of the data to provide answers that are both relevant and actionable.
 
 ## Summary

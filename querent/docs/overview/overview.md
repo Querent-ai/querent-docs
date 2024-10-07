@@ -12,6 +12,14 @@ _Current stable version: v1.0.1_
 Based on the principles of **Kolmogorov Arnold Networks (KAN)**, R!AN specializes in extracting structured knowledge, such as semantic triples (subject-predicate-object), using a streamlined, attention-based architecture optimized for real-time applications.
 
 
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/KAN.gif" alt="R!AN Overview" style={{ width: '80%' }} />
+  <p><em>Kolmogorov-Arnold Networks (KAN) enable the efficient extraction of structured knowledge in real-time, providing precise semantic representation.</em></p>
+  <p><sup>1</sup> Citation: <a href="https://arxiv.org/abs/2404.19756">Research Paper</a>, <a href="https://twitter.com/i/status/1785771512038928472">Twitter Post</a></p>
+</div>
+
+
+
 ## Purpose of the Documentation
 
 This guide provides instructions on using R!AN—from installation to advanced use cases—to help you fully leverage its capabilities in data fabric creation and analysis.
@@ -32,14 +40,6 @@ This guide provides instructions on using R!AN—from installation to advanced u
 
 
 _For detailed features, visit the [Features](../features/overview.md) page._
-
-## Ideal Use Cases
-
-- **Knowledge Discovery and Reasoning**
-- **Industry Analytics** (Energy, Healthcare, Cybersecurity, etc.)
-- **AI Workflows**
-- **Threat Intelligence and Security**
-- **Observability and Monitoring**
 
 
 ## Getting Started

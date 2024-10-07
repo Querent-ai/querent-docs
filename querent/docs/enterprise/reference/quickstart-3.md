@@ -16,8 +16,7 @@ This guide provides an overview of data discovery and insight generation in R!AN
 
 3. **Enhanced Insight Generation**: By utilizing semantic data fabric, R!AN can uncover complex relationships and patterns within the data, leading to more actionable insights.
 
-4. **Scalability**: R!AN is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance. Please refer to [performance report](../../overview/performance_report.md) for more information.
-
+4. **Scalability**: R!AN is designed to handle large volumes of data efficiently, making it suitable for enterprise-level data discovery. Its scalable architecture ensures that it can process and analyze vast amounts of data without compromising performance.
 
   There are two types of data discovery available to the users:
 
@@ -42,8 +41,8 @@ This guide provides an overview of data discovery and insight generation in R!AN
   ```
 
   - agent_name: A custom name for your discovery session. 
-  - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](../../get-started/quickstart-2.md).
-  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search vs. Traverser-Based Search document.](../../advanced/retriever_traversar_review.md) :
+  - semantic_pipeline_id: The semantic_pipeline_id recieved as the reponse to the starting a semantic data service. Please refer to [Quickstart - Create Semantic Data Fabric](./quickstart-2.md).
+  - session_type: User can choose from the below options. For more information refer to [Conceptual Overview: Retriever-Based Search and Traverser-Based Search document.](../../features/retriever_traversar_review.md) :
     1. `Retriever`: Configures the discovery session to enable similarity searches over the semantic data fabric.
     2. `Traverser`: Configures the discovery session to enable graph-traversal based searches over the semantic data fabric.
   

@@ -1,6 +1,6 @@
 ---
 title: Ports
-sidebar_position: 6
+sidebar_position: 3
 ---
 
 Internally, Querent will, in fact, use three sockets. The ports of these three sockets

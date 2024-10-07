@@ -120,13 +120,3 @@ By leveraging the Graph Builder, you can transform complex data fabrics into int
 - **Train GNN Modules**: Use your graph data to train Graph Neural Networks for predictive modeling and insights.
 
 
-**Next Steps**:
-
-- **Deepen Your Neo4j Knowledge**:
-
-  - Explore Neo4j's [official documentation](https://neo4j.com/docs/) to learn advanced querying and graph analysis techniques.
-
-- **Integrate with Machine Learning Tools**:
-
-  - Export your graph data for use with GNN frameworks like [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/) or [DGL](https://www.dgl.ai/).
-

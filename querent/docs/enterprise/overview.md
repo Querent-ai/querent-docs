@@ -1,58 +1,59 @@
 ---
-title: Get Started
+title: Enterprise Edition Overview
 sidebar_position: 1
 ---
 
-# Introduction
 
-**R!AN (Real-Time Information Aggregator Network)** is a data fabric computing platform engineered to empower enterprises and individuals to create a semantic data fabric from their domain-specific data. With a focus on scalability, flexibility, and efficiency, R!AN transforms the way data from disparate sources are processed, analyzed, and visualized, enabling critical reasoning and insight generation.
+Welcome to the **Enterprise Edition** of R!AN. This section is dedicated to enterprise users who require advanced configurations, robust deployment strategies, and detailed reference materials to maximize the capabilities of R!AN within their organizations.
 
-_Current stable version: v1.0.1_
+### What's Inside
 
-Based on the principles of **Kolmogorov Arnold Networks (KAN)**, R!AN specializes in extracting structured knowledge, such as semantic triples (subject-predicate-object), using a streamlined, attention-based architecture optimized for real-time applications.
+Explore the following subsections to get started:
+
+### Configuration
+
+1. **Node Configuration**  
+   Configure R!AN node.
+
+2. **Ports**  
+   Manage network port settings.
+
+### Deployment
+
+1. **Deployment Types**  
+   Understand the various deployment options available.
+
+2. **Kubernetes (Helm)**  
+   Learn how to deploy R!AN using Kubernetes with Helm charts.
+
+3. **Multi-Tenancy Configuration**  
+   Configure multi-tenancy.
+
+### Reference
+
+1. **REST API**  
+   Access R!AN's REST API documentation.
+
+2. **Command-Line Options**  
+   Discover command-line tools .
+
+3. **Quickstart - Setup R!AN**  
+   A step-by-step guide to setting up R!AN in your enterprise environment.
+
+4. **Quickstart - Create Data Fabric**  
+   Learn how to create a Data Fabric within R!AN to enable advanced data analytics and insights.
+
+5. **Quickstart - Data Discovery and Insights**  
+   Guide on using R!AN for data discovery to extract meaningful insights from your data.
+
+### Getting Started
+
+- **New to R!AN Enterprise?** Begin with the [Configuration](./configuration/) section to set up your environment.
+- **Ready to Deploy?** Proceed to the [Deployment](./deployment/) guides for detailed instructions.
+- **Need Detailed Information?** Visit the [Reference](./reference/quickstart.md) section for in-depth documentation.
 
 
-## Purpose of the Documentation
-
-This guide provides instructions on using R!AN—from installation to advanced use cases—to help you fully leverage its capabilities in data fabric creation and analysis.
-
-## Products
-
-- **R!AN**: Core platform for creating and managing a semantic data fabric.
-- **R!AN+**: Enterprise-grade version offering enhanced features, scalability, and premium support.
-
-## Key Features
-
-- **Data Fabric**
-- **Attention-Based Graph Embeddings**
-- **Flexible Deployment Options**
-- **Embedded Storage** 
-- **New Knowledge Discovery and Data Fabric Traversal Capabilities**
-- **Insights**
-
-
-_For detailed features, visit the [Features](../features/overview.md) page._
-
-## Ideal Use Cases
-
-- **Knowledge Discovery and Reasoning**
-- **Industry Analytics** (Energy, Healthcare, Cybersecurity, etc.)
-- **AI Workflows**
-- **Threat Intelligence and Security**
-- **Observability and Monitoring**
-
-
-## Getting Started
-
-- **[Installation Guide](../get-started/installation.md)**
-- **[Hands-On Tutorial](../get-started/standalone_application_guide.md)**
-- **[FAQs](../faqs/)**
-
-## Enterprise
-
-- **[Start Here](../get-started/installation.md)**
-
-## Contact Us
+### Contact Us
 
 If you have questions or need assistance:
 
@@ -62,3 +63,4 @@ If you have questions or need assistance:
 - **Discord**: Join our community on [Discord server](https://discord.gg/3fVAVmZXyh).
 
 We look forward to helping you get started with R!AN!
+

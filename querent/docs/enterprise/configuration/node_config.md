@@ -5,25 +5,25 @@ sidebar_position: 1
 
 The node configuration allows you to customize and optimize the settings for individual nodes in your cluster. It is divided into several sections:
 
-- Common configuration settings: shared top-level properties
-- Storage settings: defined in the [storage](#storage-configuration) section
-
-A commented example is available here: [querent.config.yaml](https://github.com/querent-ai/quester/blob/main/config/querent.config.yaml).
+- [Common Configuration](#common-configuration): Shared top-level properties applicable to all nodes.
+- [REST Configuration](#rest-configuration): Settings related to the REST API.
+- [Storage Configuration](#storage-configuration): Definitions of storage providers used by the system.
 
 ## Common configuration
+The common configuration section includes settings that are fundamental to the operation of each node in your cluster.
 
 | Property           | Description                                                                                       | Env variable              | Default value                |
 |--------------------|---------------------------------------------------------------------------------------------------|---------------------------|------------------------------|
 | `version`          | Config file version. `0.1`. Or any versioning needed for node                                     |                           |                              |
-| `cluster_id`       | Unique identifier of the cluster the node will be joining. Clusters sharing the same network should use distinct cluster IDs.| `QUESTER_CLUSTER_ID`      | `querent-default-cluster`    |
-| `node_id`          | Unique identifier of the node. It must be distinct from the node IDs of its cluster peers. Defaults to the instance's short hostname if not set. | `QUESTER_NODE_ID`         | short hostname               |
-| `listen_address`   | The IP address or hostname that Querent service binds to for starting REST and GRPC server and connecting this node to other nodes. By default, Querent binds itself to 127.0.0.1 (localhost). This default is not valid when trying to form a cluster. | `QUESTER_LISTEN_ADDRESS`  | `127.0.0.1`                  |
-| `advertise_address`| IP address advertised by the node, i.e., the IP address that peer nodes should use to connect to the node for RPCs. | `QUESTER_ADVERTISE_ADDRESS` | `listen_address`           |
-| `gossip_listen_port`| The port which to listen for the Gossip cluster membership service (UDP).                         | `QUESTER_GOSSIP_LISTEN_PORT`| `rest.listen_port`          |
-| `grpc_listen_port` | The port on which gRPC services listen for traffic.                                               | `QW_GRPC_LISTEN_PORT`     | `rest.listen_port + 1`       |
-| `peer_seeds`       | List of IP addresses or hostnames used to bootstrap the cluster and discover the complete set of nodes. This list may contain the current node address and does not need to be exhaustive. | `QUESTER_PEER_SEEDS`     |                              |
-| `data_dir`         | Path to directory where data (tmp data, splits kept for caching purpose) is persisted. This is mostly used in indexing. | `QUESTER_DATA_DIR`        | `./querent_data`             |
-|                    | Log level of Querent. Can be a direct log level, or a comma separated list of `module_name=level`  | `RUST_LOG`                | `info`                       |
+| `cluster_id`       | Unique identifier of the cluster the node will be joining. Clusters sharing the same network should use distinct cluster IDs.| `cluster_id`      | `querent-cluster`    |
+| `node_id`          | Unique identifier of the node. It must be distinct from the node IDs of its cluster peers. Defaults to the instance's short hostname if not set. | `node_id`         | `querent-node`               |
+| `listen_address`   | The IP address or hostname that R!AN service binds to for starting REST and GRPC server and connecting this node to other nodes. | `listen_address:`  | `0.0.0.0`                  |
+| `advertise_address`| IP address advertised by the node, i.e., the IP address that peer nodes should use to connect to the node for RPCs. | `advertise_address` | `listen_address`           |
+| `gossip_listen_port`| The port which to listen for the Gossip cluster membership service (UDP).                         | `gossip_listen_port`| `rest.listen_port`          |
+| `grpc_listen_port` | The port on which gRPC services listen for traffic.                                               | `grpc_listen_port`     | `rest.listen_port + 1`       |
+| `peer_seeds`       | List of IP addresses or hostnames used to bootstrap the cluster and discover the complete set of nodes. This list may contain the current node address and does not need to be exhaustive. | `peer_seeds`     |                              |
+| `data_dir`         | Path to directory where data (tmp data, splits kept for caching purpose) is persisted. This is mostly used in indexing. | `data_dir`        | `./querent_data`             |
+|                    | Log level of R!AN. Can be a direct log level, or a comma separated list of `module_name=level`  | `RUST_LOG`                | `info`                       |
 
 ## REST configuration
 
@@ -37,12 +37,11 @@ This section contains the REST API configuration options.
 
 ### Configuring CORS (Cross-origin resource sharing)
 
-CORS (Cross-origin resource sharing) describes which address or origins can access the REST API from the browser.
-By default, sharing resources cross-origin is not allowed.
+CORS describes which addresses or origins can access the REST API from the browser. By default, cross-origin resource sharing is not allowed.
 
-A wildcard, single origin, or multiple origins can be specified as part of the `cors_allow_origins` parameter:
+You can specify a wildcard (`*`), a single origin, or multiple origins as part of the `cors_allow_origins` parameter.
 
-Example of a REST configuration:
+**Example REST Configuration:**
 
 ```yaml
 rest:
@@ -51,15 +50,17 @@ rest:
     x-header-1: header-value-1
     x-header-2: header-value-2
   cors_allow_origins: '*'
-  # cors_allow_origins: https://my-hdfs-logs.domain.com   # Optionally we can specify one domain
-  # cors_allow_origins:                                   # Or allow multiple origins
-  #   - https://my-hdfs-logs.domain.com
-  #   - https://my-hdfs.other-domain.com
+  # Alternatively, specify a single domain:
+  # cors_allow_origins: https://my-domain.com
+  # Or allow multiple origins:
+  # cors_allow_origins:
+  #   - https://my-domain.com
+  #   - https://another-domain.com
 ```
 
 ### Storage Configuration
 
-The storage configuration allows you to define and customize the storage providers used by the Querent system. The configuration supports various types of storage, such as index, vector, and graph databases.
+The storage configuration allows you to define and customize the storage providers used by the R!AN system. The configuration supports various types of storage, such as index, vector, and graph databases.
 
 ### PostgreSQL Configuration
 
@@ -71,7 +72,7 @@ PostgreSQL is used for index storage. You can configure the connection details t
 | `storage_type`| Type of storage used       | `index`                                                   |
 | `config.url` | Connection URL to the PostgreSQL database | `postgres://querent:querent@localhost/querent_test?sslmode=prefer` |
 
-Example:
+**Example Storage Configuration:**
 
 ```yaml
 storage_configs:
@@ -81,82 +82,63 @@ storage_configs:
     config:
       url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
 ```
+             
 
-### Milvus Configuration
+## Complete Configuration Example
 
-Milvus is used for vector storage. The configuration allows you to specify the connection details to the Milvus server.
-
-| Property     | Description                | Example Value                                             |
-|--------------|----------------------------|-----------------------------------------------------------|
-| `name`       | Name of the Milvus configuration    | `semantic_milvus_db`                                      |
-| `storage_type`| Type of storage used       | `vector`                                                  |
-| `config.url` | Connection URL to the Milvus server  | `http://localhost:19530`                                  |
-| `config.username` | Username for Milvus server (if required) |                                                           |
-| `config.password` | Password for Milvus server (if required) |                                                           |
-
-Example:
+Here is a complete example of a node configuration file:
 
 ```yaml
+# ============================ Node Configuration ==============================
+#
+# Website: https://github.com/querent-ai/querent
+# Docs: https://github.com/querent-ai/querent-docs
+#
+# -------------------------------- General settings --------------------------------
+
+# Config file format version.
+version: 0.1
+
+# Unique cluster ID. This is used to identify the cluster to which this node belongs.
+cluster_id: querent-cluster
+# Node identifier. This is used to identify this node within the cluster running semantic search.
+node_id: querent-node
+listen_address: 0.0.0.0
+advertise_address: 0.0.0.0
+gossip_listen_port: 2222
+cpu_capacity: 5
+peer_seeds:
+
+# -------------------------------- Restful Configuration --------------------------------
+rest_config:
+  listen_port: 1111
+  cors_allow_origins:
+    - "*"
+  extra_headers:
+    x-header-1: header-value-1
+    x-header-2: header-value-2
+
+grpc_config:
+  listen_port: 50051
+  max_message_size: 20 MB
+
+# -------------------------------- Storage Configuration --------------------------------
 storage_configs:
-  milvus:
-    name: semantic_milvus_db
-    storage_type: vector
-    config:
-      url: http://localhost:19530
-      username: ""
-      password: ""
-```
-
-### Neo4j Configuration
-
-Neo4j is used for graph storage. You can configure the connection details to your Neo4j database.
-
-| Property     | Description                | Example Value                                             |
-|--------------|----------------------------|-----------------------------------------------------------|
-| `name`       | Name of the Neo4j configuration    | `semantic_neo4j_db`                                       |
-| `storage_type`| Type of storage used       | `graph`                                                   |
-| `config.db_name` | Name of the Neo4j database | `neo4j`                                                   |
-| `config.url` | Connection URL to the Neo4j server  | `bolt://localhost:7687`                                   |
-| `config.username` | Username for Neo4j server | `neo4j`                                                   |
-| `config.password` | Password for Neo4j server | `password_neo`                                            |
-
-Example:
-
-```yaml
-storage_configs:
-  neo4j:
-    name: semantic_neo4j_db
-    storage_type: graph
-    config:
-      db_name: neo4j
-      url: bolt://localhost:7687
-      username: neo4j
-      password: password_neo
-```
-
-### Example Configuration
-
-Here is an example of a full storage configuration including PostgreSQL, Milvus, and Neo4j:
-
-```yaml
-storage_configs:
-  postgres:
-    name: querent_test
-    storage_type: index
-    config:
+  - postgres:
+      name: querent_test
+      storage_type: index
       url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
-  milvus:
-    name: semantic_milvus_db
-    storage_type: vector
-    config:
-      url: http://localhost:19530
-      username: ""
-      password: ""
-  neo4j:
-    name: semantic_neo4j_db
-    storage_type: graph
-    config:
-      db_name: neo4j
-      url: bolt://localhost:7687
-      username: neo4j
-      password: password_neo
+  - postgres:
+      name: querent_test
+      storage_type: vector
+      url: postgres://querent:querent@localhost/querent_test?sslmode=prefer
+
+
+# -------------------------------- Distributed Tracing Configuration --------------------------------
+tracing:
+  jaeger:
+    enable_endpoint: true
+    lookback_period_hours: 24
+    max_trace_duration_secs: 600
+    max_fetch_spans: 1000
+```
