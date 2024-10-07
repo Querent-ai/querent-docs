@@ -25,7 +25,7 @@ Retriever-based search is designed to find relevant documents and contexts using
 
 ### Traverser-Based Search
 
-Traverser-based search uses graph traversal techniques to explore connections between entities within the [data fabric](../advanced/explore_data_fabric.md). This method provides a deeper understanding of interconnected data, uncovering hidden connections and patterns that might be missed by retriever-based methods.
+Traverser-based search uses graph traversal techniques to explore connections between entities within the [data fabric](./explore_data_fabric.md). This method provides a deeper understanding of interconnected data, uncovering hidden connections and patterns that might be missed by retriever-based methods.
 
 
 

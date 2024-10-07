@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 # Quickstart - Setup R!AN
 
-This guide will help you set up and run **R!AN** cli quickly. For detailed command options, refer to the [CLI Reference](../../reference/cli.md).
+This guide will help you set up and run **R!AN** cli quickly. For detailed command options, refer to the [CLI Reference](../reference/cli.md).
 
 ## Prerequisites
 
@@ -145,7 +145,6 @@ For both options, R!AN should now be up and running, ready to process and analyz
 
 ## Next Steps
 
-- **Explore R!AN's Capabilities**: Check out our [Hands-On Tutorial](../../get-started/agn_quickstart.md).
 - **Refer to the CLI Reference**: Learn more about command options in the [CLI Reference](../../reference/cli.md).
 
 

@@ -39,7 +39,7 @@ This guide provides instructions on using R!AN—from installation to advanced u
 - **Insights**
 
 
-_For detailed features, visit the [Features](../features/overview.md) page._
+_For detailed features, visit the [Features](../features/) page._
 
 
 ## Getting Started

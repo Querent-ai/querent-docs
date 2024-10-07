@@ -74,7 +74,7 @@ Health Monitoring: Monitors the health and performance of the node, providing de
 
 #### Initialize Data Source(s)
 
-  - R!AN supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../../guides/data_sources.md).
+  - R!AN supports a variety of data sources. For detailed information, please refer to the [data sources documentation.](../../working-with-rian/data_sources.md).
 
 ![r!an dashboard](../../assets/get-started/collector_initialize.png)
 
