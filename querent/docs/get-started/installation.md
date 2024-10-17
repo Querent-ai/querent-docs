@@ -45,13 +45,13 @@ R!AN is designed for easy installation across various platforms. Below are the p
 
 ### **Windows Installation**
 
-1. **Download**: [R!AN for Windows](https://www.querent.xyz/rian/windows)
+1. **Download**: [R!AN for Windows](https://www.querent.xyz/rian)
 2. **Run the Installer**: Double-click the downloaded `.msi` file.
 3. **Follow Prompts**: Complete the installation wizard steps.
 
 ### **macOS Installation**
 
-1. **Download**: [R!AN for macOS](https://www.querent.xyz/rian/macos)
+1. **Download**: [R!AN for macOS](https://www.querent.xyz/rian)
 2. **Install Application**:
    - Open the downloaded `.dmg` file.
    - Drag the R!AN app to your **Applications** folder.
@@ -59,7 +59,7 @@ R!AN is designed for easy installation across various platforms. Below are the p
 
 ### **Linux Installation**
 
-1. **Download**: [R!AN for Linux](https://www.querent.xyz/rian/linux)
+1. **Download**: [R!AN for Linux](https://www.querent.xyz/rian)
 2. **Make AppImage Executable**:
    ```bash
    chmod +x rian.AppImage
