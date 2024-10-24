@@ -15,7 +15,7 @@ After installing R!AN, launch the R!AN application to get started. You will see 
 #### Dashboard Overview
 The Dashboard is your main hub in R!AN, giving you a quick glance at the status of your data processing activities. It is divided into several sections:
 
-  ![r!an dashboard](../assets/get-started/example/dashboard.png)
+  ![R!AN dashboard](../assets/get-started/example/dashboard.png)
 
 - **Total Events Graph**: Displays a real-time graph showing the number of events processed over time, helping you monitor data flow within the application.
 
@@ -58,7 +58,7 @@ To begin analyzing your data with R!AN, you'll need to add a data source. Follow
 
 - Select `Historical` to add a data source.
 
-![r!an dashboard](../assets/get-started/example/data_source.png)
+![R!AN dashboard](../assets/get-started/example/data_source.png)
 
 2. **Add a New Data Source**: 
 
@@ -66,7 +66,7 @@ To begin analyzing your data with R!AN, you'll need to add a data source. Follow
 
 - Choose `Local Storage` as your data input method.
 
-![r!an dashboard](../assets/get-started/example/add_new_source.png)
+![R!AN dashboard](../assets/get-started/example/add_new_source.png)
 
 
 3. **Configure the Data Source**:
@@ -74,13 +74,13 @@ To begin analyzing your data with R!AN, you'll need to add a data source. Follow
 - Enter the `Directory Path` where your data is stored.
 - Provide a unique `Name` for the data source for easy identification.
 
-![r!an dashboard](../assets/get-started/example/File%20Storage.png)
+![R!AN dashboard](../assets/get-started/example/File%20Storage.png)
 
 4. **Verify the Added Data Source**: 
 
 - Ensure that your new data source appears in the list of available sources.
 
-![r!an dashboard](../assets/get-started/example/Saved_data_source.png)
+![R!AN dashboard](../assets/get-started/example/Saved_data_source.png)
 
 
 ### **Setting Up a Data Fabric**
