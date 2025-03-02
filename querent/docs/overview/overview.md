@@ -7,7 +7,7 @@ sidebar_position: 2
 
 **R!AN (Real-Time Information Aggregator Network)** is a data fabric computing platform engineered to empower enterprises and individuals to create a data fabric from their domain-specific data. With a focus on scalability, flexibility, and efficiency, R!AN transforms the way data from disparate sources are processed, analyzed, and visualized, enabling critical reasoning and insight generation.
 
-_Current stable version: v1.0.1_
+_Current stable version: v1.1.0_
 
 Based on the principles of **Kolmogorov Arnold Networks (KAN)**, R!AN specializes in extracting structured knowledge, such as semantic triples (subject-predicate-object), using a streamlined, attention-based architecture optimized for real-time applications.
 
