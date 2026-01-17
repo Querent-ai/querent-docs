@@ -1,0 +1,136 @@
+.licenseGenerator {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.licenseGenerator h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.licenseGenerator > p {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--ifm-color-content);
+}
+
+.formGroup input {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px var(--ifm-color-primary-alpha-20);
+}
+
+.formGroup input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-danger-contrast-background);
+  border: 1px solid var(--ifm-color-danger);
+  border-radius: 4px;
+  color: var(--ifm-color-danger);
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-success-contrast-background);
+  border: 1px solid var(--ifm-color-success);
+  border-radius: 4px;
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.resultHeader strong {
+  color: var(--ifm-color-success);
+}
+
+.copyButton {
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-success);
+  color: var(--ifm-color-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copyButton:hover {
+  background-color: var(--ifm-color-success-dark);
+}
+
+.licenseKeyDisplay {
+  padding: 1rem;
+  background-color: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.licenseKeyDisplay code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  color: var(--ifm-color-content);
+  background: transparent;
+  padding: 0;
+}
