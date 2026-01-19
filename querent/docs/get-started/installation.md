@@ -18,7 +18,7 @@ R!AN is designed for easy installation across various platforms. Below are the p
 
 ## Installation Methods
 
-- **Standalone Application (Recommended for Most Users):**: Download and run R!AN as a standalone application with a user-friendly interface. Download Linux, Windows, and MacOS from our [product page](https://www.querent.xyz/rian/). This method simplifies the process of getting R!AN up and running on your system. For more information you can refer to [GitHub releases page](https://github.com/querent-ai/distribution).
+- **Standalone Application (Recommended for Most Users):**: Download and run R!AN as a standalone application with a user-friendly interface. Download Linux, Windows, and MacOS from our [GitHub releases page](https://github.com/Querent-ai/querent/releases). This method simplifies the process of getting R!AN up and running on your system. For more information you can refer to [GitHub releases page](https://github.com/Querent-ai/querent/releases).
 
 - **Docker Image**:For containerized environments, use our Docker image available on [R!AN Docker Hub](https://hub.docker.com/r/querent) for details on the available images.
 
@@ -47,13 +47,13 @@ R!AN is designed for easy installation across various platforms. Below are the p
 
 ### **Windows Installation**
 
-1. **Download**: [R!AN for Windows](https://www.querent.xyz/rian)
+1. **Download**: [R!AN for Windows](https://github.com/Querent-ai/querent/releases/latest)
 2. **Run the Installer**: Double-click the downloaded `.msi` file.
 3. **Follow Prompts**: Complete the installation wizard steps.
 
 ### **macOS Installation**
 
-1. **Download**: [R!AN for macOS](https://www.querent.xyz/rian)
+1. **Download**: [R!AN for macOS](https://github.com/Querent-ai/querent/releases/latest)
 2. **Install Application**:
    - Open the downloaded `.dmg` file.
    - Drag the R!AN app to your **Applications** folder.
@@ -61,7 +61,7 @@ R!AN is designed for easy installation across various platforms. Below are the p
 
 ### **Linux Installation**
 
-1. **Download**: [R!AN for Linux](https://www.querent.xyz/rian)
+1. **Download**: [R!AN for Linux](https://github.com/Querent-ai/querent/releases/latest)
 2. **Make AppImage Executable**:
 
    ```bash
