@@ -80,12 +80,6 @@ R!AN is designed for easy installation across various platforms. Below are the p
 - **Minimal Available RAM Needed**: 2 GB
 - **Storage**: 10 GB of available storage
 
-## License Key Generation
-
-After installing R!AN, you'll need a license key to activate the software. Use the form below to generate your license key by providing your name and email address.
-
-<LicenseGenerator />
-
 ## Contact Us
 
 If you have questions or need assistance:
